@@ -1,8 +1,14 @@
 <template>
 	<div class="gallaly-base">
+		<!-- イラスト本体-->
 		<img id="screen" class="gl-screen">
+		<!-- ホバー用div -->
+		<div class="hoverdiv1" v-on:mouseover="modalfuncopen" v-on:mouseleave="modalfuncclose"></div>
+		<div class="hoverdiv2" v-on:mouseover="modalfuncopen" v-on:mouseleave="modalfuncclose"></div>
+		<div class="hoverdiv3" v-on:mouseover="modalfuncopen" v-on:mouseleave="modalfuncclose"></div>
+		<div class="hoverdiv4" v-on:mouseover="modalfuncopen" v-on:mouseleave="modalfuncclose"></div>
 		<!-- イラストのリスト 左上-->
-		<div id="illust-list" class="illust-list">
+		<div id="illust-list" class="illust-list modalmarker modal-hide" v-on:mouseover="modalfuncopen" v-on:mouseleave="modalfuncclose">
 			<!-- サムネ部分 -->
 			<div v-for="(column,index) in list" :key="column.title">
 				<div v-bind:id="list[index].thumclass" class="illust-list-icon" @click="illustselect(column)" v-bind:class="list[index].thumclass" v-show="list[index].active"></div>
@@ -10,13 +16,13 @@
 			<div class="illust-list-icon-dmy"></div>
 		</div>
 		<!-- 差分部分 -->
-		<div class="illust-list-dif">
+		<div class="illust-list-dif modalmarker modal-hide" v-on:mouseover="modalfuncopen" v-on:mouseleave="modalfuncclose">
 			<div v-for="(column,index) in difil" :key="column">
 				<div v-bind:id="column" class="illust-list-icon" @click="differenceselect(index,column)" v-bind:class="difil[index]"></div>
 			</div>
 		</div>
 		<!-- 説明文 -->
-		<div class="il-description">
+		<div class="il-description modalmarker modal-hide" v-on:mouseover="modalfuncopen" v-on:mouseleave="modalfuncclose">
 			<p>{{seldes}}</p>
 			<a v-bind:href="sellinksrc" target="_blank">{{sellinktxt}}</a>
 		</div>
@@ -43,6 +49,12 @@ export default {
 		},
 		screenclose: function () {
 			this.$emit('screenclose')
+		},
+		modalfuncopen: function () {
+			this.$emit('modalfuncopen')
+		},
+		modalfuncclose: function () {
+			this.$emit('modalfuncclose')
 		},
 	},
 }
@@ -146,5 +158,49 @@ export default {
 	background-color: #ffdbae;
 	width: 45vw;
 	padding: 0.5vw 1vw;
+}
+
+.modal-hide {
+	opacity: 0;
+}
+
+.modalmarker {
+	transition: all 0.3s;
+}
+
+.modal-hide:active {
+	pointer-events: none;
+}
+
+.hoverdiv1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20vh;
+	width: 100%;
+}
+
+.hoverdiv2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 30vw;
+}
+
+.hoverdiv3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 20vh;
+	width: 100%;
+}
+
+.hoverdiv4 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 30vw;
 }
 </style>

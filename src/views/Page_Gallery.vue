@@ -1,7 +1,7 @@
 <template>
 	<section id="Gallery" class="section">
 		<transition name="vfade">
-			<GalleryGallerymodal  v-show="modalscreen" :list="list" :difil="difil" @illustselect="illustselect" @differenceselect="differenceselect" @screenclose="screenclose" :seldes="seldes" :sellinktxt="sellinktxt" :sellinksrc="sellinksrc"/>
+			<GalleryGallerymodal  v-show="modalscreen" :list="list" :difil="difil" @illustselect="illustselect" @differenceselect="differenceselect" @screenclose="screenclose" :seldes="seldes" :sellinktxt="sellinktxt" :sellinksrc="sellinksrc" @modalfuncopen="modalfuncopen" @modalfuncclose="modalfuncclose"/>
 		</transition>
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 		<h2 class="font-E3 text-center"><span>Gallery</span></h2>
@@ -175,6 +175,20 @@ export default {
 				this.filter()
 			}
 		},
+		modalfuncopen : function () {
+			/* ホバー時にハイドクラスを取り除く*/
+			var removeselect = document.getElementsByClassName('modalmarker')
+			Array.prototype.forEach.call(removeselect, function (element) {
+				element.classList.remove("modal-hide");
+			});
+		},
+		modalfuncclose : function () {
+			/* ホバーから外れた時ににハイドクラスを追加*/
+			var removeselect = document.getElementsByClassName('modalmarker')
+			Array.prototype.forEach.call(removeselect, function (element) {
+				element.classList.add("modal-hide");
+			});
+		},
 	},
 	data: () => ({
 		breadcrumbs: [
@@ -214,8 +228,8 @@ export default {
 				src: require('../uploads/illustrations/イラスト3、女の子.png'),
 				difsrc:[require('../uploads/illustrations/イラスト3-2、女の子.png')],
 				tag:["女の子", "rating=a"], active: true,
-				description:'',
-				linktext: '', linksrc: '',
+				description:'商品説明みたいな感じ',
+				linktext: 'Amazon', linksrc: 'https://9-nine-project.com/special/',
 			},
 			{
 				title:"イラスト4 女の子 !特殊", 
