@@ -22,12 +22,17 @@
 			</div>
 		</div>
 		<!-- 説明文 -->
-		<div class="il-description modalmarker modal-hide" v-on:mouseover="modalfuncopen" v-on:mouseleave="modalfuncclose">
-			<p>{{seldes}}</p>
-			<a v-bind:href="sellinksrc" target="_blank">{{sellinktxt}}</a>
+		<div class="il-description desc-container modalmarker modal-hide" v-on:mouseover="modalfuncopen" v-on:mouseleave="modalfuncclose">
+			<div class="desc-box">
+				<span></span>
+				<div class="desc-content">
+					<p>{{seldes}}</p>
+					<a v-bind:href="sellinksrc" target="_blank">{{sellinktxt}}</a>
+				</div>
+			</div>
 		</div>
 		<!-- 閉じるボタン -->
-		<button class="toziru" @click="screenclose">閉じる</button>
+		<button class="gl-close" @click="screenclose">X</button>
 	</div>
 </template>
 
@@ -63,8 +68,8 @@ export default {
 <style>
 .gallaly-base {
 	width: 100%;
-	height: 100vh;
-	background-color: #00000080;
+	height: 103vh;
+	background-color: rgba(0,0,0,0.75);
 	display: flex;
 	position: fixed;
 	z-index: 100;
@@ -93,13 +98,6 @@ export default {
 .illust-list-icon-dmy {
 	height: calc(100vh - 5.85vw - 2vw - 2vw);
 	width: 0.1px;
-}
-
-.toziru {
-	position: fixed;
-	top: 5vh;
-	right: 5vw;
-	color: white;
 }
 
 .illust-list-icon {
@@ -151,14 +149,6 @@ export default {
 	left: 0;
 	object-fit: contain;
 }
-.il-description {
-	position: absolute;
-	bottom: 3vh;
-	right: 3vw;
-	background-color: #ffdbae;
-	width: 45vw;
-	padding: 0.5vw 1vw;
-}
 
 .modal-hide {
 	opacity: 0;
@@ -202,5 +192,77 @@ export default {
 	left: 0;
 	height: 100vh;
 	width: 30vw;
+}
+
+
+
+
+
+.il-description {
+	position: absolute;
+	bottom: 3vh;
+	right: 3vw;
+	background-color: #ffdbae;
+	width: 45vw;
+	padding: 0.5vw 1vw;
+}
+
+.desc-container .desc-box::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,#e7b06c,#e7b06c,#ffdbae,#ffaeca);
+}
+
+.desc-container .desc-box::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,#e7b06c,#e7b06c,#ffdbae,#ffaeca);
+	filter: blur(1.4vw);
+}
+
+.desc-container .desc-box span {
+	position: absolute;
+	top: 0.2vw;
+	left: 0.2vw;
+	right: 0.2vw;
+	bottom: 0.2vw;
+	background: rgba(0,0,0,0.6);
+	z-index: 2;
+}
+.desc-container .desc-box span::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255,255,255,0.1);
+	pointer-events: none;
+}
+.desc-container .desc-box .desc-content
+{
+	position: relative;
+	z-index: 10;
+	color: #fafafa;
+}
+
+.gl-close {
+	position: fixed;
+    top: 5vh;
+    right: 5vw;
+    width: 3vw;
+    height: 3vw;
+    color: white;
 }
 </style>
