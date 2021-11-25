@@ -16,11 +16,13 @@
 			<div class="illust-list-icon-dmy"></div>
 		</div>
 		<!-- 差分部分 -->
-		<div class="illust-list-dif modalmarker modal-hide" v-on:mouseover="modalfuncopen" v-on:mouseleave="modalfuncclose">
-			<div v-for="(column,index) in difil" :key="column">
-				<div v-bind:id="column" class="illust-list-icon" @click="differenceselect(index,column)" v-bind:class="difil[index]"></div>
+			<div class="illust-list-dif modalmarker modal-hide" v-on:mouseover="modalfuncopen" v-on:mouseleave="modalfuncclose">
+				<transition-group name="items" class="display-flex">
+					<div v-for="(column,index) in difil" :key="column">
+						<div v-bind:id="column" class="illust-list-icon" @click="differenceselect(index,column)" v-bind:class="difil[index]"></div>
+					</div>
+				</transition-group>
 			</div>
-		</div>
 		<!-- 説明文 -->
 		<div class="il-description desc-container modalmarker modal-hide" v-on:mouseover="modalfuncopen" v-on:mouseleave="modalfuncclose">
 			<div class="desc-box">
@@ -32,7 +34,11 @@
 			</div>
 		</div>
 		<!-- 閉じるボタン -->
-		<button class="gl-close" @click="screenclose">X</button>
+		<button class="gl-close" @click="screenclose">
+			<span class="glclo-span1"></span>
+			<span class="glclo-span2"></span>
+			<span class="glclo-span3"></span>
+		</button>
 	</div>
 </template>
 
@@ -260,9 +266,63 @@ export default {
 .gl-close {
 	position: fixed;
     top: 5vh;
-    right: 5vw;
-    width: 3vw;
-    height: 3vw;
+    right: 3vw;
+    width: 3.6vw;
+    height: 2.5vw;
+	/* background-color: red; */
     color: white;
+	transition: 0.5s ease-in-out;
+}
+
+.gl-close:hover {
+	transform: rotateZ( 180deg ) ;
+}
+
+.gl-close span {
+	display : block;
+	position: absolute;
+	width   : 2.8vw;
+	height  : 0.15vw;
+	left    : 0.4vw;
+	background : #e7b06c;
+	transition: 0.5s ease-in-out;
+}
+
+.glclo-span1 {
+	top : 1.14vw;
+	left: 0.42vw;
+	transform: rotate(315deg);
+}
+
+.glclo-span2 {
+	top: 1.14vw;
+	transform: rotate(-315deg);
+}
+
+.glclo-span3 {
+	top: 1.14vw;
+	transform: rotate(-315deg);
+}
+
+
+/* .items-leave-active, */
+.items-enter-active {
+    transition: opacity .5s, transform .5s;
+}
+.items-leave-to,
+.items-enter {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.items-leave,
+.items-enter-to {
+    opacity: 1;
+}
+.items-move {
+    transition: transform .5s;
+}
+
+.items-leave-active {
+	transition: opacity 0s, transform 0s;
 }
 </style>

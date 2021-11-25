@@ -8,7 +8,7 @@
 			</div>
 		</div>
 		<div class="gl-index content-core">
-			<div class="side-vertical font-E2"><span class="m-bottom-1rem">NANTOKAKANTOKA</span>OFFICIAL SITE</div>
+			<div class="side-vertical font-E2"><span class="m-bottom-05rem">NEVER</span><span class="m-bottom-1rem">RAND.F</span>OFFICIAL SITE</div>
 		</div>
 		<div class="gl-under content-core">
 			<div class="tw-round content-core">

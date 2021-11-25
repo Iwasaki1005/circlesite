@@ -15,23 +15,10 @@
 					<router-link to="/news/20210202dmy">
 						<div class="nw-column m-bottom-2rem">
 							<div class="align-center">
-								<p class="fs-0_8rem m-right-05rem co-black">2021.02.02</p>
-								<div class="newstag-dmy co-white font-E1">dmy</div>
+								<p class="fs-0_8rem m-right-05rem co-black">2022.※未定</p>
 								<div class="newstag-info co-white font-E1">info</div>
 							</div>
-							<p class="co-black">2021年(仮)のテストニュースです。</p>
-						</div>
-					</router-link>
-				</v-tab-item>
-				<v-tab-item>
-					<router-link to="/news/20200101dmy">
-						<div class="nw-column m-bottom-2rem">
-							<div class="align-center">
-								<p class="fs-0_8rem m-right-05rem co-black">2020.01.01</p>
-								<div class="newstag-dmy co-white font-E1">dmy</div>
-								<div class="newstag-info co-white font-E1">info</div>
-							</div>
-							<p class="co-black">2020年(仮)のテストニュースです。</p>
+							<p class="co-black">新サークル「ねばーランドF」活動開始しました。</p>
 						</div>
 					</router-link>
 				</v-tab-item>
@@ -47,7 +34,7 @@ export default {
 		return {
 			tab: null,
 			items: [
-			'2021', '2020',
+			'2022',
 		],
 		breadcrumbs: [
 			{

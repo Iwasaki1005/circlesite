@@ -351,6 +351,10 @@ body {
 	display: none;
 }
 
+.tr-duration-025s {
+	transition-duration: 0.25s;
+}
+
 .tr-duration-05s {
 	transition-duration: 0.5s;
 }

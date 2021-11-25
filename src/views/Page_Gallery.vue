@@ -18,7 +18,6 @@
 import GalleryIllustrations from '../components/Gallery_components/Gallery_illustrations.vue'
 import GalleryGallerymodal from '../components/Gallery_components/Gallery_gallerymodal.vue'
 
-
 export default {
 	name: 'Page_Gallery',
 	components: {
@@ -63,6 +62,8 @@ export default {
 				/* 該当のやつにクラス追加 */
 				element.classList.add('illust-list-icon-select')
 			/* ここまで */
+			// htmlからスクロールバーを隠す
+			document.querySelectorAll("html, body").forEach(elm => elm.classList.add("scrollbar"));
 		},
 		differenceselect : function (index,column) {
 			const screen = document.getElementById('screen');
@@ -78,6 +79,8 @@ export default {
 				var defeleadd = document.getElementById(column);
 				defeleadd.classList.add('illust-list-icon-select')
 			/* ここまで */
+			// htmlからスクロールバーを隠す
+			document.querySelectorAll("html, body").forEach(elm => elm.classList.add("scrollbar"));
 		},
 		screenopen: function (index) {
 			this.modalscreen = true;
@@ -118,9 +121,14 @@ export default {
 				/* 該当のやつにクラス追加 */
 				element.classList.add('illust-list-icon-select')
 			/* ここまで */
+
+			// htmlからスクロールバーを隠す
+			document.querySelectorAll("html, body").forEach(elm => elm.classList.add("scrollbar"));
 		},
 		screenclose: function () {
 			this.modalscreen = false;
+			// htmlにスクロールバーを再表示
+			document.querySelectorAll("html, body").forEach(elm => elm.classList.remove("scrollbar"));
 		},
 		addtag : function (column) {
 			this.activetag.push(column)
@@ -188,6 +196,9 @@ export default {
 			Array.prototype.forEach.call(removeselect, function (element) {
 				element.classList.add("modal-hide");
 			});
+		},
+		dmyhide: function () {
+			this.overflowyhide = true
 		},
 	},
 	data: () => ({
@@ -278,6 +289,7 @@ export default {
 		activetag: [],
 		alltags: ["男の子","女の子","複数人","ヤンキー",],
 		modalscreen: false,
+		overflowyhide: false,
 	}),
 }
 </script>
@@ -399,5 +411,10 @@ input:checked[type="checkbox"]:after {
 
 .vfade-enter, .vfade-leave-to{
     opacity: 0;
+}
+
+
+html.scrollbar {
+  overflow-y: hidden;
 }
 </style>
