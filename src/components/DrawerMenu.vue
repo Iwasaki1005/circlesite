@@ -3,7 +3,7 @@
 		<img class="dr-logo center" src="../assets/dmyimage/rogo_dmy.png">
 		<div class="dr-links">
 			<div id="dr-content1" class="dr-container dr-saup opacity-0">
-				<router-link id="homeopen" to="/">
+				<router-link to="/">
 					<div class="display-flex dr-link closeevent">
 						<i class="fas fa-home co-brown dr-icon m-right-05rem"></i>
 						<div>
@@ -12,16 +12,16 @@
 						</div>
 					</div>
 				</router-link>
-				<router-link id="aboutopen" to="/about">
+				<router-link to="/about">
 					<div class="display-flex dr-link closeevent">
-						<i class="fas fa-file-alt co-brown dr-icon m-right-05rem"></i>
+						<i class="fas fa-object-group co-brown dr-icon m-right-05rem"></i>
 						<div>
 							<p class="font-E2 dr-fs1"><span class="co-brown">A</span><span class="co-grey">bout</span></p>
 							<p class="dr-fs2 co-grey">概要</p>
 						</div>
 					</div>
 				</router-link>
-				<router-link id="newsopen" to="/news">
+				<router-link to="/news">
 					<div class="display-flex dr-link closeevent">
 						<i class="fas fa-newspaper co-brown dr-icon m-right-05rem"></i>
 						<div>
@@ -32,7 +32,7 @@
 				</router-link>
 			</div>
 			<div id="dr-content2" class="dr-container dr-saup opacity-0">
-				<router-link id="galleryopen" to="/gallery">
+				<router-link to="/gallery">
 					<div class="display-flex dr-link closeevent">
 						<i class="fas fa-pen-alt co-brown dr-icon m-right-05rem"></i>
 						<div>
@@ -41,35 +41,37 @@
 						</div>
 					</div>
 				</router-link>
+				<router-link to="/game">
+					<div class="display-flex dr-link closeevent">
+						<i class="fas fa-gamepad co-brown dr-icon m-right-05rem"></i>
+						<div>
+							<p class="font-E2 dr-fs1"><span class="co-brown">G</span><span class="co-grey">ame</span></p>
+							<p class="dr-fs2 co-grey">ゲーム</p>
+						</div>
+					</div>
+				</router-link>
 				<div class="display-flex dr-link">
-					<i class="fas fa-question-circle co-brown dr-icon m-right-05rem"></i>
+					<i class="fas fa-book-open co-brown dr-icon m-right-05rem"></i>
 					<div>
-						<p class="font-E2 dr-fs1"><span class="co-brown">？</span><span class="co-grey">？？</span></p>
-						<p class="dr-fs2 co-grey">Coming soon</p>
+						<p class="font-E2 dr-fs1"><span class="co-brown">G</span><span class="co-grey">oods</span></p>
+						<p class="dr-fs2 co-grey">グッズ</p>
 					</div>
 				</div>
 				<div class="display-flex dr-link">
-					<i class="fas fa-question-circle co-brown dr-icon m-right-05rem"></i>
+					<i class="fas fa-tablet-alt co-brown dr-icon m-right-05rem"></i>
 					<div>
-						<p class="font-E2 dr-fs1"><span class="co-brown">D</span><span class="co-grey">ammy</span></p>
-						<p class="dr-fs2 co-grey">dmy</p>
-					</div>
-				</div>
-				<div class="display-flex dr-link">
-					<i class="fas fa-question-circle co-brown dr-icon m-right-05rem"></i>
-					<div>
-						<p class="font-E2 dr-fs1"><span class="co-brown">D</span><span class="co-grey">ammy</span></p>
-						<p class="dr-fs2 co-grey">dmy</p>
+						<p class="font-E2 dr-fs1"><span class="co-brown">W</span><span class="co-grey">orks</span></p>
+						<p class="dr-fs2 co-grey">活動・お仕事履歴</p>
 					</div>
 				</div>
 			</div>
 			<div id="dr-content3" class="dr-line dr-saup opacity-0"></div>
 			<div id="dr-content4" class="dr-container dr-saup opacity-0">
 				<div class="display-flex dr-link">
-					<i class="fab fa-dailymotion co-brown dr-icon m-right-05rem"></i>
+					<i class="fas fa-file-alt co-brown dr-icon m-right-05rem"></i>
 					<div>
-						<p class="font-E2 dr-fs1"><span class="co-brown">D</span><span class="co-grey">ammy</span></p>
-						<p class="dr-fs2 co-grey">dmy</p>
+						<p class="font-E2 dr-fs1"><span class="co-brown">P</span><span class="co-grey">rivacy</span></p>
+						<p class="dr-fs2 co-grey">個人情報保護方針</p>
 					</div>
 				</div>
 				<div class="display-flex dr-link">
