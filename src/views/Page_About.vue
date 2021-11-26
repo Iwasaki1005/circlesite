@@ -10,6 +10,7 @@
 				管理人への連絡、バグの報告などはこちらからお願いします。<br><br>
 			</p>
 		</div>
+		<BackToHome />
 		<router-link to="/">
 			<div class="content-core m-top-2rem sa sa--up">
 				<div class="bt-typeA bt-typeA-border d-block center">
@@ -21,8 +22,13 @@
 </template>
 
 <script>
+import BackToHome from '../components/BackToHome.vue'
+
 export default {
 	name: 'Page_About',
+	components: {
+		BackToHome,
+	},
 	mounted: function() {
 		/*--------------------------------------------------------------------------
 		 *
