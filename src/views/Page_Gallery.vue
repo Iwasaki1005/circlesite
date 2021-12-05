@@ -351,7 +351,7 @@ input:checked[type="checkbox"]:after {
 	width: 16vw;
 	height: 16vw;
 	border: 0.1vw solid #e7b06c;
-	border-radius: 1vw;
+	border-radius: 0.4vw;
 	margin: 1vw;
 }
 

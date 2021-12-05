@@ -3,24 +3,34 @@
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 		<h2 class="font-E3 text-center"><span>Game</span></h2>
 		<div class="vertical-line center sa sa--up"></div>
-		<div class="sa sa--up">
-			<!--ここに色々いれるぞい-->
-		</div>
-		<router-link to="/">
-			<div class="content-core m-top-2rem sa sa--up">
-				<div class="bt-typeA bt-typeA-border d-block center">
-					<span class="bt-typeA-border-inner font-E1">Back To Home ></span>
-				</div>
-			</div>
-		</router-link>
+		<GamePickup  :gamelist="gamelist" @pickupcheck="pickupcheck" />
+		<GameGames :gamelist="gamelist" :datapickthumsrc="datapickthumsrc" />
 	</section>
 </template>
 
 <script>
+import GameGames from '../components/Game_components/Game_games.vue'
+import GamePickup from '../components/Game_components/Game_pickup.vue'
+
 export default {
 	name: 'Page_Game',
+	components: {
+		GameGames,
+		GamePickup,
+	},
 	mounted: function() {
 		this.scrollanime_js()
+	},
+	methods: {
+		pickupcheck : function() {
+			for (let i = 0; i < this.gamelist.length; i++) {
+				if (this.gamelist[i].pickup == true) {
+					const gamepickup = document.getElementById('gamepickup');
+					this.datapickthumsrc = this.gamelist[i].pickthumsrc
+					gamepickup.setAttribute('src', this.datapickthumsrc);
+				}
+			}
+		},
 	},
 	data: () => ({
 		breadcrumbs: [
@@ -35,6 +45,39 @@ export default {
 			href: '',
 		},
 		],
+		gamelist: [
+			{
+				title: "ダミーゲーム1", 
+				tag:["開発中", "発売中","New"],
+				release: '2021.11.26',
+				price: '¥free',
+				rating: 'rating=a',
+				linksrc: 'https://9-nine-project.com/special/',
+				thumclass:'bgil-2', pickthumsrc: require('../uploads/game/dmy_pickup.png'),
+				pickup: true,
+			},
+			{
+				title: "ダミーゲーム2", 
+				tag:["発売中","RPG",'rating=r18'],
+				release: '2021.11.01',
+				price: '¥2000',
+				rating: 'rating=r18',
+				linksrc: 'https://websitesetup.org/html-to-wordpress/',
+				thumclass:'bgil-2', pickthumsrc: require('../uploads/illustrations/イラスト６、女の子、複数人.png'),
+				pickup: false,
+			},
+		],
+		datapickthumsrc: '',
 	}),
 }
 </script>
+
+<style>
+.img-scale-hover{
+ transition:1s all;
+}
+.img-scale-hover:hover{
+  transform:scale(1.2,1.2);
+  transition:1s all;
+}
+</style>
