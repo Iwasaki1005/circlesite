@@ -190,6 +190,14 @@ body {
 	width: 90%;
 }
 
+.width50 {
+	width: 50%;
+}
+
+.width60 {
+	width: 60%;
+}
+
 .width5 {
 	width: 5%;
 }
@@ -198,8 +206,24 @@ body {
 	width: 10%;
 }
 
+.width20 {
+	width: 20%;
+}
+
+.width25 {
+	width: 25%;
+}
+
+.width30 {
+	width: 30%;
+}
+
 .display-flex {
 	display: flex;
+}
+
+.display-flex_important {
+	display: flex!important;
 }
 
 .space-between {
@@ -216,6 +240,12 @@ body {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
+}
+
+.space-around-align-center {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .content-core {
@@ -240,6 +270,11 @@ body {
 .justify-center {
 	display: flex;
 	justify-content: center;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .row-reverse {
@@ -322,6 +357,15 @@ body {
 
 .m-left-2rem {
 	margin-left: 2rem;
+}
+
+.m-tb-2rem {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.m-all0 {
+	margin: 0;
 }
 
 .p-tb-05rem {
