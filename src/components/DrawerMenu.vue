@@ -67,13 +67,15 @@
 			</div>
 			<div id="dr-content3" class="dr-line dr-saup opacity-0"></div>
 			<div id="dr-content4" class="dr-container dr-saup opacity-0">
-				<div class="display-flex dr-link">
-					<i class="fas fa-file-alt co-brown dr-icon m-right-05rem"></i>
-					<div>
-						<p class="font-E2 dr-fs1"><span class="co-brown">P</span><span class="co-grey">rivacy</span></p>
-						<p class="dr-fs2 co-grey">個人情報保護方針</p>
+				<router-link to="/information">
+					<div class="display-flex dr-link closeevent">
+						<i class="fas fa-file-alt co-brown dr-icon m-right-05rem"></i>
+						<div>
+							<p class="font-E2 dr-fs1"><span class="co-brown">I</span><span class="co-grey">nfo</span></p>
+							<p class="dr-fs2 co-grey">ご案内・個人情報保護方針</p>
+						</div>
 					</div>
-				</div>
+				</router-link>
 				<div class="display-flex dr-link">
 					<i class="fas fa-external-link-alt co-brown dr-icon m-right-05rem"></i>
 					<div>

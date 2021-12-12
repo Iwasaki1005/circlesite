@@ -24,6 +24,9 @@
 		</div>
 		<div>
 			<span>著作権表記</span>
+			<span>当サイトは基本的にリンクフリーです。</span>
+			<span>リンクをしていただく際のURLはトップページへお願いします。</span>
+			<span>詳細はこちら</span>
 		</div>
 		<div>
 			<span>page top</span>
