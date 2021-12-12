@@ -10,7 +10,7 @@
 				<router-view />
 			</transition>
 		</v-app>
-		<div style="margin-bottom: 100vh;"></div>
+		<Footer />
 	</div>
 </template>
 
@@ -37,6 +37,7 @@
 	import BackgroundEffect from './components/BackgroundEffect.vue'
 	import Glmenu from './components/GloMenu.vue'
 	import DrawerMenu from './components/DrawerMenu.vue'
+	import Footer from './components/Footer.vue'
 	import TestComponent from './components/TestComponent.vue'
 
 	export default {
@@ -49,6 +50,7 @@
 			Loading,
 			Glmenu,
 			DrawerMenu,
+			Footer,
 			TestComponent,
 		},
 		methods : {
