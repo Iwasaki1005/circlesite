@@ -2,7 +2,7 @@
 	<div id="NeverLand-top" class="nl-top-position">
 		<div class="nl-top">
 			<div class="dia-logo">
-				<img class="top-logo" src="../../assets/dmyimage/rogo_dmy.png">
+				<img class="top-logo" src="../../assets/logo/neverlandf_logo1.png">
 			</div>
 			<div class="dia-scroll">
 				<div class="scroll-text font-E1">view more</div>

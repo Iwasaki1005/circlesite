@@ -1,6 +1,6 @@
 <template>
 	<ul id="Drawer-menu" class="dr-menu dr-hidden">
-		<img class="dr-logo center" src="../assets/dmyimage/rogo_dmy.png">
+		<img class="dr-logo center" src="../assets//logo/neverlandf_logo1.png">
 		<div class="dr-links">
 			<div id="dr-content1" class="dr-container dr-saup opacity-0">
 				<router-link to="/">

@@ -34,12 +34,11 @@
 }
 
 .top-logo {
-	height: 4.5vw;
-	width: 12vw;
-	background-color: tomato;
+	height: 6.75vw;
+	width: 18vw;
 	position: relative;
-	top: 22vw;
-	left: 14vw;
+	top: 20vw;
+	left: 12vw;
 	transform: rotate(-45deg);
 }
 	
