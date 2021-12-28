@@ -7,6 +7,7 @@ import Page_News from './views/Page_News.vue'
 import Page_Gallery from './views/Page_Gallery.vue'
 import Page_Game from './views/Page_Game.vue'
 import Page_Information from './views/Page_Information.vue'
+import Page_Contact from './views/Page_Contact.vue'
 import News_Maincontents from './components/News_components/News_Maincontents.vue'
 import News_20200101dmy from './components/News_components/News_20200101dmy.vue'
 import News_20210202dmy from './components/News_components/News_20210202dmy.vue'
@@ -53,6 +54,12 @@ export default new Router({
 			name: 'game',
 			component: Page_Game,
 			meta: { title: 'Game', desc: 'ディスクリプションを記述' }
+		},
+		{
+			path: '/contact',
+			name: 'contact',
+			component: Page_Contact,
+			meta: { title: 'Contact', desc: 'ディスクリプションを記述' }
 		},
 		{
 			path: '/news',

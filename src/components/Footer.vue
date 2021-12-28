@@ -29,14 +29,18 @@
 				<span class="hover-left-in-light">Contact</span>
 			</div>
 		</div>
-		<div>
-			<span>※著作権表記</span>
-			<span>当サイトは基本的にリンクフリーです。</span>
-			<span>リンクをしていただく際のURLはトップページへお願いします。</span>
-			<span>詳細はこちら</span>
+		<div class="width100 fs-0_8rem co-white flex-end linkset-position m-bottom-2rem">
+			<div>
+				<p>当サイトは基本的にリンクフリーです。</p>
+				<p>リンクをしていただく際のURLはトップページへお願いします。</p>
+				<p>詳細はこちら</p>
+			</div>
 		</div>
-		<div>
-			<span>page top</span>
+		<div class="width100 fs-0_8rem co-white justify-center">
+			<small>© 2018 corpname inc.</small>
+		</div>
+		<div class="pagetop-position">
+			<a href="#" class="btnarrow5">page top</a>
 		</div>
 	</div>
 </template>
@@ -50,7 +54,7 @@ export default {
 <style>
 .ft-bg {
 	background-color: #e7b06c;
-	padding: 2.5vw 10vw;
+	padding: 1.5vw 10vw;
 	margin-top: 30vw;
 }
 
@@ -82,5 +86,82 @@ export default {
 .hover-left-in-light:hover::after {
 	transform-origin: left top;
 	transform: scale(1, 1);
+}
+
+.pagetop-position {
+	position: relative;
+	right: -77vw;
+	bottom: 2.5vw;
+}
+
+.linkset-position {
+	padding: 0 5%;
+}
+
+
+
+
+
+.btnarrow5{
+    /*矢印の基点とするためrelativeを指定*/
+  position: relative;
+    /*ボタンの形状*/
+  border: 0.07vw solid #e7b06c;
+    padding: 0.5vw 2.1vw;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #fafafa;
+    outline: none;
+    /*アニメーションの指定*/
+    transition: all .2s linear;
+
+	transform:rotateZ(90deg)
+}
+
+.btnarrow5:hover{
+  background:#fafafa;
+  color:#e7b06c;
+}
+
+/*矢印と下線の形状*/
+.btnarrow5::before{
+  content:"";
+    /*絶対配置で下線の位置を決める*/
+  position: absolute;
+  top:50%;
+  right:8.1vw;
+    /*下線の形状*/
+  width:2.8vw;
+  height:0.07vw;
+  background:#fafafa;
+    /*アニメーションの指定*/
+    transition: all .2s linear;
+}
+
+.btnarrow5::after{
+  content:"";
+    /*絶対配置で矢印の位置を決める*/
+  position: absolute;
+    top: 23%;
+    right: 10.5vw;
+    /*矢印の形状*/
+  width:0.07vw;
+  height:0.8vw;
+  background:#fafafa;
+    transform:skewX(136deg);
+    /*アニメーションの指定*/
+    transition: all .2s linear;
+}
+
+/*hoverした際の移動*/
+.btnarrow5:hover::before{
+  right:10.7vw;
+  background:#e7b06c;
+}
+
+.btnarrow5:hover::after{
+  right:13vw;
+  background:#e7b06c;
 }
 </style>

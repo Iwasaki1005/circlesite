@@ -3,18 +3,18 @@
 		<p class="co-brown">- Share This News -</p>
 		<div class="m-top-05rem">
 			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="vuejs" data-hashtags="ハッシュタグ名" data-related="tkcpail34,vuejs" data-show-count="false"></a>
-			<!--<SvganimateTwitter />-->
+			<SvganimateTwitter />
 		</div>
 	</div>
 </template>
 
 <script> 
-//import SvganimateTwitter from '../Svganimate_twitter.vue'
+import SvganimateTwitter from '../Svganimate_twitter.vue'
 
 export default {
 	name: 'News_Share',
 	components: {
-		//SvganimateTwitter,
+		SvganimateTwitter,
 	},
 	mounted: function () {
 		/*--------------------------------------------------------------------------
