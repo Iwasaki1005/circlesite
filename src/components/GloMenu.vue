@@ -11,10 +11,9 @@
 			<div class="side-vertical font-E2"><span class="m-bottom-05rem">NEVER</span><span class="m-bottom-1rem">RAND.F</span>OFFICIAL SITE</div>
 		</div>
 		<div class="gl-under content-core">
-			<!-- <a class="tw-round content-core">
+			<div class="tw-round content-core">
 				<i class="fab fa-twitter"></i>
-			</a> -->
-			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="vuejs" data-hashtags="ハッシュタグ名" data-related="tkcpail34,vuejs" data-show-count="false"></a>
+			</div>
 		</div>
 	</nav>
 </template>
@@ -119,32 +118,6 @@ export default {
 	}
 	}, false);
 
-	/*--------------------------------------------------------------------------
-		 *
-		 * tweet
-		 *
-		 *
-		--------------------------------------------------------------------------*/
-		let sharetweet = document.createElement('script')
-		sharetweet.setAttribute('src', 'https://platform.twitter.com/widgets.js')
-		document.head.appendChild(sharetweet)
-
 	},
 }
 </script>
-
-<style>
-.twitter {
-  background-color: #55acee;
-  border: 2px solid #55acee;
-  border-radius: 0;
-  color: #fff;
-  padding:4px 32px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-.twitter:hover {
-  background-color: #fff;
-  color: #55acee;
-}
-</style>
