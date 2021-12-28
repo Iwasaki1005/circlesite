@@ -11,16 +11,18 @@
 			<div class="side-vertical font-E2"><span class="m-bottom-05rem">NEVER</span><span class="m-bottom-1rem">RAND.F</span>OFFICIAL SITE</div>
 		</div>
 		<div class="gl-under content-core">
-			<div class="tw-round content-core">
-				<i class="fab fa-twitter"></i>
-			</div>
+			<ShareNetwork network="Twitter" url="https://news.vuejs.org/issues/180" title="title(仮)" hashtags="vuejs,vite">
+				<div class="tw-round content-core">
+					<i class="fab fa-twitter"></i>
+				</div>
+			</ShareNetwork>
 		</div>
 	</nav>
 </template>
 
 <script>
 export default {
-  name: 'Glmenu',
+   name: 'Glmenu',
    mounted: function() {
 	const dropen = document.getElementById('hamburger-button');
 	const drmenu = document.getElementById('Drawer-menu');

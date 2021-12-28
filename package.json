@@ -13,6 +13,7 @@
     "vue": "^2.6.11",
     "vue-js-modal": "^2.0.1",
     "vue-router": "3.0.7",
+    "vue-social-sharing": "^3.0.8",
     "vuetify": "^2.5.8"
   },
   "devDependencies": {
