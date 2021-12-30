@@ -24,7 +24,7 @@ export default new Router({
 			path: '/',
 			name: 'home',
 			component: Page_Main,
-			meta: { title: 'Home', desc: 'ディスクリプションを記述' }
+			meta: { title: 'Home', desc: 'サークル「ネバーランドF」のオフィシャルウェブページです。製作したイラスト、ゲームなどを公開しています。' }
 		},
 		{
 			path: '/helloworld',
@@ -35,35 +35,36 @@ export default new Router({
 			path: '/about',
 			name: 'about',
 			component: Page_About,
-			meta: { title: 'About', desc: 'ディスクリプションを記述' }
+			meta: { title: 'About', desc: '当サークルについての概要を記載しています。' }
 		},
 		{
 			path: '/gallery',
 			name: 'gallery',
 			component: Page_Gallery,
-			meta: { title: 'Gallery', desc: 'ディスクリプションを記述' }
+			meta: { title: 'Gallery', desc: '製作したイラストを公開しています。' }
 		},
 		{
 			path: '/information',
 			name: 'information',
 			component: Page_Information,
-			meta: { title: 'Information', desc: 'ディスクリプションを記述' }
+			meta: { title: 'Information', desc: '当サイトについての概要を記載しています。' }
 		},
 		{
 			path: '/game',
 			name: 'game',
 			component: Page_Game,
-			meta: { title: 'Game', desc: 'ディスクリプションを記述' }
+			meta: { title: 'Game', desc: '製作したゲームを公開しています。' }
 		},
 		{
 			path: '/contact',
 			name: 'contact',
 			component: Page_Contact,
-			meta: { title: 'Contact', desc: 'ディスクリプションを記述' }
+			meta: { title: 'Contact', desc: 'サークルの管理者へ問い合わせのメールを出すことができます。' }
 		},
 		{
 			path: '/news',
 			component: Page_News,
+			meta: { title: 'Contact', desc: 'サークルのお知らせを記載しています。' },
 			children: [
 				{
 					path: '',
