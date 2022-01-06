@@ -50,13 +50,15 @@
 						</div>
 					</div>
 				</router-link>
-				<div class="display-flex dr-link">
-					<i class="fas fa-book-open co-brown dr-icon m-right-05rem"></i>
-					<div>
-						<p class="font-E2 dr-fs1"><span class="co-brown">G</span><span class="co-grey">oods</span></p>
-						<p class="dr-fs2 co-grey">グッズ</p>
+				<router-link to="/goods">
+					<div class="display-flex dr-link closeevent">
+						<i class="fas fa-book-open co-brown dr-icon m-right-05rem"></i>
+						<div>
+							<p class="font-E2 dr-fs1"><span class="co-brown">G</span><span class="co-grey">oods</span></p>
+							<p class="dr-fs2 co-grey">グッズ</p>
+						</div>
 					</div>
-				</div>
+				</router-link>
 				<div class="display-flex dr-link">
 					<i class="fas fa-tablet-alt co-brown dr-icon m-right-05rem"></i>
 					<div>
