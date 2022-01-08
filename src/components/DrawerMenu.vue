@@ -78,13 +78,15 @@
 						</div>
 					</div>
 				</router-link>
-				<div class="display-flex dr-link closeevent">
-					<i class="fas fa-external-link-alt co-brown dr-icon m-right-05rem"></i>
-					<div>
-						<p class="font-E2 dr-fs1"><span class="co-brown">L</span><span class="co-grey">ink</span></p>
-						<p class="dr-fs2 co-grey">リンク</p>
+				<router-link to="/links">
+					<div class="display-flex dr-link closeevent">
+						<i class="fas fa-external-link-alt co-brown dr-icon m-right-05rem"></i>
+						<div>
+							<p class="font-E2 dr-fs1"><span class="co-brown">L</span><span class="co-grey">ink</span></p>
+							<p class="dr-fs2 co-grey">リンク</p>
+						</div>
 					</div>
-				</div>
+				</router-link>
 				<router-link to="/contact">
 					<div class="display-flex dr-link closeevent">
 						<i class="fas fa-envelope co-brown dr-icon m-right-05rem"></i>

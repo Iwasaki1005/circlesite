@@ -9,6 +9,7 @@ import Page_Game from './views/Page_Game.vue'
 import Page_Information from './views/Page_Information.vue'
 import Page_Contact from './views/Page_Contact.vue'
 import Page_Goods from './views/Page_Goods.vue'
+import Page_Links from './views/Page_Links.vue'
 import News_Maincontents from './components/News_components/News_Maincontents.vue'
 import News_20200101dmy from './components/News_components/News_20200101dmy.vue'
 import News_20210202dmy from './components/News_components/News_20210202dmy.vue'
@@ -67,6 +68,12 @@ export default new Router({
 			name: 'goods',
 			component: Page_Goods,
 			meta: { title: 'Contact', desc: '製作したグッズの紹介、販売先のショップ様へのリンクを記載しています。' }
+		},
+		{
+			path: '/links',
+			name: 'links',
+			component: Page_Links,
+			meta: { title: 'Links', desc: '' }
 		},
 		{
 			path: '/news',
