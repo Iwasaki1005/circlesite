@@ -451,6 +451,10 @@ body {
 	height: 2rem;
 }
 
+.f-weight-normal {
+	font-weight: normal;
+}
+
 .isdisable {
 	opacity: 0.7; /*透明度を下げる*/
 	pointer-events: none; /*クリック無効にする*/

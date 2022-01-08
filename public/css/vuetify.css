@@ -3726,9 +3726,9 @@ html.overflow-y-hidden {
   color: #FFFFFF;
 }
 
-.v-application ul, .v-application ol {
+/* .v-application ul, .v-application ol {
   padding-left: 24px;
-}
+} */
 
 .v-application .display-4 {
   font-size: 6rem !important;

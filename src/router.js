@@ -73,7 +73,7 @@ export default new Router({
 			path: '/links',
 			name: 'links',
 			component: Page_Links,
-			meta: { title: 'Links', desc: '' }
+			meta: { title: 'Links', desc: '○○やクリエイター様などを紹介しています。' }
 		},
 		{
 			path: '/news',
