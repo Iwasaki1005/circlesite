@@ -34,7 +34,7 @@
 						<p class="fs-0_8rem co-grey">
 							※直リンクでご利用される場合、URLの変更やサイトのメンテナンス等で利用できなくなる場合がありますのでご注意ください。
 						</p>
-						<img class="m-top-1rem" src="../assets/banner/neverlandf_banner1.png">
+						<img class="m-top-1rem m-bottom-05rem" src="../assets/banner/neverlandf_banner1.png">
 						<textarea readonly onclick="this.select();" class="width100 df-textarea">
 							"<a target="_blank" href="https://circus-co.jp/product/dc4/"><img alt="この恋は世界を変える CIRCUS 20th Project「D.C.4 ～ダ・カーポ4～」好評発売中!" title="この恋は世界を変える CIRCUS 20th Project「D.C.4 ～ダ・カーポ4～」好評発売中!" src="https://circus-co.jp/product/dc4/rc/special/dc4_banner_650x120.jpg"></a>"
 						</textarea>
