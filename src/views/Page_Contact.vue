@@ -10,16 +10,16 @@
 			</p>
 		</div>
 		<div class="sa sa--up">
-			<form class="center m-top-2rem">
-				<div class="input-group m-bottom-1rem">
+			<form class="center m-top-3rem">
+				<div class="input-group m-bottom-2rem">
 					<input type="text" id="name" required>
 					<label for="name"><i class="fas fa-pen"></i> ご用件</label>
 				</div>
-				<div class="input-group m-bottom-1rem">
+				<div class="input-group m-bottom-2rem">
 					<input type="text" id="email" required>
 					<label for="email"><i class="fas fa-envelope"></i> メールアドレス</label>
 				</div>
-				<div class="input-group m-bottom-1rem">
+				<div class="input-group m-bottom-2rem">
 					<textarea id="mennage" rows="8" required></textarea>
 					<label for="message"><i class="fas fa-comments"></i> お問合せ内容</label>
 				</div>
