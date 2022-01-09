@@ -107,7 +107,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .container2 {
 	position: relative;
 	width: 1100px;
@@ -166,22 +166,6 @@ export default {
 	opacity: 1;
 	margin-top: -40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .container1 {
 	position: relative;
