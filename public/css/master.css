@@ -281,6 +281,11 @@ body {
 	justify-content: flex-end;
 }
 
+.align-flex-end {
+	display: flex;
+	align-items: flex-end;
+}
+
 .row-reverse {
 	display: flex;
 	flex-direction: row-reverse;
@@ -386,6 +391,10 @@ body {
 
 .m-all0 {
 	margin: 0;
+}
+
+.p-all-05rem {
+	padding: 0.5rem;
 }
 
 .p-tb-05rem {
