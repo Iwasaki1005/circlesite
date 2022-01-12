@@ -85,6 +85,11 @@ body {
 	font-family: Kosugi Maru, sans-serif;
 }
 
+/* ジャギー防止コード 試験導入 */
+p {
+	transform: rotate(0.03deg);         /* シャギーを防ぐ指定 */
+}
+
 .font-E1 {
 	font-family: 'Varela Round', sans-serif;
 }
