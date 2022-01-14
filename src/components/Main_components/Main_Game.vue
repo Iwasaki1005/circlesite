@@ -35,6 +35,22 @@
 				</div>
 			</div>
 		</section>
+		<div>
+<!-- Swiper START -->
+<div class="swiper-container">
+	<!-- メイン表示部分 -->
+	<div class="swiper-wrapper">
+		<!-- 各スライド -->
+		<div class="swiper-slide">Slide 1</div>
+		<div class="swiper-slide">Slide 2</div>
+		<div class="swiper-slide">Slide 3</div>
+		<div class="swiper-slide">Slide 4</div>
+	</div>
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+</div>
+<!-- Swiper END -->
+		</div>
 	</v-lazy>
 </template>
 
@@ -394,3 +410,36 @@ export default {
   },
 }
 </script>
+
+<style>
+/* 全体のスタイル */
+.swiper-wrapper {
+	width: 100%;
+	height: 250px;
+}
+/* 全スライド共通スタイル */
+.swiper-slide {
+	color: #ffffff;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 250px;
+}
+/* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
+.swiper-slide:nth-child(4n+1) {
+	background-color: #EECB27;
+}
+/* 4の倍数＋2枚目のスライドのスタイル（2枚目、6枚目…） */
+.swiper-slide:nth-child(4n+2) {
+	background-color: #E13239;
+}
+/* 4の倍数＋3枚目のスライドのスタイル（3枚目、7枚目…） */
+.swiper-slide:nth-child(4n+3) {
+	background-color: #1F1762;
+}
+/* 4の倍数＋4枚目のスライドのスタイル（4枚目、8枚目…） */
+.swiper-slide:nth-child(4n+4) {
+	background-color: #BEDAE5;
+}
+
+</style>

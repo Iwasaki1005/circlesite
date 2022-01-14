@@ -69,6 +69,10 @@ a {
 	font-size: 1.2rem;
 }
 
+.fs-2_5rem {
+	font-size: 2.5rem;
+}
+
 .fs-0_8rem {
 	font-size: 0.8rem;
 }
@@ -116,6 +120,10 @@ p {
 
 .co-brown {
 	color: #e7b06c;
+}
+
+.co-pink {
+	color: #ff4d91;
 }
 
 .co-grey {

@@ -6,7 +6,7 @@
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 		<h2 class="font-E3 text-center"><span>Gallery</span></h2>
 		<div class="vertical-line center sa sa--up"></div>
-		<div class="bt-typeA bt-typeA-border d-block center m-bottom-2rem">
+		<div class="bt-typeA bt-typeA-border d-block center m-bottom-2rem sa sa--up">
 			<span class="bt-typeA-border-inner font-E1">PDF Download</span>
 		</div>
 		<!-- ここからイラスト一覧 -->

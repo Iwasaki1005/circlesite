@@ -10,6 +10,7 @@ import Page_Information from './views/Page_Information.vue'
 import Page_Contact from './views/Page_Contact.vue'
 import Page_Goods from './views/Page_Goods.vue'
 import Page_Links from './views/Page_Links.vue'
+import Page_Works from './views/Page_Works.vue'
 import News_Maincontents from './components/News_components/News_Maincontents.vue'
 import News_20200101dmy from './components/News_components/News_20200101dmy.vue'
 import News_20210202dmy from './components/News_components/News_20210202dmy.vue'
@@ -73,7 +74,13 @@ export default new Router({
 			path: '/links',
 			name: 'links',
 			component: Page_Links,
-			meta: { title: 'Links', desc: '○○やクリエイター様などを紹介しています。' }
+			meta: { title: 'Links', desc: '素敵なサークルやクリエイター様などを紹介しています。' }
+		},
+		{
+			path: '/works',
+			name: 'works',
+			component: Page_Works,
+			meta: { title: 'Works', desc: '過去のお仕事、活動履歴などについて紹介しています。' }
 		},
 		{
 			path: '/news',

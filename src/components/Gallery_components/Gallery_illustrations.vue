@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<div class="sa sa--up">
 		<div class="align-center m-bottom-05rem">
 			<p class="fs-0_8rem co-brown m-right-05rem">ナントカコンテンツを非表示にする</p>
 			<input type="checkbox" class="Ga-checkbox" @click="ratingswitch" :checked="checked" @input="$emit('input', $event.target.checked)">
@@ -15,11 +16,12 @@
 				<div v-else class="tag-off" @click="addtag(column)">{{ column }}</div>
 			</div>
 		</div>
+		</div>
 
 		<transition-group name="illustrations" style="display: flex; flex-wrap: wrap;">
 			<div v-for="(column,index) in list" :key="column.title">
 				<transition name="illustrations">
-					<div class="illust-div" @click="screenopen(index)" v-bind:class="list[index].thumclass" v-show="list[index].active"></div>
+					<div class="illust-div sa sa--up" @click="screenopen(index)" v-bind:class="list[index].thumclass" v-show="list[index].active" v-bind:data-sa_delay="index * 1000"></div>
 				</transition>
 			</div>
 		</transition-group>
@@ -77,7 +79,7 @@ export default {
 		}
 	},
 	updated: function () {
-		this.scrollanime_js()
+		this.scro()
 	},
 }
 </script>

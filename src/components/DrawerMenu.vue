@@ -59,13 +59,15 @@
 						</div>
 					</div>
 				</router-link>
-				<div class="display-flex dr-link">
-					<i class="fas fa-tablet-alt co-brown dr-icon m-right-05rem"></i>
-					<div>
-						<p class="font-E2 dr-fs1"><span class="co-brown">W</span><span class="co-grey">orks</span></p>
-						<p class="dr-fs2 co-grey">活動・お仕事履歴</p>
+				<router-link to="/works">
+					<div class="display-flex dr-link closeevent">
+						<i class="fas fa-tablet-alt co-brown dr-icon m-right-05rem"></i>
+						<div>
+							<p class="font-E2 dr-fs1"><span class="co-brown">W</span><span class="co-grey">orks</span></p>
+							<p class="dr-fs2 co-grey">活動・お仕事履歴</p>
+						</div>
 					</div>
-				</div>
+				</router-link>
 			</div>
 			<div id="dr-content3" class="dr-line dr-saup opacity-0"></div>
 			<div id="dr-content4" class="dr-container dr-saup opacity-0">
