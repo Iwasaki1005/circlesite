@@ -1,5 +1,6 @@
 <template>
 	<section id="Gallery" class="section">
+		<GalleryPdfdownload />
 		<transition name="vfade">
 			<GalleryGallerymodal  v-show="modalscreen" :list="list" :difil="difil" @illustselect="illustselect" @differenceselect="differenceselect" @screenclose="screenclose" :seldes="seldes" :sellinktxt="sellinktxt" :sellinksrc="sellinksrc" @modalfuncopen="modalfuncopen" @modalfuncclose="modalfuncclose"/>
 		</transition>
@@ -17,12 +18,14 @@
 <script>
 import GalleryIllustrations from '../components/Gallery_components/Gallery_illustrations.vue'
 import GalleryGallerymodal from '../components/Gallery_components/Gallery_gallerymodal.vue'
+import GalleryPdfdownload from '../components/Gallery_components/Gallery_pdfdownload.vue'
 
 export default {
 	name: 'Page_Gallery',
 	components: {
 		GalleryIllustrations,
 		GalleryGallerymodal,
+		GalleryPdfdownload,
 	},
 	mounted: function() {
 		this.scrollanime_js()
