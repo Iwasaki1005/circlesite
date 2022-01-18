@@ -34,7 +34,7 @@ export default {
 		// Webページ内の class="sa" の要素を複数検出
 		var scrollAnimationElm = document.querySelectorAll('.sa');
 
-		var vh30 = (screen.height * 0.4)
+		var vh30 = (screen.height * 0.3)
 
 		// 要素を表示すべきかどうかを判定する関数（メソッド）を定義
 		var scrollAnimationFunc = function () {

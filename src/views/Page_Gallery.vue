@@ -1,15 +1,12 @@
 <template>
 	<section id="Gallery" class="section">
-		<GalleryPdfdownload />
 		<transition name="vfade">
 			<GalleryGallerymodal  v-show="modalscreen" :list="list" :difil="difil" @illustselect="illustselect" @differenceselect="differenceselect" @screenclose="screenclose" :seldes="seldes" :sellinktxt="sellinktxt" :sellinksrc="sellinksrc" @modalfuncopen="modalfuncopen" @modalfuncclose="modalfuncclose"/>
 		</transition>
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 		<h2 class="font-E3 text-center"><span>Gallery</span></h2>
 		<div class="vertical-line center sa sa--up"></div>
-		<div class="bt-typeA bt-typeA-border d-block center m-bottom-2rem sa sa--up">
-			<span class="bt-typeA-border-inner font-E1">PDF Download</span>
-		</div>
+		<GalleryPdfdownload @pdfdlhide="pdfdlhide" />
 		<!-- ここからイラスト一覧 -->
 		<GalleryIllustrations :list="list" :activetag="activetag" :alltags="alltags" @addtag="addtag" @removetag="removetag" @tagallremove="tagallremove" @ratingswitch="ratingswitch"  v-model="rating" @screenopen="screenopen"/>
 	</section>
@@ -202,6 +199,12 @@ export default {
 		},
 		dmyhide: function () {
 			this.overflowyhide = true
+		},
+		pdfdlopen: function() {
+			this.$modal.show('pdfdownload');
+		},
+		pdfdlhide: function() {
+			this.$modal.hide('pdfdownload');
 		},
 	},
 	data: () => ({
