@@ -412,7 +412,7 @@ input:checked[type="checkbox"]:after {
 }
 
 .vfade-enter-active, .vfade-leave-active{
-    transition: opacity 0.5s
+    transition: opacity 0.5s;
 }
 
 .vfade-enter, .vfade-leave-to{

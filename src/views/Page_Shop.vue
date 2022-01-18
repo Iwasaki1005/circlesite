@@ -1,7 +1,7 @@
 <template>
 	<section id="About" class="section">
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
-		<h2 class="font-E3 text-center"><span>Goods</span></h2>
+		<h2 class="font-E3 text-center"><span>Shop</span></h2>
 		<div class="vertical-line center sa sa--up"></div>
 		<div class="sa sa--up">
 			
@@ -46,7 +46,7 @@
 import BackToHome from '../components/BackToHome.vue'
 
 export default {
-	name: 'Page_Goods',
+	name: 'Page_Shop',
 	components: {
 		BackToHome,
 	},

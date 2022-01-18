@@ -8,7 +8,7 @@ import Page_Gallery from './views/Page_Gallery.vue'
 import Page_Game from './views/Page_Game.vue'
 import Page_Information from './views/Page_Information.vue'
 import Page_Contact from './views/Page_Contact.vue'
-import Page_Goods from './views/Page_Goods.vue'
+import Page_Shop from './views/Page_Shop.vue'
 import Page_Links from './views/Page_Links.vue'
 import Page_Works from './views/Page_Works.vue'
 import News_Maincontents from './components/News_components/News_Maincontents.vue'
@@ -65,10 +65,10 @@ export default new Router({
 			meta: { title: 'Contact', desc: 'サークルの管理者へ問い合わせのメールを出すことができます。' }
 		},
 		{
-			path: '/goods',
-			name: 'goods',
-			component: Page_Goods,
-			meta: { title: 'Contact', desc: '製作したグッズの紹介、販売先のショップ様へのリンクを記載しています。' }
+			path: '/shop',
+			name: 'shop',
+			component: Page_Shop,
+			meta: { title: 'Shop', desc: '当サークルで製作したグッズの販売先へのリンクを掲載しています。' }
 		},
 		{
 			path: '/links',

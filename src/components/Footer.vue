@@ -8,7 +8,7 @@
 				<span class="hover-left-in-light">News</span>
 				<span class="hover-left-in-light">Gallery</span>
 				<span class="hover-left-in-light">Game</span>
-				<span class="hover-left-in-light">Goods</span>
+				<span class="hover-left-in-light">Shop</span>
 				<span class="hover-left-in-light">Works</span>
 			</div>
 		</div>

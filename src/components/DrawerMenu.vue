@@ -50,12 +50,12 @@
 						</div>
 					</div>
 				</router-link>
-				<router-link to="/goods">
+				<router-link to="/shop">
 					<div class="display-flex dr-link closeevent">
-						<i class="fas fa-book-open co-brown dr-icon m-right-05rem"></i>
+						<i class="fas fa-store-alt co-brown dr-icon m-right-05rem"></i>
 						<div>
-							<p class="font-E2 dr-fs1"><span class="co-brown">G</span><span class="co-grey">oods</span></p>
-							<p class="dr-fs2 co-grey">グッズ</p>
+							<p class="font-E2 dr-fs1"><span class="co-brown">S</span><span class="co-grey">hop</span></p>
+							<p class="dr-fs2 co-grey">ショップ</p>
 						</div>
 					</div>
 				</router-link>
