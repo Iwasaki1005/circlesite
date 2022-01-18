@@ -5,7 +5,6 @@
 		<Glmenu />
 		<DrawerMenu />
 		<v-app>
-			<TestComponent />
 			<transition name="slide" mode="out-in">
 				<router-view />
 			</transition>
@@ -15,13 +14,6 @@
 </template>
 
 <style scoped>
-/*
-.v-enter-active, .v-leave-active {
-  transition: opacity .5s;
-}
-.v-enter, .v-leave-to {
-  opacity: 0;
-}*/
 .slide-enter-active,
 .slide-leave-active {
 	transition: opacity 0.5s,;
@@ -38,7 +30,6 @@
 	import Glmenu from './components/GloMenu.vue'
 	import DrawerMenu from './components/DrawerMenu.vue'
 	import Footer from './components/Footer.vue'
-	import TestComponent from './components/TestComponent.vue'
 
 	export default {
 		name: 'App',
@@ -51,7 +42,6 @@
 			Glmenu,
 			DrawerMenu,
 			Footer,
-			TestComponent,
 		},
 		methods : {
 			createTitleDesc : function(routeInstance){
