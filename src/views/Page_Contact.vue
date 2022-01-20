@@ -24,7 +24,7 @@
 					<label for="message"><i class="fas fa-comments"></i> お問合せ内容</label>
 				</div>
 				<div class="bt-typeA bt-typeA-border d-block center">
-					<button class="bt-typeA-border-inner font-E1 font-J1" type="submit">入力内容確認</button>
+					<button class="bt-typeA-border-inner font-E1 font-J1" type="submit"><i class="fas fa-paper-plane m-right-05rem"></i>送信</button>
 				</div>
 			</form>
 		</div>

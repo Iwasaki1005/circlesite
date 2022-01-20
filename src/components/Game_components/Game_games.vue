@@ -1,5 +1,5 @@
 <template>
-	<div class="narabe">
+	<div class="narabe sa sa--up">
 		<div v-for="(column) in gamelist" :key="column.title">
 			<div class="game-bg">
 				<div>

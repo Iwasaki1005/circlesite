@@ -4,7 +4,7 @@
 			<GalleryGallerymodal  v-show="modalscreen" :list="list" :difil="difil" @illustselect="illustselect" @differenceselect="differenceselect" @screenclose="screenclose" :seldes="seldes" :sellinktxt="sellinktxt" :sellinksrc="sellinksrc" @modalfuncopen="modalfuncopen" @modalfuncclose="modalfuncclose"/>
 		</transition>
 		<section id="Illust" class="section-2 sa">
-			<h2 class="font-E3 text-center scroll-fadein index-anime"><span>three</span></h2>
+			<h2 class="font-E3 text-center scroll-fadein index-anime"><span>Illust</span></h2>
 			<div class="vertical-line center sa sa--up"></div>
 			<div class="display-flex">
 				<div class="width95">

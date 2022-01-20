@@ -1,31 +1,28 @@
 <template>
 	<div>
 		<div class="sa sa--up">
-		<div class="align-center m-bottom-05rem">
-			<p class="fs-0_8rem co-brown m-right-05rem">ナントカコンテンツを非表示にする</p>
-			<input type="checkbox" class="Ga-checkbox" @click="ratingswitch" :checked="checked" @input="$emit('input', $event.target.checked)">
-		</div>
-		<div class="align-center">
-			<p class="fs-0_8rem co-brown m-right-1rem">タグ一覧</p>
-			<button @click="tagallremove" class="bt-alloff">All OFF</button>
-		</div>
-
-		<div class="display-flex m-top-05rem">
-			<div v-for="(column) in alltags" :key="column">
-				<div v-if="activetag.includes(column)" class="tag-on" @click="removetag(column)">{{ column }}</div>
-				<div v-else class="tag-off" @click="addtag(column)">{{ column }}</div>
+			<div class="align-center m-bottom-05rem">
+				<p class="fs-0_8rem co-brown m-right-05rem">ナントカコンテンツを非表示にする</p>
+				<input type="checkbox" class="Ga-checkbox" @click="ratingswitch" :checked="checked" @input="$emit('input', $event.target.checked)">
+			</div>
+			<div class="align-center">
+				<p class="fs-0_8rem co-brown m-right-1rem">タグ一覧</p>
+				<button @click="tagallremove" class="bt-alloff">All OFF</button>
+			</div>
+			<div class="display-flex m-top-05rem">
+				<div v-for="(column) in alltags" :key="column">
+					<div v-if="activetag.includes(column)" class="tag-on" @click="removetag(column)">{{ column }}</div>
+					<div v-else class="tag-off" @click="addtag(column)">{{ column }}</div>
+				</div>
 			</div>
 		</div>
-		</div>
-
-		<transition-group name="illustrations" style="display: flex; flex-wrap: wrap;">
+		<transition-group class="sa sa--up" name="illustrations" style="display: flex; flex-wrap: wrap;">
 			<div v-for="(column,index) in list" :key="column.title">
 				<transition name="illustrations">
-					<div class="illust-div sa sa--up" @click="screenopen(index)" v-bind:class="list[index].thumclass" v-show="list[index].active" v-bind:data-sa_delay="index * 1000"></div>
+					<div class="illust-div" @click="screenopen(index)" v-bind:class="list[index].thumclass" v-show="list[index].active" v-bind:data-sa_delay="index * 1000"></div>
 				</transition>
 			</div>
 		</transition-group>
-		
 		<!-- 個別で記入したパターン(没) -->
 		<!-- <transition-group name="illustrations" style="display: flex; flex-wrap: wrap;">
 			<div key="1" v-if="activetag.includes('ヤンキー')"></div>

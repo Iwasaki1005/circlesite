@@ -7,7 +7,7 @@
 			<p class="text-center">
 				当サイトは個人サークル「ねばーランド.F」の公式ページです。<br><br>
 				主にイラストやゲームの創作を中心に活動をしています。<br><br>
-				管理人への連絡、バグの報告などはこちらからお願いします。<br><br>
+				管理人への連絡、バグの報告などは<router-link to="/contact">こちら</router-link>からお願いします。<br><br>
 			</p>
 		</div>
 		<BackToHome />

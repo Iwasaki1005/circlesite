@@ -3,7 +3,6 @@
 		<section id="Profile-main" class="section">
 			<h2 class="font-E3 text-center scroll-fadein index-anime"><span>profile</span></h2>
 			<div class="vertical-line center sa sa--up"></div>
-
 			<!-- 没部分 -->
 			<!-- <div class="pm-flame center sa sa--up">
 				<div class="pm-buttons display-flex m-left-05rem">
@@ -19,8 +18,7 @@
 					<a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="light" data-chrome=”noheader,transparent,nofooter,noborders,noscrollbar” href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
 				</div>
 			</div> -->
-
-			<div class="width100 space-around">
+			<div class="width100 space-around sa sa--up">
 				<div class="card">
 					<div class="sides left-side"></div>
 					<div class="sides right-side"></div>
@@ -42,7 +40,6 @@
 					</div>
 				</div>
 			</div>
-			
 		</section>
 	</v-lazy>
 </template>

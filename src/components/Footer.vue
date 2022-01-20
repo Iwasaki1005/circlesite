@@ -1,15 +1,31 @@
 <template>
 	<div class="ft-bg">
 		<div class="space-around-align-center">
-			<img class="dr-logo" src="../assets//logo/neverlandf_logo1.png">
+			<router-link to="/">
+				<img class="dr-logo" src="../assets//logo/neverlandf_logo1.png">
+			</router-link>
 			<div class="space-around co-white width60 fs-1_2rem">
-				<span class="hover-left-in-light">Home</span>
-				<span class="hover-left-in-light">About</span>
-				<span class="hover-left-in-light">News</span>
-				<span class="hover-left-in-light">Gallery</span>
-				<span class="hover-left-in-light">Game</span>
-				<span class="hover-left-in-light">Shop</span>
-				<span class="hover-left-in-light">Works</span>
+				<router-link to="/">
+					<span class="hover-left-in-light co-white">Home</span>
+				</router-link>
+				<router-link to="/about">
+					<span class="hover-left-in-light co-white">About</span>
+				</router-link>
+				<router-link to="/news">
+					<span class="hover-left-in-light co-white">News</span>
+				</router-link>
+				<router-link to="/gallery">
+					<span class="hover-left-in-light co-white">Gallery</span>
+				</router-link>
+				<router-link to="/game">
+					<span class="hover-left-in-light co-white">Game</span>
+				</router-link>
+				<router-link to="/shop">
+					<span class="hover-left-in-light co-white">Shop</span>
+				</router-link>
+				<router-link to="/works">
+					<span class="hover-left-in-light co-white">Works</span>
+				</router-link>
 			</div>
 		</div>
 		<div class="ft-whiteline m-top-05rem m-bottom-2rem center"></div>
@@ -19,25 +35,30 @@
 				<span class="m-right-05rem">『雨地屋しろー』Twitter</span>
 				<i class="fas fa-external-link-alt"></i>
 			</div>
-			<!-- <span>share</span> -->
 		</div>
 		<div class="space-between width90 center fs-0_8rem m-bottom-1rem">
 			<span></span>
 			<div class="space-around co-white width25">
-				<span class="hover-left-in-light">Information</span>
-				<span class="hover-left-in-light">Link</span>
-				<span class="hover-left-in-light">Contact</span>
+				<router-link to="/information">
+					<span class="hover-left-in-light co-white">Information</span>
+				</router-link>
+				<router-link to="/links">
+					<span class="hover-left-in-light co-white">Link</span>
+				</router-link>
+				<router-link to="/contact">
+					<span class="hover-left-in-light co-white">Contact</span>
+				</router-link>
 			</div>
 		</div>
 		<div class="width100 fs-0_8rem co-white flex-end linkset-position m-bottom-2rem">
 			<div>
 				<p>当サイトは基本的にリンクフリーです。</p>
 				<p>リンクをしていただく際のURLはトップページへお願いします。</p>
-				<p>詳細はこちら</p>
+				<p>詳細は<router-link to="/information"><span class="hover-left-in-light co-white">こちら</span></router-link></p>
 			</div>
 		</div>
 		<div class="width100 fs-0_8rem co-white justify-center">
-			<small>© 2018 corpname inc.</small>
+			<small>© 2022 corpname inc.</small>
 		</div>
 		<div class="pagetop-position">
 			<a href="#" class="btnarrow5">page top</a>
