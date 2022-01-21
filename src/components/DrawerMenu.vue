@@ -1,7 +1,7 @@
 <template>
 	<ul id="Drawer-menu" class="dr-menu dr-hidden">
 		<router-link to="/">
-			<img class="dr-logo center closeevent" src="../assets//logo/neverlandf_logo1.png">
+			<img class="dr-logo center closeevent" src="../assets//logo/neverlandf_logo1.png" alt=”ねばーランドFロゴ”>
 		</router-link>
 		<div class="dr-links">
 			<div id="dr-content1" class="dr-container dr-saup opacity-0">
