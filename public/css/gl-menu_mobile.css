@@ -53,14 +53,14 @@
 }
 
 
-
+/* ここから↓OK*/
 .gl-burger {
 	display : block;
 	position: fixed;
 	right : 2.8vw;
 	top   : 4vw;
-	width : 3.5vw;
-	height: 3.5vw;
+	width : 10.5vw;
+	height: 10.5vw;
 	cursor: pointer;
 	text-align: center;
 }
@@ -68,33 +68,31 @@
 .gl-burger span {
 	display : block;
 	position: absolute;
-	width   : 2.8vw;
-	height  : 0.15vw;
+	width   : 8.4vw;
+	height  : 0.45vw;
 	left    : 0.4vw;
 	background : #e7b06c;
 	transition: 0.5s ease-in-out;
 }
 
 .gl-span1 {
-	top: 0.71vw;
+	top: 2.5vw;
 }
 .gl-span2 {
-	top: 1.41vw;
+	top: 5.25vw;
 }
 .gl-span3 {
-	top: 2.14vw;
+	top: 8vw;
 }
 
 .gl-span1-active {
-	top : 1.14vw;
+	top : 5vw;
 	left: 0.42vw;
 	transform: rotate(315deg);
 }
 
 .gl-span2-active,
 .gl-span3-active {
-	top: 1.14vw;
+	top: 5vw;
 	transform: rotate(-315deg);
 }
-
-/*予備*/
