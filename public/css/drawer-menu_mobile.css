@@ -31,7 +31,7 @@
 }
 
 .dr-links {
-	height: 50vh;
+	height: 85vh;
 	width: 80%;
 	display: flex;
 	flex-direction: column;
@@ -54,7 +54,7 @@
 }
 
 .dr-link {
-	width: 16vw;
+	width: 50vw;
 	display: flex;
 	justify-content: center;
 	transition-duration: 2s;
@@ -80,20 +80,18 @@
 	width: 90%;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	margin: 0 auto;
 }
 
 .dr-logo {
-	height: 6.75vw;
-	width: 18vw;
+	width: 60vw;
 }
 
 .dr-line {
 	background-color: #e7b06c;
 	height: 0.1vw;
 	width: 95%;
-
-	
 }
 
 .dislay-none {

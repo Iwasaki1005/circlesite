@@ -188,7 +188,7 @@ p {
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 30vh;
+	margin-top: 25vh;
 }
 
 .section-2 {
@@ -566,7 +566,7 @@ p {
 	border: 0.1vw solid transparent;
 	padding: 1.2vw 4vw;
 	position: relative;
-	width: 20vw;
+	width: 40vw;
 	text-align: center;
 }
 
@@ -680,4 +680,8 @@ p {
 
 .bg-tomato {
 	background-color: tomato;
+}
+
+.display-only {
+	display: none!important;
 }
