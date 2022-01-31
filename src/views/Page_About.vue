@@ -2,12 +2,12 @@
 	<section id="About" class="section">
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 		<h2 class="font-E3 text-center"><span>About</span></h2>
-		<div class="vertical-line center sa sa--up"></div>
+		<div class="vertical-line center center_mobile sa sa--up"></div>
 		<div class="sa sa--up">
 			<p class="text-center">
-				当サイトは個人サークル「ねばーランド.F」の公式ページです。<br><br>
-				主にイラストやゲームの創作を中心に活動をしています。<br><br>
-				管理人への連絡、バグの報告などは<router-link to="/contact">こちら</router-link>からお願いします。<br><br>
+				当サイトは個人サークル<br class="monile-only">「ねばーランド.F」の公式ページです。<br><br>
+				主にイラストやゲームの創作を<br class="monile-only">中心に活動をしています。<br><br>
+				管理人への連絡、バグの報告などは<br class="monile-only"><router-link to="/contact">こちら</router-link>からお願いします。<br><br>
 			</p>
 		</div>
 		<BackToHome />
