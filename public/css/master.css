@@ -207,12 +207,24 @@ p {
 	width: 90%;
 }
 
+.width80 {
+	width: 80%;
+}
+
 .width50 {
 	width: 50%;
 }
 
 .width60 {
 	width: 60%;
+}
+
+.width50 {
+	width: 50%;
+}
+
+.width40 {
+	width: 40%;
 }
 
 .width5 {
@@ -683,6 +695,6 @@ p {
 	height: 200vh;
 }
 
-.monile-only {
+.mobile-only {
 	display: none!important;
 }

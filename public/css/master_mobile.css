@@ -210,12 +210,24 @@ p {
 	width: 90%;
 }
 
+.width80_mobile {
+	width: 80%;
+}
+
 .width50_mobile {
 	width: 50%;
 }
 
 .width60_mobile {
 	width: 60%;
+}
+
+.width50_mobile {
+	width: 50%;
+}
+
+.width40_mobile {
+	width: 40%;
 }
 
 .width5_mobile {
@@ -659,10 +671,6 @@ p {
 	  opacity: 0;
 	}
 }
-
-
-
-
 
 
 
