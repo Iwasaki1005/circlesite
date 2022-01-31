@@ -2,7 +2,7 @@
 	<section id="About" class="section">
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 		<h2 class="font-E3 text-center"><span>About</span></h2>
-		<div class="vertical-line center center_mobile sa sa--up"></div>
+		<VerticalLine />
 		<div class="sa sa--up">
 			<p class="text-center">
 				当サイトは個人サークル<br class="monile-only">「ねばーランド.F」の公式ページです。<br><br>
@@ -15,12 +15,14 @@
 </template>
 
 <script>
+import VerticalLine from '../components/VerticalLine.vue'
 import BackToHome from '../components/BackToHome.vue'
 
 export default {
 	name: 'Page_About',
 	components: {
 		BackToHome,
+		VerticalLine,
 	},
 	mounted: function() {
 		this.scrollanime_js()

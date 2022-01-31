@@ -2,7 +2,7 @@
 	<section id="About" class="section">
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 		<h2 class="font-E3 text-center"><span>Shop</span></h2>
-		<div class="vertical-line center sa sa--up"></div>
+		<VerticalLine />
 		<div class="sa sa--up">
 			
 
@@ -43,11 +43,13 @@
 </template>
 
 <script>
+import VerticalLine from '../components/VerticalLine.vue'
 import BackToHome from '../components/BackToHome.vue'
 
 export default {
 	name: 'Page_Shop',
 	components: {
+		VerticalLine,
 		BackToHome,
 	},
 	mounted: function() {

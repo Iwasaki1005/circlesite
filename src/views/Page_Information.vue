@@ -2,7 +2,7 @@
 	<section id="About" class="section">
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 		<h2 class="font-E3 text-center"><span>Information</span></h2>
-		<div class="vertical-line center sa sa--up"></div>
+		<VerticalLine />
 		<v-card theme="disable" class="bg-none sa sa--up">
 			<v-tabs v-model="tab" align-with-title grow>
 				<v-tabs-slider color="yellow"></v-tabs-slider>
@@ -59,11 +59,13 @@
 </template>
 
 <script>
+import VerticalLine from '../components/VerticalLine.vue'
 import BackToHome from '../components/BackToHome.vue'
 
 export default {
 	name: 'Page_Information',
 	components: {
+		VerticalLine,
 		BackToHome,
 	},
 	mounted: function() {
