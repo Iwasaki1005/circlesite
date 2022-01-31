@@ -2,7 +2,7 @@
 	<div>
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 		<h2 class="font-E3 text-center"><span>News</span></h2>
-		<div class="vertical-line center sa sa--up"></div>
+		<VerticalLine />
 		<v-card theme="disable" class="bg-none sa sa--up">
 			<v-tabs v-model="tab" align-with-title grow>
 				<v-tabs-slider color="yellow"></v-tabs-slider>
@@ -15,10 +15,10 @@
 					<router-link to="/news/20210202dmy">
 						<div class="nw-column m-bottom-2rem">
 							<div class="align-center">
-								<p class="fs-0_8rem m-right-05rem co-black">2022.※未定</p>
-								<div class="newstag-info co-white font-E1">info</div>
+								<p class="fs-0_8rem fs-0_8rem_mobile m-right-05rem m-right-05rem_mobile co-black co-black_mobile">2022.※未定</p>
+								<div class="newstag-info font-E1">info</div>
 							</div>
-							<p class="co-black">新サークル「ねばーランドF」活動開始しました。</p>
+							<p class="co-black co-black_mobile">新サークル「ねばーランドF」活動開始しました。</p>
 						</div>
 					</router-link>
 				</v-tab-item>
@@ -28,8 +28,13 @@
 </template>
 
 <script>
+import VerticalLine from '../VerticalLine.vue'
+
 export default {
 	name: 'News_Maincontents',
+	components: {
+		VerticalLine,
+	},
 	data () {
 		return {
 			tab: null,
@@ -51,47 +56,7 @@ export default {
 		}
 	},
 	mounted: function() {
-		/*--------------------------------------------------------------------------
-		 *
-		 * scrollanime_js.js (300pxの部分を30vhに変更)
-		 *
-		 *
-		--------------------------------------------------------------------------*/
-		/* ************************************************************************************* */
-		/* スクロールして、画面の下と要素の位置の差が300pxになったら、要素にshowクラスを追加する */
-		/* ************************************************************************************* */
-
-		// Webページ内の class="sa" の要素を複数検出
-		var scrollAnimationElm = document.querySelectorAll('.sa');
-
-		var vh30 = (screen.height * 0.4)
-
-		// 要素を表示すべきかどうかを判定する関数（メソッド）を定義
-		var scrollAnimationFunc = function () {
-			// 判定の基準になる縦幅を300pxとして定義
-			var triggerMargin = vh30;
-			// 検出した class="sa" の要素の数だけループ
-			// scrollAnimationElm.length は検出した要素の総数を指す
-			for (var i = 0; i < scrollAnimationElm.length; i++) {
-				// 「ウィンドウの内部の高さが (対象の要素の高さ＋300px) より大きい」となった場合
-				if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
-					// 対象の要素のclassに「show」を追加する
-					scrollAnimationElm[i].classList.add('show');
-				}
-			}
-			// メソッド終了
-		}
-
-		// ウィンドウに対して「読み込み」または「スクロール」が行われた際、定義していたメソッドを実行するように設定
-		window.addEventListener('load', scrollAnimationFunc);
-		window.addEventListener('scroll', scrollAnimationFunc);
-
-		// querySelectorAllについて
-		// https://developer.mozilla.org/ja/docs/Web/API/Document/querySelectorAll
-		// getBoundingClientRectについて
-		// https://developer.mozilla.org/ja/docs/Web/API/Element/getBoundingClientRect
-		// window.innerHeightについて
-		// https://developer.mozilla.org/ja/docs/Web/API/Window/innerHeight
+		this.scrollanime_js()
 	},
 }
 </script>
@@ -100,7 +65,6 @@ export default {
 .nw-column {
 	padding: 1rem 2rem;
 	border-radius: 0.2vw;
-	/*box-shadow: 0.06vw 0.06vw 0.12vw 0.12vw #e7b06c;*/
 	margin: 2rem 0.5rem;
 }
 

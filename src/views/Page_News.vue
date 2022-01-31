@@ -3,12 +3,18 @@
 		<transition name="slide" mode="out-in">
 			<router-view />
 		</transition>
+		<BackToHome />
 	</section>
 </template>
 
 <script>
+import BackToHome from '../components/BackToHome.vue'
+
 export default {
 	name: 'Page_News',
+	components: {
+		BackToHome,
+	},
 	data () {
 		return {
 			tab: null,
