@@ -693,3 +693,7 @@ p {
 .display-only {
 	display: none!important;
 }
+
+.mobile-linkline-white {
+	border-bottom: 0.15vw solid #fafafa;
+}
