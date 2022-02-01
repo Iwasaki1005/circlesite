@@ -72,6 +72,7 @@ export default {
 </script>
 
 <style>
+@media screen and (min-aspect-ratio: 1/1) { 
 .gallaly-base {
 	width: 100%;
 	height: 103vh;
@@ -324,5 +325,262 @@ export default {
 
 .items-leave-active {
 	transition: opacity 0s, transform 0s;
+}
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+.gallaly-base {
+	width: 100%;
+	height: 103vh;
+	background-color: rgba(0,0,0,0.75);
+	display: flex;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	overflow: scroll;
+}
+
+.illust-list {
+	height: 100vh;
+	width: 13vw;
+	position: fixed;
+	overflow: scroll;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+}
+
+.illust-list-dif {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 11.9vw;
+}
+
+.illust-list-icon-dmy {
+	height: calc(100vh - 5.85vw - 2vw - 2vw);
+	width: 0.1px;
+}
+
+.illust-list-icon {
+	border: solid 0.2vw #e7b06c;
+	width: 10.4vw;
+	height: 5.85vw;
+	margin: 2vw 0 2vw 1.5vw;
+}
+
+.illust-list-icon-select {
+	border: solid 0.2vw #fff;
+	width: 10.4vw;
+	height: 5.85vw;
+	margin: 2vw 0 2vw 1.5vw;
+	box-shadow: 0 0 0.4vw #ffdbae, 0 0 0.8vw #fff, 0 0 1.2vw #ffdbae;;
+}
+
+.illust-list::-webkit-scrollbar{
+	width: 0.1px;
+}
+
+.illust-list::-webkit-scrollbar-track{
+	background: transparent;
+	border: none;
+}
+
+.illust-list::-webkit-scrollbar-thumb{
+	background: transparent;
+}
+
+.gallaly-base::-webkit-scrollbar{
+	width: 0.1px;
+}
+
+.gallaly-base::-webkit-scrollbar-track{
+	background: transparent;
+	border: none;
+}
+
+.gallaly-base::-webkit-scrollbar-thumb{
+	background: transparent;
+}
+
+.gl-screen {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	object-fit: contain;
+}
+
+.modal-hide {
+	opacity: 0;
+}
+
+.modalmarker {
+	transition: all 0.3s;
+}
+
+.modal-hide:active {
+	pointer-events: none;
+}
+
+.hoverdiv1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 35vh;
+	width: 100%;
+}
+
+.hoverdiv2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 35vw;
+}
+
+.hoverdiv3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 35vh;
+	width: 100%;
+}
+
+.hoverdiv4 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 35vw;
+}
+
+
+
+
+
+.il-description {
+	position: absolute;
+	bottom: 4vh;
+	right: 3vw;
+	background-color: #ffdbae;
+	width: 94vw;
+	padding: 1vw 2vw;
+}
+
+.desc-container .desc-box::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,#e7b06c,#e7b06c,#ffdbae,#ffaeca);
+}
+
+.desc-container .desc-box::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,#e7b06c,#e7b06c,#ffdbae,#ffaeca);
+	filter: blur(1.4vw);
+}
+
+.desc-container .desc-box span {
+	position: absolute;
+	top: 0.2vw;
+	left: 0.2vw;
+	right: 0.2vw;
+	bottom: 0.2vw;
+	background: rgba(0,0,0,0.6);
+	z-index: 2;
+}
+.desc-container .desc-box span::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255,255,255,0.1);
+	pointer-events: none;
+}
+.desc-container .desc-box .desc-content
+{
+	position: relative;
+	z-index: 10;
+	color: #fafafa;
+}
+
+.gl-close {
+	position: fixed;
+    top: 5vh;
+    right: 5vw;
+    width: 10vw;
+    height: 10vw;
+	/* background-color: red; */
+    color: white;
+	transition: 0.5s ease-in-out;
+}
+
+/* .gl-close:hover {
+	transform: rotateZ( 180deg ) ;
+} */
+
+.gl-close span {
+	display : block;
+	position: absolute;
+	width   : 10vw;
+	height  : 0.15vw;
+	left    : 0.4vw;
+	background : #e7b06c;
+	transition: 0.5s ease-in-out;
+}
+
+.glclo-span1 {
+	top : 3vw;
+	left: 0.42vw;
+	transform: rotate(315deg);
+}
+
+.glclo-span2 {
+	top: 3vw;
+	transform: rotate(-315deg);
+}
+
+.glclo-span3 {
+	top: 3vw;
+	transform: rotate(-315deg);
+}
+
+
+/* .items-leave-active, */
+.items-enter-active {
+    transition: opacity .5s, transform .5s;
+}
+.items-leave-to,
+.items-enter {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.items-leave,
+.items-enter-to {
+    opacity: 1;
+}
+.items-move {
+    transition: transform .5s;
+}
+
+.items-leave-active {
+	transition: opacity 0s, transform 0s;
+}
 }
 </style>
