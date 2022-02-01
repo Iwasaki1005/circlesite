@@ -5,14 +5,17 @@
 		</transition>
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 		<h2 class="font-E3 text-center"><span>Gallery</span></h2>
-		<div class="vertical-line center sa sa--up"></div>
+		<VerticalLine />
 		<GalleryPdfdownload @pdfdlhide="pdfdlhide" />
 		<!-- ここからイラスト一覧 -->
 		<GalleryIllustrations :list="list" :activetag="activetag" :alltags="alltags" @addtag="addtag" @removetag="removetag" @tagallremove="tagallremove" @ratingswitch="ratingswitch"  v-model="rating" @screenopen="screenopen"/>
+		<BackToHome />
 	</section>
 </template>
 
 <script>
+import VerticalLine from '../components/VerticalLine.vue'
+import BackToHome from '../components/BackToHome.vue'
 import GalleryIllustrations from '../components/Gallery_components/Gallery_illustrations.vue'
 import GalleryGallerymodal from '../components/Gallery_components/Gallery_gallerymodal.vue'
 import GalleryPdfdownload from '../components/Gallery_components/Gallery_pdfdownload.vue'
@@ -20,6 +23,8 @@ import GalleryPdfdownload from '../components/Gallery_components/Gallery_pdfdown
 export default {
 	name: 'Page_Gallery',
 	components: {
+		BackToHome,
+		VerticalLine,
 		GalleryIllustrations,
 		GalleryGallerymodal,
 		GalleryPdfdownload,

@@ -432,6 +432,11 @@ p {
 	padding-bottom: 1rem;
 }
 
+.p-tb-4rem {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
 .p-rl-2rem {
 	padding-right: 2rem;
 	padding-left: 2rem;

@@ -92,7 +92,7 @@
 			<small>© 2022 corpname inc.</small>
 		</div>
 		<div class="pagetop-position">
-			<a href="#" class="btnarrow5"><i class="fas fa-chevron-left co-white_mobile mobile_only m-right-05rem_mobile fs-0_8rem_mobile"></i>page top</a>
+			<a href="#" class="btnarrow5"><i class="fas fa-chevron-left co-white_mobile mobile-only m-right-05rem_mobile fs-0_8rem_mobile"></i>page top</a>
 		</div>
 	</div>
 </template>
@@ -251,8 +251,8 @@ export default {
 
 	.pagetop-position {
 		position: relative;
-		right: -71vw;
-		bottom: 7.5vw;
+		right: -65vw;
+		bottom: 6.5vw;
 	}
 
 	.btnarrow5{
