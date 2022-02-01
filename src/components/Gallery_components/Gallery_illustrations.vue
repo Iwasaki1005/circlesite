@@ -1,22 +1,22 @@
 <template>
 	<div>
 		<div class="sa sa--up">
-			<div class="align-center m-bottom-05rem">
-				<p class="fs-0_8rem co-brown m-right-05rem">ナントカコンテンツを非表示にする</p>
+			<div class="align-center align-center_mobile m-bottom-05rem m-bottom-05rem_mobile">
+				<p class="fs-0_8rem fs-0_8rem_mobile co-brown co-brown_mobile m-right-05rem m-right-05rem_mobile">ナントカコンテンツを非表示にする</p>
 				<input type="checkbox" class="Ga-checkbox" @click="ratingswitch" :checked="checked" @input="$emit('input', $event.target.checked)">
 			</div>
-			<div class="align-center">
-				<p class="fs-0_8rem co-brown m-right-1rem">タグ一覧</p>
+			<div class="align-center align-center_mobile">
+				<p class="fs-0_8rem fs-0_8rem_mobile co-brown co-brown_mobile m-right-1rem m-right-1rem_mobile">タグ一覧</p>
 				<button @click="tagallremove" class="bt-alloff">All OFF</button>
 			</div>
-			<div class="display-flex m-top-05rem">
+			<div class="display-flex display-flex_mobile m-top-05rem m-top-05rem_mobile">
 				<div v-for="(column) in alltags" :key="column">
 					<div v-if="activetag.includes(column)" class="tag-on" @click="removetag(column)">{{ column }}</div>
 					<div v-else class="tag-off" @click="addtag(column)">{{ column }}</div>
 				</div>
 			</div>
 		</div>
-		<transition-group class="sa sa--up" name="illustrations" style="display: flex; flex-wrap: wrap;">
+		<transition-group class="sa sa--up m-top-1rem_mobile" name="illustrations" style="display: flex; flex-wrap: wrap;">
 			<div v-for="(column,index) in list" :key="column.title">
 				<transition name="illustrations">
 					<div class="illust-div" @click="screenopen(index)" v-bind:class="list[index].thumclass" v-show="list[index].active" v-bind:data-sa_delay="index * 1000"></div>
@@ -145,4 +145,138 @@ export default {
 .illustrations-leave-active {
   position: absolute;
 }
+</style>
+
+<style scoped>
+@media screen and (min-aspect-ratio: 1/1) { 
+input[type="checkbox"] {
+	position: relative;
+	width: 2.24vw;
+	height: 1.12vw;
+	-webkit-appearance: none;
+	background: linear-gradient(0deg, #fafafa00, #fafafa00);
+	outline: none;
+	border-radius: 1.12vw;
+	box-shadow: 0 0 0 0.12vw #e7b06c, inset 0 0 0 #e7b06c;
+}
+
+input:checked[type="checkbox"] {
+	background: linear-gradient(0deg, #e7b06c, #e7b06c);
+	background-color: #e7b06c;
+}
+
+input[type="checkbox"]:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1.12vw;
+	height: 1.12vw;
+	background: linear-gradient(0deg, #fafafa, #fafafa);
+	border-radius: 0.56vw;
+	box-shadow: 0 0 0 0.1vw #e7b06c;
+	transform: scale(.98, .96);
+	transition: .5s;
+}
+
+input:checked[type="checkbox"]:before {
+	left: 1.12vw;
+}
+
+input[type="checkbox"]:after {
+	content: '';
+	position: absolute;
+	top: calc(50% - 0.12vw);
+	left: 0.6vw;
+	width: 0.3vw;
+	height: 0.3vw;
+	background: linear-gradient(0deg, #9b9b9b, #9b9b9b);
+	border-radius: 50%;
+	transition: .5s;
+}
+
+input:checked[type="checkbox"]:after {
+	background: #e7b06c;
+	left: 1.72vw;
+	box-shadow: 0 0 1.2vw #f3cd9e, 0 0 2vw #f3cd9e,
+}
+
+.illust-div {
+	width: 16vw;
+	height: 16vw;
+	border: 0.1vw solid #e7b06c;
+	border-radius: 0.4vw;
+	margin: 1vw;
+}
+
+}
+
+
+
+
+
+@media screen and (max-aspect-ratio: 1/1) {
+input[type="checkbox"] {
+	position: relative;
+	width: 5.6vw;
+	height: 2.8vw;
+	-webkit-appearance: none;
+	background: linear-gradient(0deg, #fafafa00, #fafafa00);
+	outline: none;
+	border-radius: 2.8vw;
+	box-shadow: 0 0 0 0.3vw #e7b06c, inset 0 0 0 #e7b06c;
+}
+
+input:checked[type="checkbox"] {
+	background: linear-gradient(0deg, #e7b06c, #e7b06c);
+	background-color: #e7b06c;
+}
+
+input[type="checkbox"]:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2.8vw;
+	height: 2.8vw;
+	background: linear-gradient(0deg, #fafafa, #fafafa);
+	border-radius: 1.4vw;
+	box-shadow: 0 0 0 0.25vw #e7b06c;
+	transform: scale(.98, .96);
+	transition: .5s;
+}
+
+input:checked[type="checkbox"]:before {
+	left: 2.8vw;
+}
+
+input[type="checkbox"]:after {
+	content: '';
+	position: absolute;
+	top: calc(50% - 0.3vw);
+	left: 1.5vw;
+	width: 0.75vw;
+	height: 0.75vw;
+	background: linear-gradient(0deg, #9b9b9b, #9b9b9b);
+	border-radius: 50%;
+	transition: .5s;
+}
+
+input:checked[type="checkbox"]:after {
+	background: #e7b06c;
+	left: 4.3vw;
+	box-shadow: 0 0 3vw #f3cd9e, 0 0 5vw #f3cd9e,
+}
+
+.illust-div {
+	width: 35vw;
+	height: 35vw;
+	border: 0.1vw solid #e7b06c;
+	border-radius: 0.4vw;
+	margin: 1vw;
+}
+
+}
+
+
 </style>

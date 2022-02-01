@@ -137,65 +137,7 @@ export default {
 </script>
 
 <style>
-input[type="checkbox"] {
-	position: relative;
-	width: 2.24vw;
-	height: 1.12vw;
-	-webkit-appearance: none;
-	background: linear-gradient(0deg, #fafafa00, #fafafa00);
-	outline: none;
-	border-radius: 1.12vw;
-	box-shadow: 0 0 0 0.12vw #e7b06c, inset 0 0 0 #e7b06c;
-}
 
-input:checked[type="checkbox"] {
-	background: linear-gradient(0deg, #e7b06c, #e7b06c);
-	background-color: #e7b06c;
-}
-
-input[type="checkbox"]:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 1.12vw;
-	height: 1.12vw;
-	background: linear-gradient(0deg, #fafafa, #fafafa);
-	border-radius: 0.56vw;
-	box-shadow: 0 0 0 0.1vw #e7b06c;
-	transform: scale(.98, .96);
-	transition: .5s;
-}
-
-input:checked[type="checkbox"]:before {
-	left: 1.12vw;
-}
-
-input[type="checkbox"]:after {
-	content: '';
-	position: absolute;
-	top: calc(50% - 0.12vw);
-	left: 0.6vw;
-	width: 0.3vw;
-	height: 0.3vw;
-	background: linear-gradient(0deg, #9b9b9b, #9b9b9b);
-	border-radius: 50%;
-	transition: .5s;
-}
-
-input:checked[type="checkbox"]:after {
-	background: #e7b06c;
-	left: 1.72vw;
-	box-shadow: 0 0 1.2vw #f3cd9e, 0 0 2vw #f3cd9e,
-}
-
-.illust-div {
-	width: 16vw;
-	height: 16vw;
-	border: 0.1vw solid #e7b06c;
-	border-radius: 0.4vw;
-	margin: 1vw;
-}
 
 .bgil-1 {
 	background-image: url(../uploads/illustrations/イラスト1、男の子、女の子、複数人.png);
