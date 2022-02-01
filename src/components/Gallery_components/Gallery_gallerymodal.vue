@@ -343,7 +343,7 @@ export default {
 
 .illust-list {
 	height: 100vh;
-	width: 13vw;
+	width: 26vw;
 	position: fixed;
 	overflow: scroll;
 	top: 0;
@@ -355,7 +355,7 @@ export default {
 	display: flex;
 	position: absolute;
 	top: 0;
-	left: 11.9vw;
+	left: 22.9vw;
 }
 
 .illust-list-icon-dmy {
@@ -365,15 +365,15 @@ export default {
 
 .illust-list-icon {
 	border: solid 0.2vw #e7b06c;
-	width: 10.4vw;
-	height: 5.85vw;
+	width: 20.8vw;
+	height: 11.7vw;
 	margin: 2vw 0 2vw 1.5vw;
 }
 
 .illust-list-icon-select {
 	border: solid 0.2vw #fff;
-	width: 10.4vw;
-	height: 5.85vw;
+	width: 20.8vw;
+	height: 11.7vw;
 	margin: 2vw 0 2vw 1.5vw;
 	box-shadow: 0 0 0.4vw #ffdbae, 0 0 0.8vw #fff, 0 0 1.2vw #ffdbae;;
 }
