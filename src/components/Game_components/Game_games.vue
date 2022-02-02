@@ -8,11 +8,11 @@
 						<div class="samunemini img-scale-hover" v-bind:class="column.thumclass"></div>
 					</div>
 					<!-- title -->
-					<div class="co-black m-top-05rem m-bottom-05rem">
+					<div class="co-black co-black_mobile m-top-05rem m-top-05rem_mobile m-bottom-05rem m-bottom-05rem_mobile">
 						<p class="lh-110">{{ column.title }}</p>
 					</div>
 					<!-- タグ -->
-					<div class="display-flex m-bottom-1rem">
+					<div class="display-flex display-flex_mobile m-bottom-1rem m-bottom-1rem_mobile">
 						<div v-if="column.tag.includes('New')" class="gametag-dmy">New</div>
 						<div v-if="column.tag.includes('開発中')" class="gametag-dmy">開発中</div>
 						<div v-if="column.tag.includes('発売中')" class="gametag-dmy">発売中</div>
@@ -58,7 +58,8 @@ export default {
 </script>
 
 <style>
-.game-bg {
+@media screen and (min-aspect-ratio: 1/1) {
+	.game-bg {
 	border: 1px solid #e7b06c;
 	height: 25vw;
 	width: 18.5vw;
@@ -111,4 +112,61 @@ export default {
     height: 2.5vw;
     width: 8.5vw;
 }
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+		.game-bg {
+	border: 1px solid #e7b06c;
+	height: 55vw;
+	width: 75vw;
+	margin: 3vw auto 0 auto;
+	padding: 1vw 2vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 0.4vw;
+	background: #fafafa;
+}
+
+/* .narabe {
+	display: flex;
+	flex-wrap: wrap;
+} */
+
+.samunemini {
+	width: 100%;
+	height: 20vw;
+	overflow:hidden;
+}
+
+.gametag-dmy {
+    background-color: #e7b06c;
+    text-align: center;
+    width: 3.5rem;
+    margin: 0.2rem;
+    border-radius: 10%;
+    font-size: 0.6rem;
+    line-height: 1.0rem;
+	color: #fafafa;
+	padding: 0.2rem 0;
+}
+
+.gametag-r18 {
+    background-color: #e62078;
+    text-align: center;
+    width: 3.5rem;
+    margin: 0.2rem;
+    border-radius: 10%;
+    font-size: 0.6rem;
+    line-height: 1.0rem;
+	color: #fafafa;
+	padding: 0.2rem 0;
+}
+
+.bt-hp-open-sm {
+    height: 5vw;
+    width: 25vw;
+}
+}
+
 </style>
