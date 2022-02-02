@@ -2,10 +2,10 @@
 	<v-timeline>
 		<v-timeline-item v-for="(year, i) in works" :key="i" :color="year.color" small class="sa sa--up">
 			<template v-slot:opposite>
-				<span :class="`fs-2_5rem font-E3 ${year.textclass}`" v-text="year.year"></span>
+				<span :class="`fs-2_5rem fs-2_5rem_mobile font-E3 ${year.textclass}`" v-text="year.year"></span>
 			</template>
 			<div class="py-4">
-				<a :class="`fs-1_2rem ${year.textclass}`" :href="year.linkhref">
+				<a :class="`fs-1_2rem fs-1_2rem_mobile ${year.textclass}`" :href="year.linkhref">
 					{{year.title}}
 				</a>
 				<div>
@@ -23,7 +23,7 @@ export default {
 		works: [
 			{
 				color: '#e7b06c',
-				textclass: 'co-brown',
+				textclass: 'co-brown co-brown_mobile',
 				year: '1960.03',
 				title: 'あいうえお',
 				text: 'かきくけこ',
