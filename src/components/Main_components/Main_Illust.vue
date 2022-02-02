@@ -5,7 +5,7 @@
 		</transition>
 		<section id="Illust" class="section-2 sa">
 			<h2 class="font-E3 text-center scroll-fadein index-anime"><span>Illust</span></h2>
-			<div class="vertical-line center sa sa--up"></div>
+			<VerticalLine />
 			<div class="display-flex">
 				<div class="width95">
 					<div class="space-around sa sa--up">
@@ -49,11 +49,13 @@
 </template>
 
 <script>
+import VerticalLine from '../VerticalLine.vue'
 import GalleryGallerymodal from '../Gallery_components/Gallery_gallerymodal.vue'
 
 export default {
   name: 'MainIllust',
   components: {
+		VerticalLine,
 		GalleryGallerymodal,
   },
   data: () => ({

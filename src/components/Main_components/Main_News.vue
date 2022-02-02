@@ -2,7 +2,7 @@
 	<v-lazy v-model="isActive" :options="{ threshold: 1}" min-height="100" transition="fade-transition" >
 		<section id="News" class="section">
 			<h2 id="news-index" class="font-E3 text-center scroll-fadein index-anime"><span id="news-span" class="">News</span></h2>
-			<div class="vertical-line center sa sa--up"></div>
+			<VerticalLine />
 			<div class="display-flex sa sa--up">
 				<router-link class="display-flex hover-flash news-window-container" v-bind:to="newsscreen.link">
 					<div class="news-window-info">
@@ -55,8 +55,13 @@
 </template>
 
 <script>
+import VerticalLine from '../VerticalLine.vue'
+
 export default {
 	name: 'MainNews',
+	components: {
+		VerticalLine,
+	},
 	data: () => ({
 		isActive: false,
 		news : [

@@ -2,7 +2,7 @@
 	<v-lazy v-model="isActive" :options="{ threshold: 1}" min-height="100" transition="fade-transition" >
 		<section id="Game" class="section sa sa--up">
 			<h2 id="news-index" class="font-E3 text-center scroll-fadein index-anime"><span id="" class="">Game</span></h2>
-			<div class="vertical-line center sa sa--up"></div>
+			<VerticalLine />
 			<div class=" sa sa--up">
 				<div class="display-flex">
 					<div class="width10">
@@ -55,8 +55,13 @@
 </template>
 
 <script>
+import VerticalLine from '../VerticalLine.vue'
+
 export default {
   name: 'MainGame',
+  components: {
+		VerticalLine,
+  },
   data: () => ({
       isActive: false,
   }),

@@ -2,7 +2,7 @@
 	<v-lazy v-model="isActive" :options="{ threshold: 1}" min-height="100" transition="fade-transition" >
 		<section id="Profile-main" class="section">
 			<h2 class="font-E3 text-center scroll-fadein index-anime"><span>profile</span></h2>
-			<div class="vertical-line center sa sa--up"></div>
+			<VerticalLine />
 			<!-- 没部分 -->
 			<!-- <div class="pm-flame center sa sa--up">
 				<div class="pm-buttons display-flex m-left-05rem">
@@ -125,8 +125,13 @@
 </style>
 
 <script>
+import VerticalLine from '../VerticalLine.vue'
+
 export default {
   name: 'MainProfile',
+  components: {
+		VerticalLine,
+  },
   data: () => ({
       isActive: false,
   }),
