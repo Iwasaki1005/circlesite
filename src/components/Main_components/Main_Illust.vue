@@ -6,13 +6,13 @@
 		<section id="Illust" class="section-2 sa">
 			<h2 class="font-E3 text-center scroll-fadein index-anime"><span>Illust</span></h2>
 			<VerticalLine />
-			<div class="display-flex">
-				<div class="width95">
-					<div class="space-around sa sa--up">
+			<div class="display-flex display-flex_mobile">
+				<div class="width95 width95_mobile">
+					<div class="space-around space-around_mobile sa sa--up">
 						<div class="il-1 flex-lower-right hover-flash" @click="screenopen(1)" v-bind:class="list[1].thumclass" v-show="list[1].active" v-bind:data-sa_delay="index * 1000">
 							<img class="bt-il-open m-bottom-05rem m-right-05rem" src="../../assets/img/bt-open.svg">
 						</div>
-						<div class="space-around-column">
+						<div class="space-around-column space-around-column_mobile">
 							<div class="il-2 flex-lower-right hover-flash">
 								<img class="bt-il-open-sm m-bottom-05rem m-right-05rem" src="../../assets/img/bt-open.svg">
 							</div>
@@ -21,8 +21,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="space-around m-top-2rem sa sa--up">
-						<div class="space-around-column">
+					<div class="space-around space-around_mobile m-top-2rem m-top-1rem_mobile sa sa--up">
+						<div class="space-around-column space-around-column_mobile">
 							<div class="il-2 flex-lower-right hover-flash">
 								<img class="bt-il-open-sm m-bottom-05rem m-right-05rem" src="../../assets/img/bt-open.svg">
 							</div>
@@ -35,11 +35,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="width5 sa sa--up">
-					<p class="font-E3 vertical-text">Illust <span class="v-line">────────────────────────────────────────</span></p>
+				<div class="width5 width5_mobile sa sa--up">
+					<p class="font-E3 vertical-text">Illust <span class="v-line v-line_mobile display-only">────────────────────────────────────────</span><span class="v-line v-line_mobile mobile-only">──────────────────────</span></p>
 				</div>
 			</div>
-			<div class="content-core m-top-2rem sa sa--up">
+			<div class="content-core content-core_mobile m-top-2rem  m-top-2rem_mobile sa sa--up">
 				<a href="#" class="bt-typeA bt-typeA-border d-block center">
 					<span class="bt-typeA-border-inner font-E1">View more ></span>
 				</a>
