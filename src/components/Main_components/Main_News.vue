@@ -6,41 +6,72 @@
 			<div class="display-flex sa sa--up">
 				<router-link class="display-flex hover-flash news-window-container" v-bind:to="newsscreen.link">
 					<div class="news-window-info">
-						<div class="news-window-info-text co-white">
+						<div class="news-window-info-text co-white co-white_mobile">
 							<p>{{newsscreen.date}}</p>
 							<p>{{newsscreen.title}}</p>
 						</div>
 						<div class="news-window-info-tag">
-							<div v-if="newsscreen.tag.includes('dmy')" class="newstag-dmy co-white font-E1 tr-duration-05s">dmy</div>
-							<div v-if="newsscreen.tag.includes('info')" class="newstag-info co-white font-E1 tr-duration-05s">info</div>
-							<div v-if="newsscreen.tag.includes('game')" class="newstag-info co-white font-E1 tr-duration-05s">game</div>
+							<div v-if="newsscreen.tag.includes('dmy')" class="newstag-dmy co-white co-white_mobile font-E1 tr-duration-05s">dmy</div>
+							<div v-if="newsscreen.tag.includes('info')" class="newstag-info co-white co-white_mobile font-E1 tr-duration-05s">info</div>
+							<div v-if="newsscreen.tag.includes('game')" class="newstag-info co-white co-white_mobile font-E1 tr-duration-05s">game</div>
 						</div>
 					</div>
 					<div v-bind:class="newsscreen.mainthum" class="news-window-img-container overflow-hidden content-core tr-duration-05s"></div>
 				</router-link>
-				<div class="news-list-container">
+				<div class="news-list-container center_mobile display-only">
 					<div class="news-list-dia-position content-core">
 						<div class="news-list-dia">
-							<router-link class="news-dia1 display-flex" v-bind:to="news[0].link">
-								<div v-on:mouseover="newshover(0)" v-on:mouseleave="newshover(0)" class="width100 height100 hover-flash overflow-hidden">
+							<router-link class="news-dia1 display-flex display-flex_mobile" v-bind:to="news[0].link">
+								<div v-on:mouseover="newshover(0)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
 									<div v-bind:class="news[0].subthum" class="news-dia-img"></div>
 								</div>
 							</router-link>
-							<router-link class="news-dia2 display-flex" v-bind:to="news[1].link">
-								<div v-on:mouseover="newshover(1)" v-on:mouseleave="newshover(0)" class="width100 height100 hover-flash overflow-hidden">
+							<router-link class="news-dia2 display-flex display-flex_mobile" v-bind:to="news[1].link">
+								<div v-on:mouseover="newshover(1)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
 									<div v-bind:class="news[1].subthum" class="news-dia-img"></div>
 								</div>
 							</router-link>
-							<router-link class="news-dia3 display-flex" v-bind:to="news[2].link">
-								<div v-on:mouseover="newshover(2)" v-on:mouseleave="newshover(0)" class="width100 height100 hover-flash overflow-hidden">
+							<router-link class="news-dia3 display-flex display-flex_mobile" v-bind:to="news[2].link">
+								<div v-on:mouseover="newshover(2)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
 									<div v-bind:class="news[2].subthum" class="news-dia-img"></div>
 								</div>
 							</router-link>
-							<router-link class="news-dia4 display-flex" v-bind:to="news[3].link">
-								<div v-on:mouseover="newshover(3)" v-on:mouseleave="newshover(0)" class="width100 height100 hover-flash overflow-hidden">
+							<router-link class="news-dia4 display-flex display-flex_mobile" v-bind:to="news[3].link">
+								<div v-on:mouseover="newshover(3)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
 									<div v-bind:class="news[3].subthum" class="news-dia-img"></div>
 								</div>
 							</router-link>
+						</div>
+					</div>
+					<div class="news-list-button content-core">
+						<a href="#" class="bt-typeA bt-typeA-border">
+							<span class="bt-typeA-border-inner font-E1">View more ></span>
+						</a>
+					</div>
+				</div>
+				<div class="news-list-container center_mobile mobile-only">
+					<div class="news-list-dia-position content-core">
+						<div class="news-list-dia">
+							<div class="news-dia1 display-flex display-flex_mobile">
+								<div v-on:mouseover="newshover(0)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
+									<div v-bind:class="news[0].subthum" class="news-dia-img"></div>
+								</div>
+							</div>
+							<div class="news-dia2 display-flex display-flex_mobile">
+								<div v-on:mouseover="newshover(1)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
+									<div v-bind:class="news[1].subthum" class="news-dia-img"></div>
+								</div>
+							</div>
+							<div class="news-dia3 display-flex display-flex_mobile">
+								<div v-on:mouseover="newshover(2)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
+									<div v-bind:class="news[2].subthum" class="news-dia-img"></div>
+								</div>
+							</div>
+							<div class="news-dia4 display-flex display-flex_mobile">
+								<div v-on:mouseover="newshover(3)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
+									<div v-bind:class="news[3].subthum" class="news-dia-img"></div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="news-list-button content-core">
