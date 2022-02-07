@@ -5,6 +5,7 @@
 		<MainGame />
 		<MainIllust />
 		<MainProfile />
+		<Footer />
 	</div>
 </template>
 
@@ -14,6 +15,7 @@ import MainGame from '../components/Main_components/Main_Game.vue'
 import MainNews from '../components/Main_components/Main_News.vue'
 import MainTop from '../components/Main_components/Main_Top.vue'
 import MainProfile from '../components/Main_components/Main_Profile.vue'
+import Footer from '../components/Footer.vue'
 
 
 export default {
@@ -24,6 +26,7 @@ export default {
 		MainNews,
 		MainTop,
 		MainProfile,
+		Footer,
 	},
 }
 </script>

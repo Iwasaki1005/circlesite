@@ -9,7 +9,7 @@
 				<router-view />
 			</transition>
 		</v-app>
-		<Footer />
+		<!-- <Footer /> -->
 	</div>
 </template>
 
@@ -29,7 +29,7 @@
 	import BackgroundEffect from './components/BackgroundEffect.vue'
 	import Glmenu from './components/GloMenu.vue'
 	import DrawerMenu from './components/DrawerMenu.vue'
-	import Footer from './components/Footer.vue'
+	// import Footer from './components/Footer.vue'
 
 	export default {
 		name: 'App',
@@ -41,7 +41,7 @@
 			Loading,
 			Glmenu,
 			DrawerMenu,
-			Footer,
+			// Footer,
 		},
 		methods : {
 			createTitleDesc : function(routeInstance){

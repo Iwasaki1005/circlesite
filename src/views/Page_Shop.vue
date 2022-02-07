@@ -1,52 +1,56 @@
 <template>
-	<section id="About" class="section">
-		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
-		<h2 class="font-E3 text-center"><span>Shop</span></h2>
-		<VerticalLine />
-		<div class="sa sa--up">
-			<div class="container">
-				<div class="card">
-					<div class="face face1 booth">
-						<div class="content">
-							<img src="../assets/logo/png_booth.png">
-							<h3 class="tr-duration-05s">Nl.F Official Shop</h3>
+	<div>
+		<section id="About" class="section">
+			<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
+			<h2 class="font-E3 text-center"><span>Shop</span></h2>
+			<VerticalLine />
+			<div class="sa sa--up">
+				<div class="container">
+					<div class="card">
+						<div class="face face1 booth">
+							<div class="content">
+								<img src="../assets/logo/png_booth.png">
+								<h3 class="tr-duration-05s">Nl.F Official Shop</h3>
+							</div>
+						</div>
+						<div class="face face2">
+							<div class="content">
+								<a class="tr-duration-025s fs-0_8rem">Link To Shop</a>
+							</div>
 						</div>
 					</div>
-					<div class="face face2">
-						<div class="content">
-							<a class="tr-duration-025s fs-0_8rem">Link To Shop</a>
+					<div class="card">
+						<div class="face face1 melon">
+							<div class="content">
+								<img src="../assets/logo/store-logo-melonbooks.png">
+								<h3 class="tr-duration-05s">Melonbooks</h3>
+							</div>
 						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="face face1 melon">
-						<div class="content">
-							<img src="../assets/logo/store-logo-melonbooks.png">
-							<h3 class="tr-duration-05s">Melonbooks</h3>
-						</div>
-					</div>
-					<div class="face face2">
-						<div class="content">
-							<a class="tr-duration-025s fs-0_8rem">Link To Shop</a>
+						<div class="face face2">
+							<div class="content">
+								<a class="tr-duration-025s fs-0_8rem">Link To Shop</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<BackToHome />
-	</section>
+			<BackToHome />
+		</section>
+		<Footer />
+	</div>
 </template>
 
 <script>
 import VerticalLine from '../components/VerticalLine.vue'
 import BackToHome from '../components/BackToHome.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
 	name: 'Page_Shop',
 	components: {
 		VerticalLine,
 		BackToHome,
+		Footer,
 	},
 	mounted: function() {
 		this.scrollanime_js()

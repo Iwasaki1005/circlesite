@@ -1,12 +1,15 @@
 <template>
-	<section id="About" class="section">
-		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
-		<h2 class="font-E3 text-center"><span>Game</span></h2>
-		<VerticalLine />
-		<GamePickup  :gamelist="gamelist" @pickupcheck="pickupcheck" />
-		<GameGames :gamelist="gamelist" :datapickthumsrc="datapickthumsrc" />
-		<BackToHome />
-	</section>
+	<div>
+		<section id="About" class="section">
+			<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
+			<h2 class="font-E3 text-center"><span>Game</span></h2>
+			<VerticalLine />
+			<GamePickup  :gamelist="gamelist" @pickupcheck="pickupcheck" />
+			<GameGames :gamelist="gamelist" :datapickthumsrc="datapickthumsrc" />
+			<BackToHome />
+		</section>
+		<Footer />
+	</div>
 </template>
 
 <script>
@@ -14,6 +17,7 @@ import VerticalLine from '../components/VerticalLine.vue'
 import BackToHome from '../components/BackToHome.vue'
 import GameGames from '../components/Game_components/Game_games.vue'
 import GamePickup from '../components/Game_components/Game_pickup.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
 	name: 'Page_Game',
@@ -22,6 +26,7 @@ export default {
 		BackToHome,
 		GameGames,
 		GamePickup,
+		Footer,
 	},
 	mounted: function() {
 		this.scrollanime_js()

@@ -1,16 +1,19 @@
 <template>
-	<section id="Gallery" class="section">
-		<transition name="vfade">
-			<GalleryGallerymodal  v-show="modalscreen" :list="list" :difil="difil" @illustselect="illustselect" @differenceselect="differenceselect" @screenclose="screenclose" :seldes="seldes" :sellinktxt="sellinktxt" :sellinksrc="sellinksrc" @modalfuncopen="modalfuncopen" @modalfuncclose="modalfuncclose"/>
-		</transition>
-		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
-		<h2 class="font-E3 text-center"><span>Gallery</span></h2>
-		<VerticalLine />
-		<GalleryPdfdownload @pdfdlhide="pdfdlhide" />
-		<!-- ここからイラスト一覧 -->
-		<GalleryIllustrations :list="list" :activetag="activetag" :alltags="alltags" @addtag="addtag" @removetag="removetag" @tagallremove="tagallremove" @ratingswitch="ratingswitch"  v-model="rating" @screenopen="screenopen"/>
-		<BackToHome />
-	</section>
+	<div>
+		<section id="Gallery" class="section">
+			<transition name="vfade">
+				<GalleryGallerymodal  v-show="modalscreen" :list="list" :difil="difil" @illustselect="illustselect" @differenceselect="differenceselect" @screenclose="screenclose" :seldes="seldes" :sellinktxt="sellinktxt" :sellinksrc="sellinksrc" @modalfuncopen="modalfuncopen" @modalfuncclose="modalfuncclose"/>
+			</transition>
+			<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
+			<h2 class="font-E3 text-center"><span>Gallery</span></h2>
+			<VerticalLine />
+			<GalleryPdfdownload @pdfdlhide="pdfdlhide" />
+			<!-- ここからイラスト一覧 -->
+			<GalleryIllustrations :list="list" :activetag="activetag" :alltags="alltags" @addtag="addtag" @removetag="removetag" @tagallremove="tagallremove" @ratingswitch="ratingswitch"  v-model="rating" @screenopen="screenopen"/>
+			<BackToHome />
+		</section>
+		<Footer />
+	</div>
 </template>
 
 <script>
@@ -19,6 +22,7 @@ import BackToHome from '../components/BackToHome.vue'
 import GalleryIllustrations from '../components/Gallery_components/Gallery_illustrations.vue'
 import GalleryGallerymodal from '../components/Gallery_components/Gallery_gallerymodal.vue'
 import GalleryPdfdownload from '../components/Gallery_components/Gallery_pdfdownload.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
 	name: 'Page_Gallery',
@@ -28,6 +32,7 @@ export default {
 		GalleryIllustrations,
 		GalleryGallerymodal,
 		GalleryPdfdownload,
+		Footer,
 	},
 	mounted: function() {
 		this.scrollanime_js()

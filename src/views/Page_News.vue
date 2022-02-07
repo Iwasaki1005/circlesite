@@ -1,19 +1,24 @@
 <template>
-	<section id="News" class="section">
-		<transition name="slide" mode="out-in">
-			<router-view />
-		</transition>
-		<BackToHome />
-	</section>
+	<div>
+		<section id="News" class="section">
+			<transition name="slide" mode="out-in">
+				<router-view />
+			</transition>
+			<BackToHome />
+		</section>
+		<Footer />
+	</div>
 </template>
 
 <script>
 import BackToHome from '../components/BackToHome.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
 	name: 'Page_News',
 	components: {
 		BackToHome,
+		Footer,
 	},
 	data () {
 		return {
