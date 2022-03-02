@@ -16,7 +16,8 @@
 						<div class="NW-container">
 							<p class="info-indexbg m-bottom-1rem m-bottom-05rem_mobile co-white co-white_mobile">プライバシーポリシー</p>
 							<p>
-								※googleのやつをコピペ
+								当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定するものではありません。<br>
+								この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。この規約に関しての詳細は<a target="_blank" href="https://marketingplatform.google.com/about/analytics/terms/jp/">Googleアナリティクスサービス利用規約のページ</a>や<a target="_blank" href="https://policies.google.com/technologies/ads?hl=ja">Googleポリシーと規約ページ</a>をご覧ください。
 							</p>
 						</div>
 					</v-tab-item>
