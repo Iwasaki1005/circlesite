@@ -31,7 +31,6 @@ export default {
 					color: '#999',
 					position: 'absolute',
 					right: '49vw',
-					top: '1.5vw',
 					padding: 0,
 					margin: 0,
 					transform: null
