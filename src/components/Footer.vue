@@ -81,7 +81,7 @@
 				</router-link>
 			</div>
 		</div>
-		<div class="width100 width100_mobile fs-0_8rem fs-0_8rem_mobile co-white co-white_mobile flex-end linkset-position m-bottom-2rem m-bottom-2rem_mobile">
+		<div class="width100 width100_mobile fs-0_8rem fs-0_8rem_mobile co-white co-white_mobile content-core linkset-position m-bottom-2rem m-bottom-2rem_mobile">
 			<div>
 				<p>当サイトは基本的にリンクフリーです。</p>
 				<p>リンクをしていただく際のURLはトップページへお願いします。</p>
