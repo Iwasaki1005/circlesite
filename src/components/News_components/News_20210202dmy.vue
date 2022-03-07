@@ -2,10 +2,10 @@
 	<div>
 		<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 		<div class="NW-container">
-			<div class="align-center">
-				<p class="m-right-05rem">2021.02.02</p>
-				<div class="newstag-dmy co-white font-E1">dmy</div>
-				<div class="newstag-info co-white font-E1">info</div>
+			<div class="align-center align-center_mobile">
+				<p class="m-right-05rem m-right-05rem_mobile">2021.02.02</p>
+				<div class="newstag-dmy font-E1">dmy</div>
+				<div class="newstag-info font-E1">info</div>
 			</div>
 			<h3 class="m-bottom-2rem">2021年(仮)のテストニュースです。</h3>
 			<p>
@@ -13,17 +13,17 @@
 			</p>
 			<NewsShare />
 		</div>
-		<div class="content-core m-top-2rem">
-			<div class="bt-typeA bt-typeA-border d-block center">
+		<div class="content-core m-top-2rem content-core_mobile m-top-2rem_mobile">
+			<div class="bt-typeA bt-typeA-border d-block center_mobile">
 				<span class="bt-typeA-border-inner font-E1">← Next</span>
 			</div>
-			<div class="bt-typeA bt-typeA-border d-block center">
+			<div class="bt-typeA bt-typeA-border d-block center_mobile">
 				<span class="bt-typeA-border-inner font-E1">Prev →</span>
 			</div>
 		</div>
 		<router-link id="homeopen" to="/news">
-			<div class="content-core">
-				<div class="bt-typeA bt-typeA-border d-block center">
+			<div class="content-core content-core_mobile">
+				<div class="bt-typeA bt-typeA-border d-block center center_mobile">
 					<span class="bt-typeA-border-inner font-E1">Back To List ></span>
 				</div>
 			</div>
@@ -109,11 +109,23 @@ export default {
 </script>
 
 <style>
+@media screen and (min-aspect-ratio: 1/1) { 
 .NW-container {
 	width: 80%;
 	padding: 8vh 6vw;
 	margin: 5vh auto;
 	background-color: #fafafa;
 	box-shadow: 0 0 0.5vw #ddd;
+}
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+.NW-container {
+	width: 90%;
+	padding: 3vh 5vw;
+	margin: 3vh auto;
+	background-color: #fafafa;
+	box-shadow: 0 0 0.5vw #ddd;
+}
 }
 </style>
