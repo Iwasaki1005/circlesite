@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<div class="bt-typeA bt-typeA-border d-block center center_mobile m-bottom-2rem m-bottom-2rem_mobile sa sa--up" v-on:click="pdfdlopen">
+		<button class="bt-typeA bt-typeA-border d-block center center_mobile m-bottom-2rem m-bottom-2rem_mobile sa sa--up" v-on:click="pdfdlopen">
 			<span class="bt-typeA-border-inner font-E1">PDF Download</span>
-		</div>
+		</button>
 		<modal name="pdfdownload">
 			<div class="column-center column-center_mobile p-tb-1rem p-tb-4rem_mobile p-rl-2rem_mobile">
 				<h3 class="co-brown co-brown_mobile f-weight-normal f-weight-normal_mobile m-bottom-1rem m-bottom-1rem_mobile">PDF Download</h3>
@@ -229,6 +229,7 @@ export default {
 
 	.close-bt {
 		width: 5rem;
+		cursor: pointer;
 	}
 	}
 

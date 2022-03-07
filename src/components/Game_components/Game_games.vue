@@ -94,6 +94,7 @@ export default {
     font-size: 0.6rem;
     line-height: 1.0rem;
 	color: #fafafa;
+	cursor: default;
 }
 
 .gametag-r18 {
@@ -106,6 +107,7 @@ export default {
     font-size: 0.6rem;
     line-height: 1.0rem;
 	color: #fafafa;
+	cursor: default;
 }
 
 .bt-hp-open-sm {
@@ -149,6 +151,7 @@ export default {
     line-height: 1.0rem;
 	color: #fafafa;
 	padding: 0.2rem 0;
+	cursor: default;
 }
 
 .gametag-r18 {
@@ -161,6 +164,7 @@ export default {
     line-height: 1.0rem;
 	color: #fafafa;
 	padding: 0.2rem 0;
+	cursor: default;
 }
 
 .bt-hp-open-sm {

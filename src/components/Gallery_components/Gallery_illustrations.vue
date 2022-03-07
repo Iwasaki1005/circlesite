@@ -3,7 +3,7 @@
 		<div class="sa sa--up">
 			<div class="align-center align-center_mobile m-bottom-05rem m-bottom-05rem_mobile">
 				<p class="fs-0_8rem fs-0_8rem_mobile co-brown co-brown_mobile m-right-05rem m-right-05rem_mobile">ナントカコンテンツを非表示にする</p>
-				<input type="checkbox" class="Ga-checkbox" @click="ratingswitch" :checked="checked" @input="$emit('input', $event.target.checked)">
+				<input type="checkbox" class="Ga-checkbox cursor-pointer" @click="ratingswitch" :checked="checked" @input="$emit('input', $event.target.checked)">
 			</div>
 			<div class="align-center align-center_mobile">
 				<p class="fs-0_8rem fs-0_8rem_mobile co-brown co-brown_mobile m-right-1rem m-right-1rem_mobile">タグ一覧</p>
@@ -11,8 +11,8 @@
 			</div>
 			<div class="display-flex display-flex_mobile m-top-05rem m-top-05rem_mobile">
 				<div v-for="(column) in alltags" :key="column">
-					<div v-if="activetag.includes(column)" class="tag-on" @click="removetag(column)">{{ column }}</div>
-					<div v-else class="tag-off" @click="addtag(column)">{{ column }}</div>
+					<div v-if="activetag.includes(column)" class="tag-on cursor-pointer" @click="removetag(column)">{{ column }}</div>
+					<div v-else class="tag-off cursor-pointer" @click="addtag(column)">{{ column }}</div>
 				</div>
 			</div>
 		</div>
@@ -207,6 +207,7 @@ input:checked[type="checkbox"]:after {
 	border: 0.1vw solid #e7b06c;
 	border-radius: 0.4vw;
 	margin: 1vw;
+	cursor: pointer;
 }
 
 }

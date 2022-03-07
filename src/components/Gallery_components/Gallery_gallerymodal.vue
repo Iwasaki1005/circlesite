@@ -112,6 +112,7 @@ export default {
 	width: 10.4vw;
 	height: 5.85vw;
 	margin: 2vw 0 2vw 1.5vw;
+	cursor: pointer;
 }
 
 .illust-list-icon-select {
@@ -368,6 +369,7 @@ export default {
 	width: 20.8vw;
 	height: 11.7vw;
 	margin: 2vw 0 2vw 1.5vw;
+	cursor: pointer;
 }
 
 .illust-list-icon-select {

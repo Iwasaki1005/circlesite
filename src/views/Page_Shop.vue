@@ -10,7 +10,7 @@
 						<div class="face face1 booth">
 							<div class="content">
 								<img src="../assets/logo/png_booth.png">
-								<h3 class="tr-duration-05s">Nl.F Official Shop</h3>
+								<h3 class="tr-duration-05s cursor-default">Nl.F Official Shop</h3>
 							</div>
 						</div>
 						<div class="face face2">
@@ -23,7 +23,7 @@
 						<div class="face face1 melon">
 							<div class="content">
 								<img src="../assets/logo/store-logo-melonbooks.png">
-								<h3 class="tr-duration-05s">Melonbooks</h3>
+								<h3 class="tr-duration-05s cursor-default">Melonbooks</h3>
 							</div>
 						</div>
 						<div class="face face2">
