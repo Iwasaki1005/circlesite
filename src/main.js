@@ -8,6 +8,15 @@ import Globalfunctions from '../public/js/Globalfunctions.js'
 import Galleryfunctions from '../public/js/Galleryfunctions.js'
 /*import css from '../public/css/scrollbar.css'*/
 
+/* FonaAwesomeをインストール */
+/* npmでは無料分のアイコンをインストール済み */
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+/* 使用するアイコンをインストール */
+library.add( fas )
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
 
 
 Vue.config.productionTip = false
