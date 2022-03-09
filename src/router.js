@@ -15,6 +15,7 @@ import News_Maincontents from './components/News_components/News_Maincontents.vu
 import News_20200101dmy from './components/News_components/News_20200101dmy.vue'
 import News_20210202dmy from './components/News_components/News_20210202dmy.vue'
 import Page_404 from './views/Page_404.vue'
+import Page_Debugfloor from './views/Page_Debugfloor.vue'
 
 
 Vue.use(Router)
@@ -33,6 +34,11 @@ export default new Router({
 			path: '/helloworld',
 			name: 'helloworld',
 			component: Page_HelloWorld,
+		},
+		{
+			path: '/debugfloor',
+			name: 'debugfloor',
+			component: Page_Debugfloor,
 		},
 		{
 			path: '/about',
