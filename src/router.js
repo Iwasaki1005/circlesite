@@ -36,7 +36,7 @@ export default new Router({
 			component: Page_HelloWorld,
 		},
 		{
-			path: '/debugfloor',
+			path: '/debug',
 			name: 'debugfloor',
 			component: Page_Debugfloor,
 		},
