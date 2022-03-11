@@ -5,6 +5,7 @@
 			<h2 class="font-E3 text-center"><span>Debugfloor</span></h2>
 			<VerticalLine />
 			<TestFontAwesome />
+			<TestVuePhotoSwipe />
 			<BackToHome />
 		</section>
 		<Footer />
@@ -17,6 +18,7 @@ import BackToHome from '../components/BackToHome.vue'
 import Footer from '../components/Footer.vue'
 
 import TestFontAwesome from '../components/Debugfloor_components/Test_FontAwesome.vue'
+import TestVuePhotoSwipe from '../components/Debugfloor_components/Test_VuePhotoSwipe.vue'
 
 export default {
 	name: 'Page_Debugfloor',
@@ -25,6 +27,7 @@ export default {
 		VerticalLine,
 		Footer,
 		TestFontAwesome,
+		TestVuePhotoSwipe,
 	},
 	mounted: function() {
 		this.scrollanime_js()
