@@ -14,7 +14,7 @@
 				<v-tab-item>
 					<router-link to="/news/20210202dmy">
 						<div class="nw-column m-bottom-2rem">
-							<div class="align-center">
+							<div class="align-center align-center_mobile">
 								<p class="fs-0_8rem fs-0_8rem_mobile m-right-05rem m-right-05rem_mobile co-black co-black_mobile">2022.※未定</p>
 								<div class="newstag-info font-E1">info</div>
 							</div>
@@ -66,6 +66,7 @@ export default {
 	padding: 1rem 2rem;
 	border-radius: 0.2vw;
 	margin: 2rem 0.5rem;
+	box-shadow: 0.04vw 0.04vw 0.4vw 0.01vw #e7b06c;
 }
 
 .bg-none {

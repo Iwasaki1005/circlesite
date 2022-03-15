@@ -4,82 +4,82 @@
 			<h2 id="news-index" class="font-E3 text-center scroll-fadein index-anime"><span id="news-span" class="">News</span></h2>
 			<VerticalLine />
 			<div class="display-flex sa sa--up">
-				<router-link class="display-flex hover-flash news-window-container" v-bind:to="newsscreen.link">
+				<router-link class="display-flex hover-flash news-window-container" v-bind:to="news[0].link">
 					<div class="news-window-info">
 						<div class="news-window-info-text co-white co-white_mobile">
-							<p>{{newsscreen.date}}</p>
-							<p>{{newsscreen.title}}</p>
+							<p>{{news[0].date}}</p>
+							<p>{{news[0].title}}</p>
 						</div>
 						<div class="news-window-info-tag">
-							<div v-if="newsscreen.tag.includes('dmy')" class="newstag-dmy co-white co-white_mobile font-E1 tr-duration-05s">dmy</div>
-							<div v-if="newsscreen.tag.includes('info')" class="newstag-info co-white co-white_mobile font-E1 tr-duration-05s">info</div>
-							<div v-if="newsscreen.tag.includes('game')" class="newstag-info co-white co-white_mobile font-E1 tr-duration-05s">game</div>
+							<div v-if="news[0].tag.includes('dmy')" class="newstag-dmy co-white co-white_mobile font-E1 tr-duration-05s">dmy</div>
+							<div v-if="news[0].tag.includes('info')" class="newstag-info co-white co-white_mobile font-E1 tr-duration-05s">info</div>
+							<div v-if="news[0].tag.includes('game')" class="newstag-info co-white co-white_mobile font-E1 tr-duration-05s">game</div>
 						</div>
 					</div>
-					<div v-bind:class="newsscreen.mainthum" class="news-window-img-container overflow-hidden content-core tr-duration-05s"></div>
+					<div v-bind:class="news[0].mainthum" class="news-window-img-container overflow-hidden content-core tr-duration-05s"></div>
 				</router-link>
-				<div class="news-list-container center_mobile display-only">
-					<div class="news-list-dia-position content-core">
-						<div class="news-list-dia">
-							<router-link class="news-dia1 display-flex display-flex_mobile" v-bind:to="news[0].link">
-								<div v-on:mouseover="newshover(0)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
-									<div v-bind:class="news[0].subthum" class="news-dia-img"></div>
+				<div class="column-center column-center_mobile m-top-1rem_mobile">
+					<h3 class="co-brown co-brown_mobile f-weight-normal f-weight-normal_mobile">-最新情報-</h3>
+					<div>
+						<router-link class="m-bottom-05rem m-bottom-05rem_mobile" v-bind:to="news[1].link">
+							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile">
+								<div class="display-flex display-flex_mobile">
+									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[1].date}}</p>
+									<div class="align-center align-center_mobile">
+										<div v-if="news[1].tag.includes('dmy')" class="newstag-dmy-small">dmy</div>
+										<div v-if="news[1].tag.includes('info')" class="newstag-info-small">info</div>
+										<div v-if="news[1].tag.includes('game')" class="newstag-info-small">game</div>
+									</div>
 								</div>
-							</router-link>
-							<router-link class="news-dia2 display-flex display-flex_mobile" v-bind:to="news[1].link">
-								<div v-on:mouseover="newshover(1)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
-									<div v-bind:class="news[1].subthum" class="news-dia-img"></div>
-								</div>
-							</router-link>
-							<router-link class="news-dia3 display-flex display-flex_mobile" v-bind:to="news[2].link">
-								<div v-on:mouseover="newshover(2)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
-									<div v-bind:class="news[2].subthum" class="news-dia-img"></div>
-								</div>
-							</router-link>
-							<router-link class="news-dia4 display-flex display-flex_mobile" v-bind:to="news[3].link">
-								<div v-on:mouseover="newshover(3)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
-									<div v-bind:class="news[3].subthum" class="news-dia-img"></div>
-								</div>
-							</router-link>
-						</div>
-					</div>
-					<div class="news-list-button content-core">
-						<a href="#" class="bt-typeA bt-typeA-border">
-							<span class="bt-typeA-border-inner font-E1">View more ></span>
-						</a>
-					</div>
-				</div>
-				<div class="news-list-container center_mobile mobile-only">
-					<div class="news-list-dia-position content-core">
-						<div class="news-list-dia">
-							<div class="news-dia1 display-flex display-flex_mobile">
-								<div v-on:mouseover="newshover(0)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
-									<div v-bind:class="news[0].subthum" class="news-dia-img"></div>
-								</div>
+								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[1].title}}</p>
 							</div>
-							<div class="news-dia2 display-flex display-flex_mobile">
-								<div v-on:mouseover="newshover(1)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
-									<div v-bind:class="news[1].subthum" class="news-dia-img"></div>
+						</router-link>
+						<router-link class="m-bottom-05rem m-bottom-05rem_mobile" v-bind:to="news[2].link">
+							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile">
+								<div class="display-flex display-flex_mobile">
+									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[2].date}}</p>
+									<div class="align-center align-center_mobile">
+										<div v-if="news[2].tag.includes('dmy')" class="newstag-dmy-small">dmy</div>
+										<div v-if="news[2].tag.includes('info')" class="newstag-info-small">info</div>
+										<div v-if="news[2].tag.includes('game')" class="newstag-info-small">game</div>
+									</div>
 								</div>
+								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[2].title}}</p>
 							</div>
-							<div class="news-dia3 display-flex display-flex_mobile">
-								<div v-on:mouseover="newshover(2)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
-									<div v-bind:class="news[2].subthum" class="news-dia-img"></div>
+						</router-link>
+						<router-link class="m-bottom-05rem m-bottom-05rem_mobile" v-bind:to="news[3].link">
+							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile">
+								<div class="display-flex display-flex_mobile">
+									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[3].date}}</p>
+									<div class="align-center align-center_mobile">
+										<div v-if="news[3].tag.includes('dmy')" class="newstag-dmy-small">dmy</div>
+										<div v-if="news[3].tag.includes('info')" class="newstag-info-small">info</div>
+										<div v-if="news[3].tag.includes('game')" class="newstag-info-small">game</div>
+									</div>
 								</div>
+								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[3].title}}</p>
 							</div>
-							<div class="news-dia4 display-flex display-flex_mobile">
-								<div v-on:mouseover="newshover(3)" v-on:mouseleave="newshover(0)" class="width100 width100_mobile height100 height100_mobile hover-flash overflow-hidden">
-									<div v-bind:class="news[3].subthum" class="news-dia-img"></div>
+						</router-link>
+						<router-link class="m-bottom-05rem m-bottom-05rem_mobile" v-bind:to="news[4].link">
+							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile">
+								<div class="display-flex display-flex_mobile">
+									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[4].date}}</p>
+									<div class="align-center align-center_mobile">
+										<div v-if="news[4].tag.includes('dmy')" class="newstag-dmy-small">dmy</div>
+										<div v-if="news[4].tag.includes('info')" class="newstag-info-small">info</div>
+										<div v-if="news[4].tag.includes('game')" class="newstag-info-small">game</div>
+									</div>
 								</div>
+								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[4].title}}</p>
 							</div>
-						</div>
-					</div>
-					<div class="news-list-button content-core">
-						<a href="#" class="bt-typeA bt-typeA-border">
-							<span class="bt-typeA-border-inner font-E1">View more ></span>
-						</a>
+						</router-link>
 					</div>
 				</div>
+			</div>
+			<div class="content-core content-core_mobile m-top-2rem  m-top-2rem_mobile sa sa--up">
+				<a href="#" class="bt-typeA bt-typeA-border d-block center">
+					<span class="bt-typeA-border-inner font-E1">View more ></span>
+				</a>
 			</div>
 		</section>
 	</v-lazy>
@@ -96,6 +96,7 @@ export default {
 	data: () => ({
 		isActive: false,
 		news : [
+			// 【メモ】新しいものニュースを上から順に追加していく
 			{
 				title:'ダミー1ナントカカントカのお知らせ',
 				date:'2021.11.24',
@@ -113,15 +114,23 @@ export default {
 				emergent: false,
 			},
 			{
-				title:'ダミー3',
+				title:'ナントカ先生直筆イラストが当たる発売記念RTキャンペーン開催中です。',
 				date:'9999.99.99',
-				tag:['dmy','info'],
+				tag:['info'],
 				mainthum:'mthum-3',subthum:'sthum-3',
 				link:'/news/20200101dmy',
 				emergent: false,
 			},
 			{
-				title:'ダミー4',
+				title:'ナントカ先生直筆イラストが当たる発売記念RTキャンペーン開催中です。',
+				date:'2021.08.11',
+				tag:['dmy','info','game'],
+				mainthum:'mthum-4',subthum:'sthum-4',
+				link:'/news/20200101dmy',
+				emergent: false,
+			},
+			{
+				title:'ナントカ先生直筆イラストが当たる発売記念RTキャンペーン開催中です。',
 				date:'2021.08.11',
 				tag:['dmy','info'],
 				mainthum:'mthum-4',subthum:'sthum-4',
@@ -129,33 +138,13 @@ export default {
 				emergent: false,
 			},
 		],
-		newsscreen : {
-			title:'',
-			date:'',
-			tag:[],
-			mainthum:'',subthum:'',
-			link:'',
-			emergent: false,
-		},
 	}),
-	methods: {
-		newshover : function (index) {
-			this.newsscreen.title = this.news[index].title;
-			this.newsscreen.date = this.news[index].date;
-			this.newsscreen.tag = this.news[index].tag;
-			this.newsscreen.mainthum = this.news[index].mainthum;
-			this.newsscreen.subthum = this.news[index].subthum;
-			this.newsscreen.link = this.news[index].link;
-			this.newsscreen.emergent = this.news[index].emergent;
-		},
-	},
 	created: function() {
 		this.newshover(0)
 	},
 	updated: function () {
 		this.indexanime()
 		this.scrollanime_js()
-		// this.newshover(0)
 	},
 }
 </script>

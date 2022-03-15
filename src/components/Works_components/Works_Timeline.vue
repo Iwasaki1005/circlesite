@@ -59,13 +59,6 @@ export default {
 </script>
 
 <style>
-.nw-column {
-	padding: 1rem 2rem;
-	border-radius: 0.2vw;
-	/*box-shadow: 0.06vw 0.06vw 0.12vw 0.12vw #e7b06c;*/
-	margin: 2rem 0.5rem;
-}
-
 .bg-none {
 	background-color: transparent;
 }
