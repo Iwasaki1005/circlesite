@@ -4,8 +4,8 @@
 			<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 			<h2 class="font-E3 text-center"><span>Debugfloor</span></h2>
 			<VerticalLine />
-			<TestFontAwesome />
-			<TestVuePhotoSwipe />
+			<TestFontAwesome style="display: none;" />
+			<TestVuePhotoSwipe style="display: none;" />
 			<BackToHome />
 		</section>
 		<Footer />
