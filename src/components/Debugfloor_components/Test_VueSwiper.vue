@@ -1,15 +1,9 @@
 <template>
-	<div>
-		<h3>Swiper実験場</h3>
-	</div>
+	<span>Swiper実験場</span>
 </template>
 
 <script>
-export default {
-	name: '',
-}
 </script>
 
 <style>
-
 </style>
