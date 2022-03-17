@@ -6,7 +6,8 @@ import VModal from 'vue-js-modal'
 import VueSocialSharing from 'vue-social-sharing'
 import Globalfunctions from '../public/js/Globalfunctions.js'
 import Galleryfunctions from '../public/js/Galleryfunctions.js'
-/*import css from '../public/css/scrollbar.css'*/
+
+import '../public/css/dmyimportcss.css' // CSSのmain.jsでの読み込み実験 成功
 
 
 /* FonaAwesomeをインストール */
