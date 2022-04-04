@@ -20,9 +20,9 @@
 				</router-link>
 				<div class="column-center column-center_mobile m-top-1rem_mobile">
 					<h3 class="co-brown co-brown_mobile f-weight-normal f-weight-normal_mobile">-最新情報-</h3>
-					<div>
+					<div class="m-top-1rem m-top-1rem_mobile">
 						<router-link class="m-bottom-05rem m-bottom-05rem_mobile" v-bind:to="news[1].link">
-							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile">
+							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile p-rl-1rem p-rl-1rem_mobile">
 								<div class="display-flex display-flex_mobile">
 									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[1].date}}</p>
 									<div class="align-center align-center_mobile">
@@ -34,8 +34,9 @@
 								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[1].title}}</p>
 							</div>
 						</router-link>
+						<div class="m-news-line"></div>
 						<router-link class="m-bottom-05rem m-bottom-05rem_mobile" v-bind:to="news[2].link">
-							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile">
+							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile p-rl-1rem p-rl-1rem_mobile">
 								<div class="display-flex display-flex_mobile">
 									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[2].date}}</p>
 									<div class="align-center align-center_mobile">
@@ -47,8 +48,9 @@
 								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[2].title}}</p>
 							</div>
 						</router-link>
+						<div class="m-news-line"></div>
 						<router-link class="m-bottom-05rem m-bottom-05rem_mobile" v-bind:to="news[3].link">
-							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile">
+							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile p-rl-1rem p-rl-1rem_mobile">
 								<div class="display-flex display-flex_mobile">
 									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[3].date}}</p>
 									<div class="align-center align-center_mobile">
@@ -60,8 +62,9 @@
 								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[3].title}}</p>
 							</div>
 						</router-link>
+						<div class="m-news-line"></div>
 						<router-link class="m-bottom-05rem m-bottom-05rem_mobile" v-bind:to="news[4].link">
-							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile">
+							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile p-rl-1rem p-rl-1rem_mobile">
 								<div class="display-flex display-flex_mobile">
 									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[4].date}}</p>
 									<div class="align-center align-center_mobile">

@@ -444,6 +444,11 @@ p {
 	padding-bottom: 4rem;
 }
 
+.p-rl-1rem_mobile {
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
 .p-rl-2rem_mobile {
 	padding-right: 2rem;
 	padding-left: 2rem;

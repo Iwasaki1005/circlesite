@@ -437,6 +437,11 @@ p {
 	padding-bottom: 4rem;
 }
 
+.p-rl-1rem {
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
 .p-rl-2rem {
 	padding-right: 2rem;
 	padding-left: 2rem;

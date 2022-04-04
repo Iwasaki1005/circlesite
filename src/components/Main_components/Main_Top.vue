@@ -1,32 +1,25 @@
 <template>
-	<div id="NeverLand-top" class="nl-top-position">
-		<div class="nl-top">
-			<div class="dia-logo">
-				<img class="top-logo" src="../../assets/logo/neverlandf_logo1.png" alt=”ねばーランドFロゴ”>
-			</div>
-			<div class="dia-scroll">
-				<div class="scroll-text font-E1">view more</div>
-				<div></div>
-			</div>
-			<div class="dia-slide1">
-				<div class="dia-slide-area"></div>
-			</div>
-			<div class="dia-slide2">
-				<div class="dia-slide-area"></div>
-			</div>
-			<div class="dia-slide3">
-				<div class="dia-slide-area"></div>
-			</div>
-			<div class="dia-slide4">
-				<div class="dia-slide-area"></div>
-			</div>
-			<div class="dia-slide5">
-				<div class="dia-slide-area"></div>
-			</div>
-			<div class="dia-slide6">
-				<div class="dia-slide-area"></div>
-			</div>
+	<div id="NeverLand-top" class="nla-top">
+		<div class="nla-dia1-con">
+			<img class="nla-dia1" src="../../assets/sprite/triangle1.svg">
 		</div>
+		<!-- <div class="nla-dia2-con">
+			<img class="nla-dia1" src="../../assets/sprite/triangle2.svg">
+		</div> -->
+		<div class="nla-logo-grid content-core content-core_mobile">
+			<img class="nla-logo" src="../../assets/logo/neverlandf_logo1.png" alt=”ねばーランドFロゴ”>
+		</div>
+		<div class="nla-tips1">
+			<img class="nla-banner tr-duration-025s" src="../../assets/dmyimage/topicbanner_dmy1.png">
+			<img class="nla-banner tr-duration-025s" src="../../assets/dmyimage/topicbanner_dmy2.png">
+		</div>
+		<div class="nla-tips2">
+			<img class="nla-banner tr-duration-025s" src="../../assets/dmyimage/topicbanner_dmy3.png">
+			<img class="nla-banner tr-duration-025s" src="../../assets/dmyimage/topicbanner_dmy1.png">
+			<img class="nla-banner tr-duration-025s" src="../../assets/dmyimage/topicbanner_dmy2.png">
+			<img class="nla-banner tr-duration-025s" src="../../assets/dmyimage/topicbanner_dmy3.png">
+		</div>
+		<div style="display: none;" class="nla-visual">visual</div>
 	</div>
 </template>
 

@@ -178,3 +178,8 @@
 .news-list-button {
 	height: 20%;
 }
+
+.m-news-line {
+	margin: 0.5rem 0;
+	border-bottom: 0.1vw solid #e7b06c;
+}
