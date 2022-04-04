@@ -6,9 +6,9 @@
 			<VerticalLine />
 			<div class="sa sa--up">
 				<p class="text-center">
-					当サイトは個人サークル<br class="monile-only">「ねばーランド.F」の公式ページです。<br><br>
-					主にイラストやゲームの創作を<br class="monile-only">中心に活動をしています。<br><br>
-					管理人への連絡、バグの報告などは<br class="monile-only"><router-link to="/contact">こちら</router-link>からお願いします。<br><br>
+					当サイトは個人サークル<br class="mob-only">「ねばーランド.F」の公式ページです。<br><br>
+					主にイラストやゲームの創作を<br class="mob-only">中心に活動をしています。<br><br>
+					管理人への連絡、バグの報告などは<br class="mob-only"><router-link to="/contact">こちら</router-link>からお願いします。<br><br>
 				</p>
 			</div>
 			<BackToHome />

@@ -7,6 +7,53 @@
 
 
 
+body {
+	font-family: Kosugi Maru, sans-serif;
+}
+
+.font-E1 {
+	font-family: 'Varela Round', sans-serif;
+}
+
+.font-E2 {
+	font-family: Libre Baskerville, serif;
+}
+
+.font-E3 {
+	font-family: 'Allura', cursive;
+}
+
+.font-J1 {
+	font-family: Kosugi Maru, sans-serif;
+}
+
+
+
+
+
+.co-black {
+	color: #333;
+}
+
+.co-white {
+	color: #fafafa;
+}
+
+.co-brown {
+	color: #e7b06c;
+}
+
+.co-pink {
+	color: #ff4d91;
+}
+
+.co-grey {
+	color: #9b9b9b;
+}
+
+
+
+
 /*--------------------------------------------------------------------------
  *
  * displayのみ適応(範囲は仮設定)
@@ -15,7 +62,39 @@
 --------------------------------------------------------------------------*/
 
 @media screen and (min-aspect-ratio: 1/1) { 
+	.section {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 30vh;
+	}
+	
+	.section-2 {
+		width: 70%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 40vh;
+	}
 
+	.co-black_dis {
+		color: #333;
+	}
+	
+	.co-white_dis {
+		color: #fafafa;
+	}
+	
+	.co-brown_dis {
+		color: #e7b06c;
+	}
+	
+	.co-pink_dis {
+		color: #ff4d91;
+	}
+	
+	.co-grey_dis {
+		color: #9b9b9b;
+	}
 }
 
 /*--------------------------------------------------------------------------
@@ -26,5 +105,37 @@
 --------------------------------------------------------------------------*/
 
 @media screen and (max-aspect-ratio: 1/1) {
+	.section {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 25vh;
+	}
+	
+	.section-2 {
+		width: 70%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 40vh;
+	}
 
+	.co-black_mob {
+		color: #333;
+	}
+	
+	.co-white_mob {
+		color: #fafafa;
+	}
+	
+	.co-brown_mob {
+		color: #e7b06c;
+	}
+	
+	.co-pink_mob {
+		color: #ff4d91;
+	}
+	
+	.co-grey_mob {
+		color: #9b9b9b;
+	}
 }

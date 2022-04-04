@@ -85,50 +85,6 @@ a {
 	line-height: 120%;
 }
 
-body {
-	font-family: Kosugi Maru, sans-serif;
-}
-
-/* ジャギー防止コード 試験導入 */
-p {
-	transform: rotate(0.03deg);         /* シャギーを防ぐ指定 */
-}
-
-.font-E1 {
-	font-family: 'Varela Round', sans-serif;
-}
-
-.font-E2 {
-	font-family: Libre Baskerville, serif;
-}
-
-.font-E3 {
-	font-family: 'Allura', cursive;
-}
-
-.font-J1 {
-	font-family: Kosugi Maru, sans-serif;
-}
-
-.co-black {
-	color: #333;
-}
-
-.co-white {
-	color: #fafafa;
-}
-
-.co-brown {
-	color: #e7b06c;
-}
-
-.co-pink {
-	color: #ff4d91;
-}
-
-.co-grey {
-	color: #9b9b9b;
-}
 
 .vertical-text {
 	writing-mode: vertical-rl;
@@ -180,20 +136,6 @@ p {
  *
  *
 --------------------------------------------------------------------------*/
-
-.section {
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 30vh;
-}
-
-.section-2 {
-	width: 70%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 40vh;
-}
 
 .width100 {
 	width: 100%;
@@ -339,10 +281,6 @@ p {
 
 .d-block {
 	display: block;
-}
-
-.text-center {
-	text-align: center;
 }
 
 .m-top-1rem {
