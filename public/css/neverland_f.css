@@ -169,6 +169,22 @@ html::-webkit-scrollbar {
 	.lh-120_dis {
 		line-height: 120%;
 	}
+
+
+
+
+
+
+
+
+
+	.article-container {
+		width: 80%;
+		padding: 8vh 6vw;
+		margin: 5vh auto;
+		background-color: #fafafa;
+		box-shadow: 0 0 0.5vw #ddd;
+	}
 }
 
 /*--------------------------------------------------------------------------
@@ -233,5 +249,16 @@ html::-webkit-scrollbar {
 	
 	.lh-120_mob {
 		line-height: 120%;
+	}
+
+
+
+
+	.article-container {
+		width: 90%;
+		padding: 3vh 5vw;
+		margin: 3vh auto;
+		background-color: #fafafa;
+		box-shadow: 0 0 0.5vw #ddd;
 	}
 }
