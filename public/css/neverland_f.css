@@ -54,6 +54,30 @@ body {
 
 
 
+
+
+.fs-1_2rem {
+	font-size: 1.2rem;
+}
+
+.fs-2_5rem {
+	font-size: 2.5rem;
+}
+
+.fs-0_8rem {
+	font-size: 0.8rem;
+}
+
+.lh-110 {
+	line-height: 110%;
+}
+
+.lh-120 {
+	line-height: 120%;
+}
+
+
+
 /*--------------------------------------------------------------------------
  *
  * displayのみ適応(範囲は仮設定)
@@ -94,6 +118,29 @@ body {
 	
 	.co-grey_dis {
 		color: #9b9b9b;
+	}
+
+
+
+
+	.fs-1_2rem_dis {
+		font-size: 1.2rem;
+	}
+	
+	.fs-2_5rem_dis {
+		font-size: 2.5rem;
+	}
+	
+	.fs-0_8rem_dis {
+		font-size: 0.8rem;
+	}
+	
+	.lh-110_dis {
+		line-height: 110%;
+	}
+	
+	.lh-120_dis {
+		line-height: 120%;
 	}
 }
 
@@ -137,5 +184,27 @@ body {
 	
 	.co-grey_mob {
 		color: #9b9b9b;
+	}
+
+
+
+	.fs-1_2rem_mob {
+		font-size: 1.2rem;
+	}
+	
+	.fs-2_5rem_mob {
+		font-size: 2.5rem;
+	}
+	
+	.fs-0_8rem_mob {
+		font-size: 0.8rem;
+	}
+	
+	.lh-110_mob {
+		line-height: 110%;
+	}
+	
+	.lh-120_mob {
+		line-height: 120%;
 	}
 }

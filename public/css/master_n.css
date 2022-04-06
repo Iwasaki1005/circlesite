@@ -1,5 +1,5 @@
 
-/* 最終更新 04.04 */
+/* 最終更新 04.06 */
 
 /*--------------------------------------------------------------------------
  *
@@ -10,6 +10,10 @@
 
 .d-flex {
 	display: flex;
+}
+
+.d-flex_important {
+	display: flex!important;
 }
 
 .f-direction-row {
@@ -153,6 +157,12 @@
 	justify-content: space-around;
 }
 
+.f-ali-cen-jus-around {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .d-none {
 	display: none;
 }
@@ -262,6 +272,11 @@
 .m-tb-2rem {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+}
+
+.m-rl-auto {
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .m-all0 {
@@ -722,6 +737,10 @@
 	display: flex;
 }
 
+.d-flex_important_dis {
+	display: flex!important;
+}
+
 .f-direction-row_dis {
 	display: flex;
 	flex-direction: row;
@@ -863,6 +882,12 @@
 	justify-content: space-around;
 }
 
+.f-ali-cen-jus-around_dis {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .d-none_dis {
 	display: none;
 }
@@ -971,6 +996,11 @@
 .m-tb-2rem_dis {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+}
+
+.m-rl-auto_dis {
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .m-all0_dis {
@@ -1421,6 +1451,10 @@
 	display: flex;
 }
 
+.d-flex_important_mob {
+	display: flex!important;
+}
+
 .f-direction-row_mob {
 	display: flex;
 	flex-direction: row;
@@ -1562,6 +1596,12 @@
 	justify-content: space-around;
 }
 
+.f-ali-cen-jus-around_mob {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .d-none_mob {
 	display: none;
 }
@@ -1671,6 +1711,11 @@
 .m-tb-2rem_mob {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+}
+
+.m-rl-auto_mob {
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .m-all0_mob {
