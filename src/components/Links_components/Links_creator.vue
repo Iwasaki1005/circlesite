@@ -1,25 +1,23 @@
 <template>
-	<div>
-		<div class="container1">
-			<div v-for="(column,index) in creators" :key="column.title" class="card1">
-				<div class="content1">
-					<div class="imgBx1"><img v-bind:src="creators[index].iconsrc"></div>
-					<div class="contentBx1">
-						<h3 class="co-white co-white_mobile f-weight-normal f-weight-normal_mobile">{{ creators[index].name }}<br><span class="font-E3">{{ creators[index].title }}</span></h3>
-					</div>
+	<div class="links-creator-container">
+		<div v-for="(column,index) in creators" :key="column.title" class="links-creator-card1">
+			<div class="links-creator-content">
+				<div class="links-creator-imgbx1"><img v-bind:src="creators[index].iconsrc"></div>
+				<div class="links-creator-contentbx1">
+					<h3 class="co-white f-weight-normal">{{ creators[index].name }}<br><span class="font-E3">{{ creators[index].title }}</span></h3>
 				</div>
-				<ul class="sci1">
-					<li v-if="creators[index].activelink.includes('hp')" style="--i:1">
-						<a class="co-white co-white_mobile fs-1_2rem fs-1_2rem_mobile" v-bind:href="creators[index].hpsrc"><i class="fas fa-home"></i></a>
-					</li>
-					<li v-if="creators[index].activelink.includes('twitter')" style="--i:2">
-						<a class="co-white co-white_mobile fs-1_2rem fs-1_2rem_mobile" v-bind:href="creators[index].twittersrc"><i class="fab fa-twitter-square"></i></a>
-					</li>
-					<li v-if="creators[index].activelink.includes('github')" style="--i:3">
-						<a class="co-white co-white_mobile fs-1_2rem fs-1_2rem_mobile" v-bind:href="creators[index].githubsrc"><i class="fab fa-github-square"></i></a>
-					</li>
-				</ul>
 			</div>
+			<ul class="links-creator-sci1">
+				<li v-if="creators[index].activelink.includes('hp')" style="--i:1">
+					<a class="co-white fs-1_2rem" v-bind:href="creators[index].hpsrc"><i class="fas fa-home"></i></a>
+				</li>
+				<li v-if="creators[index].activelink.includes('twitter')" style="--i:2">
+					<a class="co-white fs-1_2rem" v-bind:href="creators[index].twittersrc"><i class="fab fa-twitter-square"></i></a>
+				</li>
+				<li v-if="creators[index].activelink.includes('github')" style="--i:3">
+					<a class="co-white fs-1_2rem" v-bind:href="creators[index].githubsrc"><i class="fab fa-github-square"></i></a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </template>
@@ -43,7 +41,7 @@ export default {
 
 <style scoped>
 @media screen and (min-aspect-ratio: 1/1) {
-.container1 {
+.links-creator-container {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -52,7 +50,7 @@ export default {
 	margin: 2.8vw 0;
 }
 
-.container1 .card1 {
+.links-creator-container .links-creator-card1 {
 	position: relative;
 	width: 20vw;
 	height: 28vw;
@@ -66,7 +64,7 @@ export default {
 	backdrop-filter: blue(0.7vw);
 }
 
-.container1 .card1 .content1 {
+.links-creator-container .links-creator-card1 .links-creator-content {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -76,12 +74,12 @@ export default {
 	transition: 0.5s;
 }
 
-.container1 .card1:hover .content1 {
+.links-creator-container .links-creator-card1:hover .links-creator-content {
 	opacity: 1;
 	transform: translateY(-1.4vw);
 }
 
-.container1 .card1 .content1 .imgBx1 {
+.links-creator-container .links-creator-card1 .links-creator-content .links-creator-imgbx1 {
 	position: relative;
 	width: 10vw;
 	height: 10vw;
@@ -89,7 +87,7 @@ export default {
 	overflow: hidden;
 }
 
-.container1 .card1 .content1 .imgBx1 img {
+.links-creator-container .links-creator-card1 .links-creator-content .links-creator-imgbx1 img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -98,23 +96,23 @@ export default {
 	object-fit: cover;
 }
 
-.container1 .card1 .content1 .contentBx1 h3 {
+.links-creator-container .links-creator-card1 .links-creator-content .links-creator-contentbx1 h3 {
 	text-transform: uppercase;
 	text-align: center;
 	margin: 1.4vw 0 0.7vw;
 }
 
-.container1 .card1 .content1 .contentBx1 h3 span {
+.links-creator-container .links-creator-card1 .links-creator-content .links-creator-contentbx1 h3 span {
 	text-transform: initial;
 }
 
-.container1 .card1 .sci1 {
+.links-creator-container .links-creator-card1 .links-creator-sci1 {
 	position: absolute;
 	bottom: 3.5vw;
 	display: flex;
 }
 
-.container1 .card1 .sci1 li {
+.links-creator-container .links-creator-card1 .links-creator-sci1 li {
 	list-style: none;
 	margin: 0 0.7vw;
 	transform: translateY(1.4vw);
@@ -122,14 +120,14 @@ export default {
 	transition-delay: calc(0.1s * var(--i));
 }
 
-.container1 .card1:hover .sci1 li {
+.links-creator-container .links-creator-card1:hover .links-creator-sci1 li {
 	transform: translateY(0px);
 	opacity: 1;
 }
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
-.container1 {
+.links-creator-container {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -138,7 +136,7 @@ export default {
 	margin: 2.8vw 0;
 }
 
-.container1 .card1 {
+.links-creator-container .links-creator-card1 {
 	position: relative;
 	width: 35vw;
 	height: 50vw;
@@ -152,7 +150,7 @@ export default {
 	backdrop-filter: blue(0.7vw);
 }
 
-.container1 .card1 .content1 {
+.links-creator-container .links-creator-card1 .links-creator-content {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -162,12 +160,12 @@ export default {
 	transition: 0.5s;
 }
 
-.container1 .card1:hover .content1 {
+.links-creator-container .links-creator-card1:hover .links-creator-content {
 	opacity: 1;
 	transform: translateY(-1.4vw);
 }
 
-.container1 .card1 .content1 .imgBx1 {
+.links-creator-container .links-creator-card1 .links-creator-content .links-creator-imgbx1 {
 	position: relative;
 	width: 15vw;
 	height: 15vw;
@@ -175,7 +173,7 @@ export default {
 	overflow: hidden;
 }
 
-.container1 .card1 .content1 .imgBx1 img {
+.links-creator-container .links-creator-card1 .links-creator-content .links-creator-imgbx1 img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -184,23 +182,23 @@ export default {
 	object-fit: cover;
 }
 
-.container1 .card1 .content1 .contentBx1 h3 {
+.links-creator-container .links-creator-card1 .links-creator-content .links-creator-contentbx1 h3 {
 	text-transform: uppercase;
 	text-align: center;
 	margin: 1.4vw 0 0.7vw;
 }
 
-.container1 .card1 .content1 .contentBx1 h3 span {
+.links-creator-container .links-creator-card1 .links-creator-content .links-creator-contentbx1 h3 span {
 	text-transform: initial;
 }
 
-.container1 .card1 .sci1 {
+.links-creator-container .links-creator-card1 .links-creator-sci1 {
 	position: absolute;
 	bottom: 3.5vw;
 	display: flex;
 }
 
-.container1 .card1 .sci1 li {
+.links-creator-container .links-creator-card1 .links-creator-sci1 li {
 	list-style: none;
 	margin: 0 0.7vw;
 	transform: translateY(1.4vw);
@@ -208,7 +206,7 @@ export default {
 	transition-delay: calc(0.1s * var(--i));
 }
 
-.container1 .card1:hover .sci1 li {
+.links-creator-container .links-creator-card1:hover .links-creator-sci1 li {
 	transform: translateY(0px);
 	opacity: 1;
 }

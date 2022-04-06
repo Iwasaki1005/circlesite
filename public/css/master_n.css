@@ -744,11 +744,11 @@
 	text-align: center;
 }
 
-.wei-normal {
+.f-weight-normal {
 	font-weight: normal;
 }
 
-.wei-bold {
+.f-weight-bold {
 	font-weight: bold;
 }
 
@@ -1488,11 +1488,11 @@
 	text-align: center;
 }
 
-.wei-normal_dis {
+.f-weight-normal_dis {
 	font-weight: normal;
 }
 
-.wei-bold_dis {
+.f-weight-bold_dis {
 	font-weight: bold;
 }
 
@@ -2249,11 +2249,11 @@
 	text-align: center;
 }
 
-.wei-normal_mob {
+.f-weight-normal_mob {
 	font-weight: normal;
 }
 
-.wei-bold_mob {
+.f-weight-bold_mob {
 	font-weight: bold;
 }
 
