@@ -57,9 +57,3 @@ export default {
 	},
 }
 </script>
-
-<style>
-.bg-none {
-	background-color: transparent;
-}
-</style>

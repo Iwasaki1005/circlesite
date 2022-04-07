@@ -1,11 +1,11 @@
 <template>
-	<router-link to="/">
-		<div class="content-core content-core_mobile m-top-2rem m-top-2rem_mobile sa sa--up">
+	<div class="f-ali-jus-center m-top-2rem sa sa--up">
+		<router-link to="/">
 			<div class="bt-typeA bt-typeA-border d-block center">
 				<span class="bt-typeA-border-inner font-E1">Back To Home ></span>
 			</div>
-		</div>
-	</router-link>
+		</router-link>
+	</div>
 </template>
 
 <script>

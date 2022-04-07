@@ -16,7 +16,7 @@
 						<div class="nw-column m-bottom-2rem">
 							<div class="align-center">
 								<p class="fs-0_8rem m-right-05rem co-black">2022.※未定</p>
-								<div class="newstag-info co-white font-E1">info</div>
+								<div class="tag-info co-white font-E1">info</div>
 							</div>
 							<p class="co-black">新サークル「ねばーランドF」活動開始しました。</p>
 						</div>

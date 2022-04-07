@@ -77,7 +77,9 @@ body {
 }
 
 
-
+.bg-none {
+	background-color: transparent;
+}
 
 
 /*--------------------------------------------------------------------------
@@ -185,6 +187,91 @@ html::-webkit-scrollbar {
 		background-color: #fafafa;
 		box-shadow: 0 0 0.5vw #ddd;
 	}
+
+
+
+
+
+	.tag-dmy {
+		background-color: red;
+		color: #fafafa;
+		text-align: center;
+		width: 2.6rem;
+		height: 1.2rem;
+		margin: 0.1rem;
+		border-radius: 10%;
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+		font-family: 'Varela Round', sans-serif;
+	}
+	
+	.tag-dmy-small {
+		background-color: red;
+		color: #fafafa;
+		text-align: center;
+		width: 2rem;
+		height: 1rem;
+		margin: 0.1rem;
+		border-radius: 10%;
+		font-size: 0.6rem;
+		line-height: 1rem;
+		font-family: 'Varela Round', sans-serif;
+	}
+	
+	.tag-info {
+		background-color: #ff4d91;
+		color: #fafafa;
+		text-align: center;
+		width: 2.6rem;
+		margin: 0.1rem;
+		border-radius: 10%;
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+		font-family: 'Varela Round', sans-serif;
+	}
+	
+	.tag-info-small {
+		background-color: #ff4d91;
+		color: #fafafa;
+		text-align: center;
+		width: 2rem;
+		height: 1rem;
+		margin: 0.1rem;
+		border-radius: 10%;
+		font-size: 0.6rem;
+		line-height: 1rem;
+		font-family: 'Varela Round', sans-serif;
+	}
+	
+	.tag-3 {
+		background-color: #AA96DA;
+		text-align: center;
+		width: 100%;
+		margin: 15% auto;
+		border-radius: 10%;
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+	}
+	
+	.tag-4 {
+		background-color: #A8D8EA;
+		text-align: center;
+		width: 100%;
+		margin: 15% auto;
+		border-radius: 10%;
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+	}
+	
+	.tag-5 {
+		background-color: #FFFFD2;
+		text-align: center;
+		width: 100%;
+		margin: 15% auto;
+		border-radius: 10%;
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+	}
 }
 
 /*--------------------------------------------------------------------------
@@ -260,5 +347,91 @@ html::-webkit-scrollbar {
 		margin: 3vh auto;
 		background-color: #fafafa;
 		box-shadow: 0 0 0.5vw #ddd;
+	}
+
+
+
+
+
+
+	.tag-dmy {
+		background-color: red;
+		color: #fafafa;
+		text-align: center;
+		width: 2.6rem;
+		height: 1.2rem;
+		margin: 0.1rem;
+		border-radius: 10%;
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+		font-family: 'Varela Round', sans-serif;
+	}
+	
+	.tag-info {
+		background-color: #ff4d91;
+		color: #fafafa;
+		text-align: center;
+		width: 2.6rem;
+		margin: 0.1rem;
+		border-radius: 10%;
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+		font-family: 'Varela Round', sans-serif;
+	}
+	
+	.tag-dmy-small {
+		background-color: red;
+		color: #fafafa;
+		text-align: center;
+		width: 2.4rem;
+		height: 1rem;
+		margin: 0.1rem;
+		border-radius: 10%;
+		font-size: 0.6rem;
+		line-height: 1rem;
+		font-family: 'Varela Round', sans-serif;
+	}
+	
+	.tag-info-small {
+		background-color: #ff4d91;
+		color: #fafafa;
+		text-align: center;
+		width: 2.4rem;
+		height: 1rem;
+		margin: 0.1rem;
+		border-radius: 10%;
+		font-size: 0.6rem;
+		line-height: 1rem;
+		font-family: 'Varela Round', sans-serif;
+	}
+	
+	.tag-3 {
+		background-color: #AA96DA;
+		text-align: center;
+		width: 100%;
+		margin: 15% auto;
+		border-radius: 10%;
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+	}
+	
+	.tag-4 {
+		background-color: #A8D8EA;
+		text-align: center;
+		width: 100%;
+		margin: 15% auto;
+		border-radius: 10%;
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+	}
+	
+	.tag-5 {
+		background-color: #FFFFD2;
+		text-align: center;
+		width: 100%;
+		margin: 15% auto;
+		border-radius: 10%;
+		font-size: 0.8rem;
+		line-height: 1.2rem;
 	}
 }

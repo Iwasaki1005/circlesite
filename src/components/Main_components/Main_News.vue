@@ -11,9 +11,9 @@
 							<p>{{news[0].title}}</p>
 						</div>
 						<div class="news-window-info-tag">
-							<div v-if="news[0].tag.includes('dmy')" class="newstag-dmy co-white co-white_mobile font-E1 tr-duration-05s">dmy</div>
-							<div v-if="news[0].tag.includes('info')" class="newstag-info co-white co-white_mobile font-E1 tr-duration-05s">info</div>
-							<div v-if="news[0].tag.includes('game')" class="newstag-info co-white co-white_mobile font-E1 tr-duration-05s">game</div>
+							<div v-if="news[0].tag.includes('dmy')" class="tag-dmy co-white co-white_mobile font-E1 tr-duration-05s">dmy</div>
+							<div v-if="news[0].tag.includes('info')" class="tag-info co-white co-white_mobile font-E1 tr-duration-05s">info</div>
+							<div v-if="news[0].tag.includes('game')" class="tag-info co-white co-white_mobile font-E1 tr-duration-05s">game</div>
 						</div>
 					</div>
 					<div v-bind:class="news[0].mainthum" class="news-window-img-container overflow-hidden content-core tr-duration-05s"></div>
@@ -26,9 +26,9 @@
 								<div class="display-flex display-flex_mobile">
 									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[1].date}}</p>
 									<div class="align-center align-center_mobile">
-										<div v-if="news[1].tag.includes('dmy')" class="newstag-dmy-small">dmy</div>
-										<div v-if="news[1].tag.includes('info')" class="newstag-info-small">info</div>
-										<div v-if="news[1].tag.includes('game')" class="newstag-info-small">game</div>
+										<div v-if="news[1].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
+										<div v-if="news[1].tag.includes('info')" class="tag-info-small">info</div>
+										<div v-if="news[1].tag.includes('game')" class="tag-info-small">game</div>
 									</div>
 								</div>
 								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[1].title}}</p>
@@ -40,9 +40,9 @@
 								<div class="display-flex display-flex_mobile">
 									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[2].date}}</p>
 									<div class="align-center align-center_mobile">
-										<div v-if="news[2].tag.includes('dmy')" class="newstag-dmy-small">dmy</div>
-										<div v-if="news[2].tag.includes('info')" class="newstag-info-small">info</div>
-										<div v-if="news[2].tag.includes('game')" class="newstag-info-small">game</div>
+										<div v-if="news[2].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
+										<div v-if="news[2].tag.includes('info')" class="tag-info-small">info</div>
+										<div v-if="news[2].tag.includes('game')" class="tag-info-small">game</div>
 									</div>
 								</div>
 								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[2].title}}</p>
@@ -54,9 +54,9 @@
 								<div class="display-flex display-flex_mobile">
 									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[3].date}}</p>
 									<div class="align-center align-center_mobile">
-										<div v-if="news[3].tag.includes('dmy')" class="newstag-dmy-small">dmy</div>
-										<div v-if="news[3].tag.includes('info')" class="newstag-info-small">info</div>
-										<div v-if="news[3].tag.includes('game')" class="newstag-info-small">game</div>
+										<div v-if="news[3].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
+										<div v-if="news[3].tag.includes('info')" class="tag-info-small">info</div>
+										<div v-if="news[3].tag.includes('game')" class="tag-info-small">game</div>
 									</div>
 								</div>
 								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[3].title}}</p>
@@ -68,9 +68,9 @@
 								<div class="display-flex display-flex_mobile">
 									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[4].date}}</p>
 									<div class="align-center align-center_mobile">
-										<div v-if="news[4].tag.includes('dmy')" class="newstag-dmy-small">dmy</div>
-										<div v-if="news[4].tag.includes('info')" class="newstag-info-small">info</div>
-										<div v-if="news[4].tag.includes('game')" class="newstag-info-small">game</div>
+										<div v-if="news[4].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
+										<div v-if="news[4].tag.includes('info')" class="tag-info-small">info</div>
+										<div v-if="news[4].tag.includes('game')" class="tag-info-small">game</div>
 									</div>
 								</div>
 								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[4].title}}</p>

@@ -13,12 +13,12 @@
 			<v-tabs-items v-model="tab">
 				<v-tab-item>
 					<router-link to="/news/20210202dmy">
-						<div class="nw-column m-bottom-2rem">
-							<div class="align-center align-center_mobile">
-								<p class="fs-0_8rem fs-0_8rem_mobile m-right-05rem m-right-05rem_mobile co-black co-black_mobile">2022.※未定</p>
-								<div class="newstag-info font-E1">info</div>
+						<div class="news-column m-bottom-2rem_dis">
+							<div class="f-ali-items-center">
+								<p class="fs-0_8rem m-right-05rem co-black">2022.※未定</p>
+								<div class="tag-info font-E1">info</div>
 							</div>
-							<p class="co-black co-black_mobile">新サークル「ねばーランドF」活動開始しました。</p>
+							<p class="co-black">新サークル「ねばーランドF」活動開始しました。</p>
 						</div>
 					</router-link>
 				</v-tab-item>
@@ -62,14 +62,10 @@ export default {
 </script>
 
 <style>
-.nw-column {
+.news-column {
 	padding: 1rem 2rem;
 	border-radius: 0.2vw;
 	margin: 2rem 0.5rem;
 	box-shadow: 0.04vw 0.04vw 0.4vw 0.01vw #e7b06c;
-}
-
-.bg-none {
-	background-color: transparent;
 }
 </style>
