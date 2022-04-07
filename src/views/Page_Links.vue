@@ -12,9 +12,10 @@
 					</v-tab>
 				</v-tabs>
 				<v-tabs-items v-model="tab">
-					<v-tab-item>
+					<!-- サークル様の紹介機能は一旦非表示に -->
+					<!-- <v-tab-item>
 						<LinksCircle />
-					</v-tab-item>
+					</v-tab-item> -->
 					<v-tab-item>
 						<LinksCreator :creators="creators" />
 					</v-tab-item>
@@ -30,7 +31,7 @@
 import VerticalLine from '../components/VerticalLine.vue'
 import BackToHome from '../components/BackToHome.vue'
 import LinksCreator from '../components/Links_components/Links_creator.vue'
-import LinksCircle from '../components/Links_components/Links_circle.vue'
+// import LinksCircle from '../components/Links_components/Links_circle.vue'
 import Footer from '../components/Footer.vue'
 
 export default {
@@ -39,7 +40,7 @@ export default {
 		VerticalLine,
 		BackToHome,
 		LinksCreator,
-		LinksCircle,
+		// LinksCircle,
 		Footer,
 	},
 	mounted: function() {

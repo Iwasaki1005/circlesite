@@ -12,7 +12,6 @@ import Page_Shop from './views/Page_Shop.vue'
 import Page_Links from './views/Page_Links.vue'
 import Page_Works from './views/Page_Works.vue'
 import News_Maincontents from './components/News_components/News_Maincontents.vue'
-import News_20200101dmy from './components/News_components/News_20200101dmy.vue'
 import News_20210202dmy from './components/News_components/News_20210202dmy.vue'
 import Page_404 from './views/Page_404.vue'
 import Page_Debugfloor from './views/Page_Debugfloor.vue'
@@ -98,12 +97,6 @@ export default new Router({
 					component: News_Maincontents,
 					name: 'news',
 					meta: { title: 'News', desc: 'ディスクリプションを記述' },
-				},
-				{
-					path: '/news/20200101dmy',
-					component: News_20200101dmy,
-					name: '20200101dmy',
-					meta: { title: '2020年(仮)のテストニュースです。', desc: '2020年(仮)のテストニュースです。' }
 				},
 				{
 					path: '/news/20210202dmy',
