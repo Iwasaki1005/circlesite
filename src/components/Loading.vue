@@ -8,9 +8,8 @@
 import ProgressBar from 'progressbar.js'
 
 export default {
-  name: 'Loading',
-  mounted: function() {
-
+	name: 'Loading',
+	mounted: function() {
 		// progressbar.js@1.0.0 version is used
 		// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
 
@@ -52,7 +51,25 @@ export default {
 				loading.style.display = "none"; 
 			}, 1000);
 		});
-
-  },
+	},
 }
 </script>
+
+<style>
+#Pr_line {
+	width: 100vw;
+	height: 0.2vw;
+	position: fixed;
+	top: 49vh;
+	z-index: 900;
+}
+
+#Loading {
+	background-color: #fafafa;
+	width: calc(100vw - calc(100vw - 100%));
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	z-index: 800;
+}
+</style>
