@@ -1,85 +1,86 @@
 <template>
 	<v-lazy v-model="isActive" :options="{ threshold: 1}" min-height="100" transition="fade-transition" >
 		<section id="News" class="section">
-			<h2 id="news-index" class="font-E3 text-center scroll-fadein index-anime"><span id="news-span" class="">News</span></h2>
+			<h2 id="news-index" class="font-E3 text-center scroll-fadein index-anime"><span>News</span></h2>
 			<VerticalLine />
-			<div class="display-flex sa sa--up">
-				<router-link class="display-flex hover-flash news-window-container" v-bind:to="news[0].link">
-					<div class="news-window-info">
-						<div class="news-window-info-text co-white co-white_mobile">
+			<div class="d-flex_dis sa sa--up">
+				<router-link class="hover-flash main-news-window-container" v-bind:to="news[0].link">
+					<div class="main-news-window-info">
+						<div class="main-news-window-info-text co-white">
 							<p>{{news[0].date}}</p>
 							<p>{{news[0].title}}</p>
 						</div>
-						<div class="news-window-info-tag">
-							<div v-if="news[0].tag.includes('dmy')" class="tag-dmy co-white co-white_mobile font-E1 tr-duration-05s">dmy</div>
-							<div v-if="news[0].tag.includes('info')" class="tag-info co-white co-white_mobile font-E1 tr-duration-05s">info</div>
-							<div v-if="news[0].tag.includes('game')" class="tag-info co-white co-white_mobile font-E1 tr-duration-05s">game</div>
+						<div class="main-news-window-info-tag">
+							<div v-if="news[0].tag.includes('dmy')" class="tag-dmy co-white tr-duration-05s">dmy</div>
+							<div v-if="news[0].tag.includes('info')" class="tag-info co-white tr-duration-05s">info</div>
+							<div v-if="news[0].tag.includes('game')" class="tag-info co-white tr-duration-05s">game</div>
 						</div>
 					</div>
-					<div v-bind:class="news[0].mainthum" class="news-window-img-container overflow-hidden content-core tr-duration-05s"></div>
+					<div v-bind:class="news[0].mainthum" class="main-news-window-img-container overflow-hidden content-core tr-duration-05s"></div>
 				</router-link>
-				<div class="column-center column-center_mobile m-top-1rem_mobile">
-					<h3 class="co-brown co-brown_mobile f-weight-normal f-weight-normal_mobile">-最新情報-</h3>
-					<div class="m-top-1rem m-top-1rem_mobile">
-						<router-link class="m-bottom-05rem m-bottom-05rem_mobile" v-bind:to="news[1].link">
-							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile p-rl-1rem p-rl-1rem_mobile">
-								<div class="display-flex display-flex_mobile">
-									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[1].date}}</p>
-									<div class="align-center align-center_mobile">
+				<div class="f-ali-jus-center-dir-column m-top-1rem_mob">
+					<h3 class="co-brown f-weight-normal">-最新情報-</h3>
+					<div class="m-top-1rem">
+						<router-link class="m-bottom-05rem" v-bind:to="news[1].link">
+							<div class="m-bottom-05rem m-top-05rem p-rl-1rem">
+								<div class="d-flex">
+									<p class="fs-0_8rem co-black">{{news[1].date}}</p>
+									<div class="f-ali-items-center">
 										<div v-if="news[1].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
 										<div v-if="news[1].tag.includes('info')" class="tag-info-small">info</div>
 										<div v-if="news[1].tag.includes('game')" class="tag-info-small">game</div>
 									</div>
 								</div>
-								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[1].title}}</p>
+								<p class="fs-0_8rem co-black">{{news[1].title}}</p>
 							</div>
 						</router-link>
-						<div class="m-news-line"></div>
-						<router-link class="m-bottom-05rem m-bottom-05rem_mobile" v-bind:to="news[2].link">
-							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile p-rl-1rem p-rl-1rem_mobile">
-								<div class="display-flex display-flex_mobile">
-									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[2].date}}</p>
-									<div class="align-center align-center_mobile">
+							<!-- ここまでりふぁ -->
+						<div class="main-news-line"></div>
+						<router-link class="m-bottom-05rem" v-bind:to="news[2].link">
+							<div class="m-bottom-05rem m-top-05rem p-rl-1rem">
+								<div class="d-flex">
+									<p class="fs-0_8rem co-black">{{news[2].date}}</p>
+									<div class="f-ali-items-center">
 										<div v-if="news[2].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
 										<div v-if="news[2].tag.includes('info')" class="tag-info-small">info</div>
 										<div v-if="news[2].tag.includes('game')" class="tag-info-small">game</div>
 									</div>
 								</div>
-								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[2].title}}</p>
+								<p class="fs-0_8rem co-black">{{news[2].title}}</p>
 							</div>
 						</router-link>
-						<div class="m-news-line"></div>
-						<router-link class="m-bottom-05rem m-bottom-05rem_mobile" v-bind:to="news[3].link">
-							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile p-rl-1rem p-rl-1rem_mobile">
-								<div class="display-flex display-flex_mobile">
-									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[3].date}}</p>
-									<div class="align-center align-center_mobile">
+						<div class="main-news-line"></div>
+						<router-link class="m-bottom-05rem" v-bind:to="news[3].link">
+							<div class="m-bottom-05rem m-top-05rem p-rl-1rem">
+								<div class="d-flex">
+									<p class="fs-0_8rem co-black">{{news[3].date}}</p>
+									<div class="f-ali-items-center">
 										<div v-if="news[3].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
 										<div v-if="news[3].tag.includes('info')" class="tag-info-small">info</div>
 										<div v-if="news[3].tag.includes('game')" class="tag-info-small">game</div>
 									</div>
 								</div>
-								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[3].title}}</p>
+								<p class="fs-0_8rem co-black">{{news[3].title}}</p>
 							</div>
 						</router-link>
-						<div class="m-news-line"></div>
-						<router-link class="m-bottom-05rem m-bottom-05rem_mobile" v-bind:to="news[4].link">
-							<div class="m-bottom-05rem m-bottom-05rem_mobile m-top-05rem m-top-05rem_mobile p-rl-1rem p-rl-1rem_mobile">
-								<div class="display-flex display-flex_mobile">
-									<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[4].date}}</p>
-									<div class="align-center align-center_mobile">
+						<div class="main-news-line"></div>
+						<router-link class="m-bottom-05rem" v-bind:to="news[4].link">
+							<div class="m-bottom-05rem m-top-05rem p-rl-1rem">
+								<div class="d-flex">
+									<p class="fs-0_8rem co-black">{{news[4].date}}</p>
+									<div class="f-ali-items-center">
 										<div v-if="news[4].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
 										<div v-if="news[4].tag.includes('info')" class="tag-info-small">info</div>
 										<div v-if="news[4].tag.includes('game')" class="tag-info-small">game</div>
 									</div>
 								</div>
-								<p class="fs-0_8rem fs-0_8rem_mobile co-black_mobile co-black">{{news[4].title}}</p>
+								<p class="fs-0_8rem co-black">{{news[4].title}}</p>
 							</div>
 						</router-link>
 					</div>
 				</div>
 			</div>
-			<div class="content-core content-core_mobile m-top-2rem  m-top-2rem_mobile sa sa--up">
+			<div class="f-ali-jus-center m-top-2rem sa sa--up">
 				<a href="#" class="bt-typeA bt-typeA-border d-block center">
 					<span class="bt-typeA-border-inner font-E1">View more ></span>
 				</a>
@@ -184,5 +185,93 @@ export default {
 .sthum-4 {
 	background-image: url(../../uploads/news/dmynews_4.png);
 	background-position: center;
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+	.main-news-window-container {
+		width: 55%;
+		height: 30vw;
+		display: grid;
+		grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+		grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+	}
+
+	.main-news-window-img-container {
+		grid-row: 2 / 16;
+		grid-column: 1 / 18;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		border: 2px solid #e7b06c;
+		object-fit: contain;
+	}
+
+	.main-news-window-info {
+		background-color: #e7b06c;
+		grid-row: 5 / 21;
+		grid-column: 2 / 20;
+		display: grid;
+		grid-template-columns: 2.5% 87% 9% 1.5% ;
+		grid-template-rows: 2.5% 69% 26% 2.5%;
+	}
+
+	.main-news-window-info-text {
+		grid-column: 2 / 4;
+		grid-row: 3 / 4;
+	}
+
+	.main-news-window-info-tag {
+		grid-column: 3 / 4;
+		grid-row: 2 / 3;
+	}
+
+	.main-news-line {
+		margin: 0.5rem 0;
+		border-bottom: 0.1vw solid #e7b06c;
+	}
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+	.main-news-window-container {
+		width: 100%;
+		height: 60vw;
+		display: grid;
+		grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+		grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+	}
+
+	.main-news-window-img-container {
+		grid-row: 2 / 16;
+		grid-column: 1 / 17;
+		width: 100%;
+		height: 95%;
+		overflow: hidden;
+		border: 2px solid #e7b06c;
+		object-fit: contain;
+	}
+
+	.main-news-window-info {
+		background-color: #e7b06c;
+		grid-row: 5 / 21;
+		grid-column: 2 / 20;
+		display: grid;
+		grid-template-columns: 2.5% 83% 9% 1.5% ;
+		grid-template-rows: 2.5% 64% 31% 2.5%;
+	}
+
+	.main-news-window-info-text {
+		grid-column: 2 / 4;
+		grid-row: 3 / 4;
+	}
+
+	.main-news-window-info-tag {
+		grid-column: 3 / 4;
+		grid-row: 2 / 3;
+	}
+
+	.main-news-line {
+		margin: 0.5rem 0;
+		border-bottom: 0.1vw solid #e7b06c;
+	}
 }
 </style>
