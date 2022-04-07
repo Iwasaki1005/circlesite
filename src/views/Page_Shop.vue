@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<section id="About" class="section">
+		<section id="Shop" class="section">
 			<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 			<h2 class="font-E3 text-center"><span>Shop</span></h2>
 			<VerticalLine />
@@ -181,11 +181,6 @@ export default {
 	color: #fafafa;
 }
 }
-
-
-
-
-
 
 @media screen and (max-aspect-ratio: 1/1) {
 .container {
