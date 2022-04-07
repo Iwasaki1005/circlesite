@@ -3,7 +3,9 @@
 
 
 
-
+.theme--light.v-timeline .v-timeline-item__dot {
+	z-index: 1;
+}
 
 
 
