@@ -1,18 +1,18 @@
 <template>
-	<nav id="Gl-menu" class="gl-menu">
-		<div class="gl-under content-core content-core_mobile">
-			<div id="hamburger-button" class="gl-burger">
-				<span id="gl-burger-span1" class="gl-span1"></span>
-				<span id="gl-burger-span2" class="gl-span2"></span>
-				<span id="gl-burger-span3" class="gl-span3"></span>
+	<nav id="Globalmenu" class="globalmenu">
+		<div class="globalmenu-tb">
+			<div id="hamburger-button" class="globalmenu-burger">
+				<span id="globalmenu-burger-span1" class="globalmenu-burger-span1"></span>
+				<span id="globalmenu-burger-span2" class="globalmenu-burger-span2"></span>
+				<span id="globalmenu-burger-span3" class="globalmenu-burger-span3"></span>
 			</div>
 		</div>
-		<div class="gl-index content-core content-core_mobile">
-			<div class="side-vertical font-E2"><span class="m-bottom-05rem">NEVER</span><span class="m-bottom-1rem">RAND.F</span>OFFICIAL SITE</div>
+		<div class="globalmenu-index">
+			<div class="globalmenu-vertical font-E2"><span class="m-bottom-05rem">NEVER</span><span class="m-bottom-1rem">RAND.F</span>OFFICIAL SITE</div>
 		</div>
-		<div class="gl-under content-core content-core_mobile">
-			<ShareNetwork network="Twitter" url="https://news.vuejs.org/issues/180" title="title(仮)" hashtags="vuejs,vite">
-				<div class="tw-round content-core  content-core_mobile">
+		<div class="globalmenu-tb">
+			<ShareNetwork network="Twitter" url="https://news.vuejs.org/issues/180" title="ねばーランド.F" hashtags="ねばーランド.F">
+				<div class="tw-round f-ali-jus-center">
 					<i class="fab fa-twitter"></i>
 				</div>
 			</ShareNetwork>
@@ -32,9 +32,9 @@ export default {
 	const drcontent3 = document.getElementById('dr-content3');
 	const drcontent4 = document.getElementById('dr-content4');
 
-	const glspan1 = document.getElementById('gl-burger-span1');
-	const glspan2 = document.getElementById('gl-burger-span2');
-	const glspan3 = document.getElementById('gl-burger-span3');
+	const glspan1 = document.getElementById('globalmenu-burger-span1');
+	const glspan2 = document.getElementById('globalmenu-burger-span2');
+	const glspan3 = document.getElementById('globalmenu-burger-span3');
 
 	function DrOpen () {
 		//1.位置を少し下にずらす//
@@ -56,9 +56,9 @@ export default {
 			//3.透明度と位置の設定のクラスを削除しメニューが開かれる//
 			dropen.classList.add('switch-dr');
 			drmenu.classList.remove('dr-hidden');
-			glspan1.classList.add('gl-span1-active');
-			glspan2.classList.add('gl-span2-active');
-			glspan3.classList.add('gl-span3-active');
+			glspan1.classList.add('globalmenu-burger-span1-active');
+			glspan2.classList.add('globalmenu-burger-span2-active');
+			glspan3.classList.add('globalmenu-burger-span3-active');
 			drcontent1.classList.remove('dr-saup');
 			drcontent2.classList.remove('dr-saup');
 			drcontent3.classList.remove('dr-saup');
@@ -79,9 +79,9 @@ export default {
 			//2.フェードアウト//
 			dropen.classList.remove('switch-dr');
 			drmenu.classList.add('dr-hidden');
-			glspan1.classList.remove('gl-span1-active');
-			glspan2.classList.remove('gl-span2-active');
-			glspan3.classList.remove('gl-span3-active');
+			glspan1.classList.remove('globalmenu-burger-span1-active');
+			glspan2.classList.remove('globalmenu-burger-span2-active');
+			glspan3.classList.remove('globalmenu-burger-span3-active');
 			drcontent1.classList.add('opacity-0');
 			drcontent2.classList.add('opacity-0');
 			drcontent3.classList.add('opacity-0');
@@ -123,3 +123,190 @@ export default {
 	},
 }
 </script>
+
+<style>
+.globalmenu-index {
+	height: 60vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.globalmenu-tb {
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.globalmenu-vertical {
+	writing-mode: vertical-rl;
+	color: #e7b06c;
+	font-size: 0.8rem;
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+	.globalmenu {
+		height: 100vh;
+		width: 5vw;
+		position: fixed;
+		top: 0;
+		right: 2vw;
+	}
+
+	.globalmenu-burger {
+		display : block;
+		position: fixed;
+		right : 2.8vw;
+		top   : 4vw;
+		width : 3.5vw;
+		height: 3.5vw;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	.globalmenu-burger span {
+		display : block;
+		position: absolute;
+		width   : 2.8vw;
+		height  : 0.15vw;
+		left    : 0.4vw;
+		background : #e7b06c;
+		transition: 0.5s ease-in-out;
+	}
+
+	.globalmenu-burger-span1 {
+		top: 0.71vw;
+	}
+
+	.globalmenu-burger-span2 {
+		top: 1.41vw;
+	}
+
+	.globalmenu-burger-span3 {
+		top: 2.14vw;
+	}
+
+	.globalmenu-burger-span1-active {
+		top : 1.14vw;
+		left: 0.42vw;
+		transform: rotate(315deg);
+	}
+
+	.globalmenu-burger-span2-active,
+	.globalmenu-burger-span3-active {
+		top: 1.14vw;
+		transform: rotate(-315deg);
+	}
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+	.globalmenu {
+		height: 100vh;
+		width: 5vw;
+		position: fixed;
+		top: 0;
+		right: 5vw;
+	}
+
+	.globalmenu-burger {
+		display : block;
+		position: fixed;
+		right : 2.8vw;
+		top   : 4vw;
+		width : 10.5vw;
+		height: 10.5vw;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	.globalmenu-burger span {
+		display : block;
+		position: absolute;
+		width   : 8.4vw;
+		height  : 0.45vw;
+		left    : 0.4vw;
+		background : #e7b06c;
+		transition: 0.5s ease-in-out;
+	}
+
+	.globalmenu-burger-span1 {
+		top: 2.5vw;
+	}
+
+	.globalmenu-burger-span2 {
+		top: 5.25vw;
+	}
+
+	.globalmenu-burger-span3 {
+		top: 8vw;
+	}
+
+	.globalmenu-burger-span1-active {
+		top : 5vw;
+		left: 0.42vw;
+		transform: rotate(315deg);
+	}
+
+	.globalmenu-burger-span2-active,
+	.globalmenu-burger-span3-active {
+		top: 5vw;
+		transform: rotate(-315deg);
+	}
+}
+</style>
+
+<style scoped>
+	@media screen and (min-aspect-ratio: 1/1) {
+	.fa-twitter {
+		font-size: 1rem;
+		color: white;
+		transition: 0.4s;
+	}
+
+	.tw-round {
+		width: 1.8rem;
+		height: 1.8rem;
+		background-color: #e7b06c;
+		border-radius: 50%;
+		transition: 0.4s;
+	}
+
+	.tw-round:hover {
+		width: 0.1rem;
+		height: 0.1rem;
+	}
+
+	.tw-round:hover .fa-twitter{
+		color: #00acee;
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+	.fa-twitter {
+		font-size: 1.5rem;
+		color: white;
+		transition: 0.4s;
+	}
+
+	.tw-round {
+		width: 2.7rem;
+		height: 2.7rem;
+		background-color: #e7b06c;
+		border-radius: 50%;
+		transition: 0.4s;
+	}
+
+	.tw-round:hover {
+		width: 0.1rem;
+		height: 0.1rem;
+	}
+
+	.tw-round:hover .fa-twitter{
+		color: #00acee;
+		font-size: 3rem;
+	}
+}
+</style>
