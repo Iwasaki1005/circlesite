@@ -447,4 +447,80 @@ export default {
 	background-color: #BEDAE5;
 }
 
+
+
+@media screen and (min-aspect-ratio: 1/1) {
+.game-slideshow {
+	width: 500%;
+	height: 33vw;
+	overflow: hidden;
+	position: relative;
+}
+
+.game-slide {
+	width: 60vw;
+	height: 30vw;
+	position: absolute;
+}
+
+.slide-position1 {
+	left: 0vw;
+}
+
+.slide-position2 {
+	left: 70vw;
+}
+
+.slide-position3 {
+	left: 140vw;
+}
+
+.slide-position0 {
+	left: -65vw;
+}
+
+.slide-arrow {
+	font-size: 1.8rem;
+	color: #e7b06c;
+	margin: 0px 0.2em;
+}
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+.game-slideshow {
+	width: 500%;
+	height: 33vw;
+	overflow: hidden;
+	position: relative;
+}
+
+.game-slide {
+	width: 60vw;
+	height: 30vw;
+	position: absolute;
+}
+
+.slide-position1 {
+	left: 0vw;
+}
+
+.slide-position2 {
+	left: 70vw;
+}
+
+.slide-position3 {
+	left: 140vw;
+}
+
+.slide-position0 {
+	left: -65vw;
+}
+
+.slide-arrow {
+	font-size: 1.8rem;
+	color: #e7b06c;
+	margin: 0px 0.2em;
+}
+}
+
 </style>
