@@ -38,10 +38,10 @@ export default {
 
 	function DrOpen () {
 		//1.位置を少し下にずらす//
-		drcontent1.classList.add('dr-saup');
-		drcontent2.classList.add('dr-saup');
-		drcontent3.classList.add('dr-saup');
-		drcontent4.classList.add('dr-saup');
+		drcontent1.classList.add('drawermenu-saup');
+		drcontent2.classList.add('drawermenu-saup');
+		drcontent3.classList.add('drawermenu-saup');
+		drcontent4.classList.add('drawermenu-saup');
 		//2.時間差、アニメーション時間を設定//
 		drcontent1.classList.add('tr-delay-01s');
 		drcontent2.classList.add('tr-delay-02s');
@@ -55,14 +55,14 @@ export default {
 		setTimeout(function(){
 			//3.透明度と位置の設定のクラスを削除しメニューが開かれる//
 			dropen.classList.add('switch-dr');
-			drmenu.classList.remove('dr-hidden');
+			drmenu.classList.remove('drawermenu-hide');
 			glspan1.classList.add('globalmenu-burger-span1-active');
 			glspan2.classList.add('globalmenu-burger-span2-active');
 			glspan3.classList.add('globalmenu-burger-span3-active');
-			drcontent1.classList.remove('dr-saup');
-			drcontent2.classList.remove('dr-saup');
-			drcontent3.classList.remove('dr-saup');
-			drcontent4.classList.remove('dr-saup');
+			drcontent1.classList.remove('drawermenu-saup');
+			drcontent2.classList.remove('drawermenu-saup');
+			drcontent3.classList.remove('drawermenu-saup');
+			drcontent4.classList.remove('drawermenu-saup');
 			drcontent1.classList.remove('opacity-0');
 			drcontent2.classList.remove('opacity-0');
 			drcontent3.classList.remove('opacity-0');
@@ -78,7 +78,7 @@ export default {
 			drcontent4.classList.remove('tr-delay-04s');
 			//2.フェードアウト//
 			dropen.classList.remove('switch-dr');
-			drmenu.classList.add('dr-hidden');
+			drmenu.classList.add('drawermenu-hide');
 			glspan1.classList.remove('globalmenu-burger-span1-active');
 			glspan2.classList.remove('globalmenu-burger-span2-active');
 			glspan3.classList.remove('globalmenu-burger-span3-active');
