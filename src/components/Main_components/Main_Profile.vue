@@ -3,21 +3,6 @@
 		<section id="Profile-main" class="section">
 			<h2 class="font-E3 text-center scroll-fadein index-anime"><span>profile</span></h2>
 			<VerticalLine />
-			<!-- 没部分 -->
-			<!-- <div class="pm-flame center sa sa--up">
-				<div class="pm-buttons display-flex m-left-05rem">
-					<img class="pm-bt" src="../../assets/img/icon_mail.svg">
-					<img class="pm-bt" src="../../assets/img/icon_twitter.svg">
-					<img class="pm-bt" src="../../assets/img/icon_pixiv.svg">
-				</div>
-				<div class="pm-name">
-					<p class="lh-120 fs-1_2rem co-white">教和出操舵</p>
-					<p class="lh-120 fs-0_8rem m-left-1rem co-white">└ GACHA-CYUDOKUSYA:KYOUWA DESOUDA</p>
-				</div>
-				<div id="twitter-color" class="p-twitter-box pm-tw">
-					<a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="light" data-chrome=”noheader,transparent,nofooter,noborders,noscrollbar” href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
-				</div>
-			</div> -->
 			<div class="width100 width100_mobile space-around space-around_mobile sa sa--up">
 				<div class="card">
 					<div class="sides left-side"></div>
@@ -48,6 +33,25 @@
 		</section>
 	</v-lazy>
 </template>
+
+<script>
+import VerticalLine from '../VerticalLine.vue'
+
+export default {
+  name: 'MainProfile',
+  components: {
+		VerticalLine,
+  },
+  data: () => ({
+      isActive: false,
+  }),
+  updated: function () {
+		this.indexanime()
+		this.scrollanime_js()
+		this.tweet()
+  },
+}
+</script>
 
 <style scoped>
 @media screen and (min-aspect-ratio: 1/1) { 
@@ -206,22 +210,3 @@
 }
 }
 </style>
-
-<script>
-import VerticalLine from '../VerticalLine.vue'
-
-export default {
-  name: 'MainProfile',
-  components: {
-		VerticalLine,
-  },
-  data: () => ({
-      isActive: false,
-  }),
-  updated: function () {
-		this.indexanime()
-		this.scrollanime_js()
-		this.tweet()
-  },
-}
-</script>

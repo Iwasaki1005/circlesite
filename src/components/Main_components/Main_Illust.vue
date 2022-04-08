@@ -6,41 +6,42 @@
 		<section id="Illust" class="section-2 sa">
 			<h2 class="font-E3 text-center scroll-fadein index-anime"><span>Illust</span></h2>
 			<VerticalLine />
-			<div class="display-flex display-flex_mobile">
-				<div class="width95 width95_mobile">
-					<div class="space-around space-around_mobile sa sa--up">
-						<div class="il-1 flex-lower-right hover-flash" @click="screenopen(1)" v-bind:class="list[1].thumclass" v-show="list[1].active" v-bind:data-sa_delay="index * 1000">
-							<img class="bt-il-open m-bottom-05rem m-right-05rem" src="../../assets/img/bt-open.svg">
+			<div class="d-flex">
+				<div class="width-95p">
+					<div class="f-jus-space-around sa sa--up">
+						<div class="il-1 f-jus-end f-ali-items-end hover-flash" @click="screenopen(1)" v-bind:class="list[1].thumclass" v-show="list[1].active" v-bind:data-sa_delay="index * 1000">
+							<img class="main-illust-bt" src="../../assets/img/bt-open.svg">
 						</div>
-						<div class="space-around-column space-around-column_mobile">
-							<div class="il-2 flex-lower-right hover-flash">
-								<img class="bt-il-open-sm m-bottom-05rem m-right-05rem" src="../../assets/img/bt-open.svg">
+						<div class="f-jus-space-around f-direction-column">
+							<div class="il-2 f-jus-end f-ali-items-end hover-flash">
+								<img class="main-illust-bt-sm " src="../../assets/img/bt-open.svg">
 							</div>
-							<div class="il-3 flex-lower-right hover-flash">
-								<img class="bt-il-open-sm m-bottom-05rem m-right-05rem" src="../../assets/img/bt-open.svg">
+							<div class="il-3 f-jus-end f-ali-items-end hover-flash">
+								<img class="main-illust-bt-sm" src="../../assets/img/bt-open.svg">
 							</div>
 						</div>
 					</div>
-					<div class="space-around space-around_mobile m-top-2rem m-top-1rem_mobile sa sa--up">
-						<div class="space-around-column space-around-column_mobile">
-							<div class="il-2 flex-lower-right hover-flash">
-								<img class="bt-il-open-sm m-bottom-05rem m-right-05rem" src="../../assets/img/bt-open.svg">
+					<!-- ここまでりふぁ -->
+					<div class="f-jus-space-around m-top-2rem_dis m-top-1rem_mob sa sa--up">
+						<div class="f-jus-space-around f-direction-column">
+							<div class="il-2 f-jus-end f-ali-items-end hover-flash">
+								<img class="main-illust-bt-sm" src="../../assets/img/bt-open.svg">
 							</div>
-							<div class="il-3 flex-lower-right hover-flash">
-								<img class="bt-il-open-sm m-bottom-05rem m-right-05rem" src="../../assets/img/bt-open.svg">
+							<div class="il-3 f-jus-end f-ali-items-end hover-flash">
+								<img class="main-illust-bt-sm" src="../../assets/img/bt-open.svg">
 							</div>
 						</div>
-						<div class="il-1 flex-lower-right hover-flash">
-							<img class="bt-il-open m-bottom-05rem m-right-05rem" src="../../assets/img/bt-open.svg">
+						<div class="il-1 f-jus-end f-ali-items-end hover-flash">
+							<img class="main-illust-bt" src="../../assets/img/bt-open.svg">
 						</div>
 					</div>
 				</div>
-				<div class="width5 width5_mobile sa sa--up">
-					<p class="font-E3 vertical-text">Illust <span class="v-line v-line_mobile display-only">────────────────────────────────────────</span><span class="v-line v-line_mobile mobile-only">──────────────────────</span></p>
+				<div class="width-5p sa sa--up">
+					<p class="font-E3 vertical-text">Illust <span class="v-line dis-only">────────────────────────────────────────</span><span class="v-line v-line_mobile mobile-only">──────────────────────</span></p>
 				</div>
 			</div>
-			<div class="content-core content-core_mobile m-top-2rem  m-top-2rem_mobile sa sa--up">
-				<a href="#" class="bt-typeA bt-typeA-border d-block center">
+			<div class="f-ali-jus-center m-top-2rem sa sa--up">
+				<a href="#" class="bt-typeA bt-typeA-border d-block m-rl-auto">
 					<span class="bt-typeA-border-inner font-E1">View more ></span>
 				</a>
 			</div>
@@ -135,3 +136,79 @@ export default {
   },
 }
 </script>
+
+<style>
+@media screen and (min-aspect-ratio: 1/1) {
+	.il-1 {
+		width: 41.6vw;
+		height: 23.4vw;
+		border: 0.2vw solid #e7b06c;
+		background-image: url(https://img.sirabee.com/wp-content/uploads/2020/07/sirabee20200710airgun-400x266.jpg);
+	}
+
+	.il-2 {
+		width: 19.2vw;
+		height: 10.8vw;
+		border: 0.2vw solid #e7b06c;
+		background-image: url(https://3.bp.blogspot.com/-joXYE8YRH-w/VwIjIGpt9-I/AAAAAAAA5fM/jHtT9Wiwdtgas3DI6gSgxnb19CLZ4_gAw/s400/internet_offline_offkai.png);
+	}
+
+	.il-3 {
+		width: 19.2vw;
+		height: 10.8vw;
+		border: 0.2vw solid #e7b06c;
+		background-image: url(https://fpiccdn.com/25567_5/w500/h0/mratio/ejpg/?478f69fd8b836304b948ca0c8678ea90);
+	}
+
+	.main-illust-bt {
+		height: 2vw;
+		width: 7.4vw;
+		margin-right: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.main-illust-bt-sm {
+		height: 1.5vw;
+		width: 5.55vw;
+		margin-right: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+	.il-1 {
+		width: 41.6vw;
+		height: 23.4vw;
+		border: 0.2vw solid #e7b06c;
+		background-image: url(https://img.sirabee.com/wp-content/uploads/2020/07/sirabee20200710airgun-400x266.jpg);
+	}
+
+	.il-2 {
+		width: 19.2vw;
+		height: 10.8vw;
+		border: 0.2vw solid #e7b06c;
+		background-image: url(https://3.bp.blogspot.com/-joXYE8YRH-w/VwIjIGpt9-I/AAAAAAAA5fM/jHtT9Wiwdtgas3DI6gSgxnb19CLZ4_gAw/s400/internet_offline_offkai.png);
+	}
+
+	.il-3 {
+		width: 19.2vw;
+		height: 10.8vw;
+		border: 0.2vw solid #e7b06c;
+		background-image: url(https://fpiccdn.com/25567_5/w500/h0/mratio/ejpg/?478f69fd8b836304b948ca0c8678ea90);
+	}
+
+	.main-illust-bt {
+		height: 2vw;
+		width: 7.4vw;
+		margin-right: 0.2rem;
+		margin-bottom: 0.2rem;
+	}
+
+	.main-illust-bt-sm {
+		height: 1.5vw;
+		width: 5.55vw;
+		margin-right: 0.2rem;
+		margin-bottom: 0.2rem;
+	}
+}
+</style>

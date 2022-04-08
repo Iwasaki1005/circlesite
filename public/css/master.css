@@ -72,10 +72,7 @@ a {
 	font-size: 2rem;
 }
 
-.v-line {
-	font-size: 0.5rem;
-	margin-left: 2rem;
-}
+
 
 
 /*--------------------------------------------------------------------------
@@ -97,7 +94,7 @@ a {
 	z-index: 20;
 }
 
-.gl-menu {
+.globalmenu {
 	z-index: 30;
 }
 
