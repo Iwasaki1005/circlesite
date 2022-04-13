@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<section id="About" class="section">
+		<section id="Game" class="section">
 			<v-breadcrumbs :items="breadcrumbs" divider=">"></v-breadcrumbs>
 			<h2 class="font-E3 text-center"><span>Game</span></h2>
 			<VerticalLine />
@@ -83,10 +83,11 @@ export default {
 </script>
 
 <style>
-.img-scale-hover{
+.game-img-scale-hover{
  transition:1s all;
 }
-.img-scale-hover:hover{
+
+.game-img-scale-hover:hover{
   transform:scale(1.2,1.2);
   transition:1s all;
 }
