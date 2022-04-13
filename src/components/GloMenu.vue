@@ -25,7 +25,7 @@ export default {
    name: 'Glmenu',
    mounted: function() {
 	const dropen = document.getElementById('hamburger-button');
-	const drmenu = document.getElementById('Drawer-menu');
+	const drmenu = document.getElementById('Drawermenu');
 
 	const drcontent1 = document.getElementById('dr-content1');
 	const drcontent2 = document.getElementById('dr-content2');
