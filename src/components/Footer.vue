@@ -1,9 +1,7 @@
 <template>
 	<footer class="footer">
 		<div class="f-ali-cen-jus-around_dis f-direction-column_mob">
-			<router-link to="/">
-				<img class="footer-logo" src="../assets//logo/neverlandf_logo1.png">
-			</router-link>
+			<img  @click="logoscroll()" class="footer-logo" src="../assets//logo/neverlandf_logo1.png">
 			<!-- Display用 -->
 			<div class="f-jus-space-around width-60p fs-1_2rem dis-only">
 				<router-link to="/">
@@ -100,6 +98,16 @@
 <script>
 export default {
 	name: 'Footer',
+	methods: {
+		logoscroll: function () {
+			console.log(this.$route.path)
+			if (this.$route.path === '/') {
+				window.scroll({top: 0, behavior: 'smooth'});
+			} else {
+				this.$router.push('/')
+			}
+		},
+	}
 }
 </script>
 
