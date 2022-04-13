@@ -139,6 +139,10 @@ html::-webkit-scrollbar {
 	margin-left: 2rem;
 }
 
+html.scrollbar {
+	overflow-y: hidden;
+  }
+
 
 
 

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<ul id="DrawerMenu" class="drawermenu drawermenu-hide">
+		<ul id="Drawermenu" class="drawermenu drawermenu-hide">
 			<router-link to="/">
 				<img class="drawermenu-logo m-rl-auto closeevent" src="../assets//logo/neverlandf_logo1.png" alt=”ねばーランドFロゴ”>
 			</router-link>
