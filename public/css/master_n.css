@@ -420,6 +420,11 @@
 	padding-bottom: 2rem;
 }
 
+.p-tb-4rem {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
 .p-rl-1rem {
 	padding-right: 1rem;
 	padding-left: 1rem;
@@ -1195,6 +1200,11 @@
 	padding-bottom: 2rem;
 }
 
+.p-tb-4rem_dis {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
 .p-rl-1rem_dis {
 	padding-right: 1rem;
 	padding-left: 1rem;
@@ -1958,6 +1968,11 @@
 .p-tb-2rem_mob {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+}
+
+.p-tb-4rem_mob {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
 .p-rl-1rem_mob {

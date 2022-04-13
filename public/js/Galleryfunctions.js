@@ -1,7 +1,7 @@
 export default {
 	methods: {
 		illustselect: function (column) {
-			const screen = document.getElementById('screen');
+			const screen = document.getElementById('gallery-gallerymodal-screen');
 			/* データに差分いらすとのクラスを入れる */
 			this.difil = (column.differenceses);
 			/* データに差分いらすとのsrcを入れる */
@@ -14,7 +14,7 @@ export default {
 			/* 画像のsrcを書き換え */
 			screen.setAttribute('src', column.src);
 			/* リストスクロール */
-			var illustlist = document.getElementById('illust-list')
+			var illustlist = document.getElementById('gallery-gallerymodal-illist')
 			var element = document.getElementById(column.thumclass);
 			var rect = element.getBoundingClientRect();
 			var eletop = rect.top;
@@ -27,36 +27,36 @@ export default {
 			});
 			/* 選択中のframeのクラスを追加*/
 				/* 関係のないものからクラス削除 */
-				var removeselect = document.getElementsByClassName('illust-list-icon')
+				var removeselect = document.getElementsByClassName('gallery-gallerymodal-illist-icon')
 				Array.prototype.forEach.call(removeselect, function (element) {
-					element.classList.remove("illust-list-icon-select");
+					element.classList.remove("gallery-gallerymodal-illist-icon-select");
 				});
 				/* 該当のやつにクラス追加 */
-				element.classList.add('illust-list-icon-select')
+				element.classList.add('gallery-gallerymodal-illist-icon-select')
 			/* ここまで */
 			// htmlからスクロールバーを隠す
 			document.querySelectorAll("html, body").forEach(elm => elm.classList.add("scrollbar"));
 		},
 		differenceselect : function (index,column) {
-			const screen = document.getElementById('screen');
+			const screen = document.getElementById('gallery-gallerymodal-screen');
 			/* 画像のsrcを書き換え */
 			screen.setAttribute('src', this.difilsrc[index]);
 			/* 選択中のframeのクラスを追加*/
 				/* 関係のないものからクラス削除 */
-				var removeselect = document.getElementsByClassName('illust-list-icon')
+				var removeselect = document.getElementsByClassName('gallery-gallerymodal-illist-icon')
 				Array.prototype.forEach.call(removeselect, function (element) {
-					element.classList.remove("illust-list-icon-select");
+					element.classList.remove("gallery-gallerymodal-illist-icon-select");
 				});
 				/* 該当のやつにクラス追加 */
 				var defeleadd = document.getElementById(column);
-				defeleadd.classList.add('illust-list-icon-select')
+				defeleadd.classList.add('gallery-gallerymodal-illist-icon-select')
 			/* ここまで */
 			// htmlからスクロールバーを隠す
 			document.querySelectorAll("html, body").forEach(elm => elm.classList.add("scrollbar"));
 		},
 		screenopen: function (index) {
 			this.modalscreen = true;
-			const screen = document.getElementById('screen');
+			const screen = document.getElementById('gallery-gallerymodal-screen');
 			this.difil = (this.list[index].differenceses);
 			/* データに差分いらすとのsrcを入れる */
 			this.difilsrc = (this.list[index].difsrc);
@@ -69,7 +69,7 @@ export default {
 			screen.setAttribute('src', this.list[index].src);
 			/* リストスクロール */
 			setTimeout(() => {
-				var illustlist = document.getElementById('illust-list')
+				var illustlist = document.getElementById('gallery-gallerymodal-illist')
 				var element = document.getElementById(this.list[index].thumclass);
 				var rect = element.getBoundingClientRect();
 				var eletop = rect.top;
@@ -86,12 +86,12 @@ export default {
 			var element = document.getElementById(this.list[index].thumclass);
 			/* 選択中のframeのクラスを追加*/
 				/* 関係のないものからクラス削除 */
-				var removeselect = document.getElementsByClassName('illust-list-icon')
+				var removeselect = document.getElementsByClassName('gallery-gallerymodal-illist-icon')
 				Array.prototype.forEach.call(removeselect, function (element) {
-					element.classList.remove("illust-list-icon-select");
+					element.classList.remove("gallery-gallerymodal-illist-icon-select");
 				});
 				/* 該当のやつにクラス追加 */
-				element.classList.add('illust-list-icon-select')
+				element.classList.add('gallery-gallerymodal-illist-icon-select')
 			/* ここまで */
 
 			// htmlからスクロールバーを隠す

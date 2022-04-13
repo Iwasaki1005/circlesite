@@ -1,19 +1,19 @@
 <template>
 	<div>
-		<button class="bt-typeA bt-typeA-border d-block center center_mobile m-bottom-2rem m-bottom-2rem_mobile sa sa--up" v-on:click="pdfdlopen">
+		<button class="bt-typeA bt-typeA-border d-block m-rl-auto m-bottom-2rem sa sa--up" v-on:click="pdfdlopen">
 			<span class="bt-typeA-border-inner font-E1">PDF Download</span>
 		</button>
 		<modal name="pdfdownload">
-			<div class="column-center column-center_mobile p-tb-1rem p-tb-4rem_mobile p-rl-2rem_mobile">
-				<h3 class="co-brown co-brown_mobile f-weight-normal f-weight-normal_mobile m-bottom-1rem m-bottom-1rem_mobile">PDF Download</h3>
-				<p class="m-bottom-2rem m-bottom-2rem_mobile">
+			<div class="f-ali-jus-center-dir-column p-tb-1rem_dis p-tb-4rem_mob p-rl-2rem_mob">
+				<h3 class="co-brown f-weight-normal m-bottom-1rem">PDF Download</h3>
+				<p class="m-bottom-2rem_dis">
 					本ページで公開されているイラストの全てをダウンロードして閲覧することができます。<br>
 					ダウンロードしたファイルは個人、閉鎖的な場での閲覧のみ可能です。<br>
 					SNSへの投稿、素材としての利用、グッズ化などのその他一切の商用利用は禁止です。
 				</p>
 				<div>
-					<p class="m-bottom-1rem m-bottom-1rem_mobile">上記の内容に同意します。</p>
-					<div class="space-around space-around_mobile">
+					<p class="m-bottom-1rem">上記の内容に同意します。</p>
+					<div class="f-jus-space-around">
 						<label v-on:click='pdfdlactive'>
 							<input type="radio" name="yesNo" v-model="agree" value="yes">
 							<span class="check"></span>
@@ -26,12 +26,13 @@
 						</label>
 					</div>
 				</div>
-				<div class="content-core content-core_mobile m-top-1rem m-top-1rem_mobile">
-					<div id="pdf_dlbt" class="bt-typeA bt-typeA-border d-block center tr-duration-05s isdisable_grey">
+				<!-- ここまでりふぁ -->
+				<div class="f-ali-jus-center m-top-1rem">
+					<div id="pdf_dlbt" class="bt-typeA bt-typeA-border d-block m-rl-auto tr-duration-05s isdisable_grey">
 						<span class="bt-typeA-border-inner font-E1">Download</span>
 					</div>
 				</div>
-				<img class="m-top-1rem m-top-1rem_mobile close-bt" v-on:click="pdfdlclose" src="../../assets/img/bt-close.svg">
+				<img class="m-top-1rem gallery-pdfdownload-closebt" v-on:click="pdfdlclose" src="../../assets/img/bt-close.svg">
 			</div>
 		</modal>
 	</div>
@@ -137,6 +138,7 @@ export default {
 		transform: rotate(-45deg) translate(0.5vw,0.5vw);
 	}
 }
+
 @media screen and (max-aspect-ratio: 1/1) {
 	label {
 		position: relative;
@@ -217,8 +219,8 @@ export default {
 </style>
 
 <style>
-	@media screen and (min-aspect-ratio: 1/1) { 
-		.vm--modal {
+@media screen and (min-aspect-ratio: 1/1) { 
+	.vm--modal {
 		top: 20vh!important;
 		left: 15vw!important;
 		width: 70vw!important;
@@ -227,14 +229,14 @@ export default {
 		background-color: #fafafa!important;
 	}
 
-	.close-bt {
+	.gallery-pdfdownload-closebt {
 		width: 5rem;
 		cursor: pointer;
 	}
-	}
+}
 
-	@media screen and (max-aspect-ratio: 1/1) {
-.vm--modal {
+@media screen and (max-aspect-ratio: 1/1) {
+	.vm--modal {
 		top: 15vh!important;
 		left: 7.5vw!important;
 		width: 85vw!important;
@@ -243,8 +245,8 @@ export default {
 		background-color: #fafafa!important;
 	}
 
-	.close-bt {
+	.gallery-pdfdownload-closebt {
 		width: 7rem;
 	}
-	}
+}
 </style>

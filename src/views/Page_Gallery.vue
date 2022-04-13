@@ -142,8 +142,6 @@ export default {
 </script>
 
 <style>
-
-
 .bgil-1 {
 	background-image: url(../uploads/illustrations/イラスト1、男の子、女の子、複数人.png);
 	background-position: center;
@@ -199,11 +197,6 @@ export default {
 }
 
 .vfade-enter, .vfade-leave-to{
-    opacity: 0;
-}
-
-
-html.scrollbar {
-  overflow-y: hidden;
+	opacity: 0;
 }
 </style>
