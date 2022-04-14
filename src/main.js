@@ -6,8 +6,10 @@ import VModal from 'vue-js-modal'
 import VueSocialSharing from 'vue-social-sharing'
 import Globalfunctions from '../public/js/Globalfunctions.js'
 import Galleryfunctions from '../public/js/Galleryfunctions.js'
-
-import '../public/css/dmyimportcss.css' // CSSのmain.jsでの読み込み実験 成功
+import '../public/css/master.css'
+import '../public/css/neverland_f.css'
+import '../public/css/reset.min.css'
+import '../public/css/vuetify.css' 
 
 
 /* FonaAwesomeをインストール */
@@ -31,7 +33,6 @@ Vue.mixin(Globalfunctions)
 Vue.mixin(Galleryfunctions)
 
 new Vue({
-  /*css,*/
   vuetify,
   router,
   render: h => h(App),

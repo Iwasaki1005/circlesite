@@ -1,6 +1,6 @@
 <template>
 	<v-lazy v-model="isActive" :options="{ threshold: 1}" min-height="100" transition="fade-transition" >
-		<section id="Game" class="section sa sa--up">
+		<section id="Game" class="section sa sa--up d-none">
 			<h2 id="news-index" class="font-E3 text-center scroll-fadein index-anime"><span id="" class="">Game</span></h2>
 			<VerticalLine />
 			<div class=" sa sa--up">
