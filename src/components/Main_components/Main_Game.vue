@@ -5,10 +5,10 @@
 			<VerticalLine />
 			<div class=" sa sa--up">
 				<div class="display-flex">
-					<div class="width10">
+					<div class="width-10p">
 						<p class="font-E3 vertical-text center">Game <span class="v-line">────────────────────────────────────────</span></p>
 					</div>
-					<div class="width90">
+					<div class="width-90p">
 						<div class="game-slideshow display-flex">
 							<div id="game-slide1" class="game-slide slide-position1 overflow-hidden">
 								<img class="game-slide img-zoom" src="https://clip.narinari.com/wp-content/uploads/2020/10/100_wakrariKV-724x1024.jpg">
@@ -23,13 +23,13 @@
 					</div>
 				</div>
 				<div class="display-flex">
-					<div class="width10">
+					<div class="width-10p">
 						<div class="content-core">
 							<i id="slide-bt-back" class="fas fa-chevron-circle-left slide-arrow"></i>
 							<i id="slide-bt-next" class="fas fa-chevron-circle-right slide-arrow"></i>
 						</div>
 					</div>
-					<div class="width90">
+					<div class="width-90p">
 						<span>テキストテキストテキストテキストテキスト</span>
 					</div>
 				</div>

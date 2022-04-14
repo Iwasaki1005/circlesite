@@ -41,7 +41,7 @@
 						<span class="co-white_mob">News</span>
 					</router-link>
 					<router-link to="/gallery" class="width-30p_mob text-center">
-						<span class="co-white_mob width40_mobile">Gallery</span>
+						<span class="co-white_mob width-40p_mob">Gallery</span>
 					</router-link>
 				</div>
 				<div class="f-jus-space-around m-bottom-1rem_mob">
