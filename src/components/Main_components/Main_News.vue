@@ -16,7 +16,7 @@
 							<div v-if="news[0].tag.includes('game')" class="tag-info co-white tr-duration-05s">game</div>
 						</div>
 					</div>
-					<div v-bind:class="news[0].mainthum" class="main-news-window-img-container overflow-hidden content-core tr-duration-05s"></div>
+					<div v-bind:class="news[0].mainthum" class="main-news-window-img-container overflow-hidden f-ali-jus-center tr-duration-05s"></div>
 				</router-link>
 				<div class="f-ali-jus-center-dir-column m-top-1rem_mob">
 					<h3 class="co-brown f-weight-normal">-最新情報-</h3>

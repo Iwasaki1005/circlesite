@@ -1,13 +1,11 @@
-// module.exports = {
-// 	configureWebpack: {
-// 	  devServer: {
-// 		watchOptions: {
-// 		  poll: true
-// 		}
-// 	  }
-// 	}
-// }
-
 module.exports = {
-	publicPath: './'
+	publicPath: './',
+
+	configureWebpack: {
+	  devServer: {
+		watchOptions: {
+		  poll: true
+		}
+	  }
+	}
 }

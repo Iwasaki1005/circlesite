@@ -14,7 +14,7 @@
 				<v-tab-item>
 					<router-link to="/news/20210202dmy">
 						<div class="nw-column m-bottom-2rem">
-							<div class="align-center">
+							<div class="f-ali-items-center">
 								<p class="fs-0_8rem m-right-05rem co-black">2022.※未定</p>
 								<div class="tag-info co-white font-E1">info</div>
 							</div>

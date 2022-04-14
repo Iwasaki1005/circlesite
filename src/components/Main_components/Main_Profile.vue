@@ -11,7 +11,7 @@
 						<div class="main-profile-gradation width-5p"></div>
 						<div class="width-95p p-all-05rem f-ali-items-end">
 							<div>
-								<div class="display-flex_mobile m-bottom-05rem_mobile mob-only">
+								<div class="d-flex_mob m-bottom-05rem_mob mob-only">
 									<img class="main-profile-bt" src="../../assets/img/icon_mail.svg">
 									<img class="main-profile-bt m-left-05rem" src="../../assets/img/icon_twitter.svg">
 									<img class="main-profile-bt m-left-05rem" src="../../assets/img/icon_pixiv.svg">

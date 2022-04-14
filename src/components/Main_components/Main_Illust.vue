@@ -37,7 +37,7 @@
 					</div>
 				</div>
 				<div class="width-5p sa sa--up">
-					<p class="font-E3 vertical-text">Illust <span class="v-line dis-only">────────────────────────────────────────</span><span class="v-line v-line_mobile mobile-only">──────────────────────</span></p>
+					<p class="font-E3 vertical-text">Illust <span class="v-line dis-only">────────────────────────────────────────</span><span class="v-line v-line_mobile mob-only">──────────────────────</span></p>
 				</div>
 			</div>
 			<div class="f-ali-jus-center m-top-2rem sa sa--up">

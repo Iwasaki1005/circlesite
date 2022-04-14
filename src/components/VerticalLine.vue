@@ -1,5 +1,5 @@
 <template>
-	<div class="vertical-line center center_mobile sa sa--up"></div>
+	<div class="vertical-line m-rl-auto sa sa--up"></div>
 </template>
 
 <script>

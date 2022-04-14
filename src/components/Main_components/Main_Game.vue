@@ -1,15 +1,15 @@
 <template>
 	<v-lazy v-model="isActive" :options="{ threshold: 1}" min-height="100" transition="fade-transition" >
-		<section id="Game" class="section sa sa--up display-none display-none_mobile">
+		<section id="Game" class="section sa sa--up">
 			<h2 id="news-index" class="font-E3 text-center scroll-fadein index-anime"><span id="" class="">Game</span></h2>
 			<VerticalLine />
 			<div class=" sa sa--up">
-				<div class="display-flex">
+				<div class="d-flex">
 					<div class="width-10p">
 						<p class="font-E3 vertical-text center">Game <span class="v-line">────────────────────────────────────────</span></p>
 					</div>
 					<div class="width-90p">
-						<div class="game-slideshow display-flex">
+						<div class="game-slideshow d-flex">
 							<div id="game-slide1" class="game-slide slide-position1 overflow-hidden">
 								<img class="game-slide img-zoom" src="https://clip.narinari.com/wp-content/uploads/2020/10/100_wakrariKV-724x1024.jpg">
 							</div>
@@ -22,9 +22,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="display-flex">
+				<div class="d-flex">
 					<div class="width-10p">
-						<div class="content-core">
+						<div class="f-ali-jus-center">
 							<i id="slide-bt-back" class="fas fa-chevron-circle-left slide-arrow"></i>
 							<i id="slide-bt-next" class="fas fa-chevron-circle-right slide-arrow"></i>
 						</div>

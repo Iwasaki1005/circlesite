@@ -1,8 +1,8 @@
 <template>
-	<div class="column-center m-top-2rem column-center_mobile m-top-2rem_mobile">
-		<p class="co-brown co-brown_mobile">- Share This News -</p>
-		<div class="m-top-05rem m-top-05rem_mobile">
-			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="vuejs" data-hashtags="ハッシュタグ名" data-related="tkcpail34,vuejs" data-show-count="false"></a>
+	<div class="f-ali-jus-center-dir-column m-top-2rem">
+		<p class="co-brown">- Share This News -</p>
+		<div class="m-top-05rem">
+			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="news-share-twitterbt" data-via="vuejs" data-hashtags="ハッシュタグ名" data-related="tkcpail34,vuejs" data-show-count="false"></a>
 			<!-- <SvganimateTwitter /> -->
 		</div>
 	</div>
@@ -40,18 +40,11 @@ export default {
 </script>
 
 <style>
-.twitter-share-button {
+.news-share-twitterbt {
 	position: relative;
-	z-index: 10;
 }
 
-.tw-bt-posi-bt {
+.news-share-twitterbt-position {
 	position: absolute;
-	z-index: 8;
-}
-
-.btn {
-	height: 4vw!important;
-	width: 4vw!important;
 }
 </style>
