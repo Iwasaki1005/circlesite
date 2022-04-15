@@ -47,14 +47,14 @@
 			createTitleDesc : function(routeInstance){
 				// タイトルを設定
 				if(routeInstance.meta.title){
-					var setTitle = routeInstance.meta.title + ' | サイトタイトル';
+					var setTitle = routeInstance.meta.title + ' | ねばーランド.F';
 					document.title = setTitle;
 				} else {
 					document.title = 'title is not set'
 				}
 				// メタタグdescription設定
 				if(routeInstance.meta.desc){
-					var setDesc = routeInstance.meta.desc + ' | サイトタイトル';
+					var setDesc = routeInstance.meta.desc + ' | ねばーランド.F';
 					document.querySelector("meta[name='description']").setAttribute('content', setDesc)
 				} else {
 					document.querySelector("meta[name='description']").setAttribute('content', 'description is not set')
