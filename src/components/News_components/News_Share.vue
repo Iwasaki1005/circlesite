@@ -2,7 +2,7 @@
 	<div class="f-ali-jus-center-dir-column m-top-2rem">
 		<p class="co-brown">- Share This News -</p>
 		<div class="m-top-05rem">
-			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="news-share-twitterbt" data-via="vuejs" data-hashtags="ハッシュタグ名" data-related="tkcpail34,vuejs" data-show-count="false"></a>
+			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
 			<!-- <SvganimateTwitter /> -->
 		</div>
 	</div>
@@ -25,17 +25,6 @@ export default {
 			return path;
 		},
 	},
-	mounted: function () {
-		/*--------------------------------------------------------------------------
-		 *
-		 * tweet
-		 *
-		 *
-		--------------------------------------------------------------------------*/
-		let sharetweet = document.createElement('script')
-		sharetweet.setAttribute('src', 'https://platform.twitter.com/widgets.js')
-		document.head.appendChild(sharetweet)
-  },
 }
 </script>
 

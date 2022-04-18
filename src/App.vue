@@ -89,6 +89,9 @@
 				{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css' },
 				// { rel: 'icon', href: require('./path/to/icon-16.png'), sizes: '16x16', type: 'image/png' }, 
 			],
+			script: [
+				{ type: 'text/javascript', src: 'https://platform.twitter.com/widgets.js', async: true},
+			],
 		},
 	}
 </script>
