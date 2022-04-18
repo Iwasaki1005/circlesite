@@ -9,7 +9,6 @@ import Globalfunctions from '../public/js/Globalfunctions.js'
 import Galleryfunctions from '../public/js/Galleryfunctions.js'
 import '../public/css/master.css'
 import '../public/css/neverland_f.css'
-import '../public/css/reset.min.css'
 import '../public/css/vuetify.css' 
 
 
