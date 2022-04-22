@@ -80,9 +80,9 @@
 				{ property: 'og:type', content: 'website' },
 				{ property: 'og:url', content: 'http://neverland-f.com/' },
 				{ property: 'og:locale', content: 'ja_JP' },
-				// { property: 'og:image', content: 'https://example.com/img/og.png' },
-				// { name: 'twitter:card', content: 'summary_large_image' },
-				// { name: 'twitter:image', content: 'https://example.com/img/og.png' }
+				{ property: 'og:image', content: 'http://nlf.pinoko.jp/ogp_twitter/neverlandf_summary_large_1.png' },
+				{ name: 'twitter:card', content: 'summary_large_image' },
+				{ name: 'twitter:site', content: '@tkcpail34' }
 			],
 			link: [
 				{ rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css' },
@@ -90,7 +90,7 @@
 				// { rel: 'icon', href: require('./path/to/icon-16.png'), sizes: '16x16', type: 'image/png' }, 
 			],
 			script: [
-				{ type: 'text/javascript', src: 'https://platform.twitter.com/widgets.js', async: true},
+				{ type: 'text/javascript', src: 'https://platform.twitter.com/widgets.js', async: true },
 			],
 		},
 	}
