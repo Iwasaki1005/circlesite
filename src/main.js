@@ -5,7 +5,6 @@ import router from './router'
 import VModal from 'vue-js-modal'
 import VueSocialSharing from 'vue-social-sharing'
 import VueHead from 'vue-head'
-import VueAnalytics from 'vue-analytics';
 import Globalfunctions from '../public/js/Globalfunctions.js'
 import Galleryfunctions from '../public/js/Galleryfunctions.js'
 import '../public/css/master.css'
@@ -33,10 +32,6 @@ Vue.use(VueSocialSharing);
 Vue.use(VueHead)
 Vue.mixin(Globalfunctions)
 Vue.mixin(Galleryfunctions)
-Vue.use(VueAnalytics, {
-	id: 'G-15Y7NXCQG1',
-	router
-});
 
 new Vue({
   vuetify,
