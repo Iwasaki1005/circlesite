@@ -81,7 +81,7 @@
 				{ property: 'og:url', content: 'http://neverland-f.com/' },
 				{ property: 'og:locale', content: 'ja_JP' },
 				{ name: 'twitter:card', content: 'summary_large_image' },
-				{ name: 'twitter:site', content: '@tkcpail34' }
+				{ name: 'twitter:site', content: '@tkcpail34' },
 				{ property: 'og:image', content: 'https://neverland-f.com/ogp_twitter/neverlandf_summary_large_1.png' },
 			],
 			link: [
