@@ -80,9 +80,9 @@
 				{ property: 'og:type', content: 'website' },
 				{ property: 'og:url', content: 'http://neverland-f.com/' },
 				{ property: 'og:locale', content: 'ja_JP' },
-				{ property: 'og:image', content: 'http://nlf.pinoko.jp/ogp_twitter/neverlandf_summary_large_1.png' },
 				{ name: 'twitter:card', content: 'summary_large_image' },
 				{ name: 'twitter:site', content: '@tkcpail34' }
+				{ property: 'og:image', content: 'https://neverland-f.com/ogp_twitter/neverlandf_summary_large_1.png' },
 			],
 			link: [
 				{ rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css' },
