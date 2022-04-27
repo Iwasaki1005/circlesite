@@ -9,7 +9,6 @@
 				<router-view />
 			</transition>
 		</v-app>
-		<!-- <Footer /> -->
 	</div>
 </template>
 
@@ -29,7 +28,6 @@
 	import BackgroundEffect from './components/BackgroundEffect.vue'
 	import Glmenu from './components/GloMenu.vue'
 	import DrawerMenu from './components/DrawerMenu.vue'
-	// import Footer from './components/Footer.vue'
 
 	export default {
 		name: 'App',
@@ -41,7 +39,6 @@
 			Loading,
 			Glmenu,
 			DrawerMenu,
-			// Footer,
 		},
 		methods : {
 			createTitleDesc : function(routeInstance){
@@ -78,11 +75,14 @@
 				{ property: 'og:title', content: 'ねばーランド.F' },
 				{ property: 'og:description', content: 'サークル「ネバーランドF」のオフィシャルウェブページです。製作したイラスト、ゲームなどを公開しています。' },
 				{ property: 'og:type', content: 'website' },
-				{ property: 'og:url', content: 'http://neverland-f.com/' },
+				{ property: 'og:url', content: 'https://neverland-f.com/' },
 				{ property: 'og:locale', content: 'ja_JP' },
+				{ property: 'og:image', content: 'https://neverland-f.com/ogp_twitter/neverlandf_summary_large_1.png' },
 				{ name: 'twitter:card', content: 'summary_large_image' },
 				{ name: 'twitter:site', content: '@tkcpail34' },
-				{ property: 'og:image', content: 'https://neverland-f.com/ogp_twitter/neverlandf_summary_large_1.png' },
+				{ name: 'twitter:title', content: 'ホーム' },
+				{ name: 'twitter:description', content: 'ページの説明文' },
+				{ name: 'twitter:image', content: 'https://neverland-f.com/ogp_twitter/neverlandf_summary_large_1.png' },
 			],
 			link: [
 				{ rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css' },
