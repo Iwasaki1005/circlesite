@@ -11,17 +11,17 @@
 				</p>
 			</div>
 			<div class="sa sa--up">
-				<form class="m-rl-auto m-top-3rem">
+				<form method="post" action="php/mail.php" class="m-rl-auto m-top-3rem">
 					<div class="p-relative m-bottom-2rem_dis m-bottom-1_5rem_mob">
-						<input type="text" id="name" required>
+						<input name="ご用件" v-model="contact_index" type="text" id="name" required>
 						<label for="name"><i class="fas fa-pen"></i> ご用件</label>
 					</div>
 					<div class="p-relative m-bottom-2rem_dis m-bottom-1_5rem_mob">
-						<input type="text" id="email" required>
+						<input name="メールアドレス"  v-model="contact_mail" type="text" id="email" required>
 						<label for="email"><i class="fas fa-envelope"></i> メールアドレス</label>
 					</div>
 					<div class="p-relative m-bottom-2rem_dis m-bottom-1_5rem_mob">
-						<textarea id="mennage" rows="8" required></textarea>
+						<textarea name="お問合せ内容"  v-model="contact_message" id="mennage" rows="8" required></textarea>
 						<label for="message"><i class="fas fa-comments"></i> お問合せ内容</label>
 					</div>
 					
@@ -79,7 +79,9 @@ export default {
 		padding: 1vw;
 		outline: 0;
 		border: 0.07vw solid #e7b06c;
-		color: #e7b06c;
+		color: #333;
+		font-family: Kosugi Maru, sans-serif;
+		font-size: 1.4vw;
 		background: transparent;
 		font-size: 15px;
 	}
