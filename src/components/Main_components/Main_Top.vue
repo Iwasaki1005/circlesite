@@ -40,7 +40,7 @@ export default {
 		display: grid;
 		grid-template-rows: minmax(34vw, 80vh) minmax(8vw, 20vh) minmax(17vw, 40vh);
 		grid-template-columns: 30% 20% 50%;
-		background-color: tomato;
+		/* background-color: aqua; */
 	}
 
 	.main-top-logo {
