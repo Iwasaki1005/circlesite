@@ -3,7 +3,7 @@
 		<div class="main-top-dia-con">
 			<img class="main-top-dia" src="../../assets/sprite/triangle1.svg">
 		</div>
-		<div class="main-top-logo-grid f-ali-jus-center">
+		<div class="main-top-logo-grid f-ali-jus-center_dis">
 			<img class="main-top-logo" src="../../assets/logo/neverlandf_logo1.png" alt=”ねばーランド.Fロゴ”>
 		</div>
 		<div class="main-top-tips1">
