@@ -259,6 +259,16 @@ a {
 	font-size: 0.8rem;
 }
 
+.fs-normal {
+	font-size: 1rem;
+}
+
+.fs-h3nomal {
+	font-size: 1rem!important;
+	line-height: 150%;
+	font-weight: normal;
+}
+
 .lh-110 {
 	line-height: 110%;
 }
@@ -379,6 +389,10 @@ html.scrollbar {
 	
 	.fs-0_8rem_dis {
 		font-size: 0.8rem;
+	}
+
+	.fs-normal_dis {
+		font-size: 1rem;
 	}
 	
 	.lh-110_dis {
@@ -657,6 +671,10 @@ html.scrollbar {
 	
 	.fs-0_8rem_mob {
 		font-size: 0.8rem;
+	}
+
+	.fs-normal_mob {
+		font-size: 1rem;
 	}
 	
 	.lh-110_mob {

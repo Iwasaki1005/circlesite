@@ -4,7 +4,7 @@
 			<img class="main-top-dia" src="../../assets/sprite/triangle1.svg">
 		</div>
 		<div class="main-top-logo-grid f-ali-jus-center">
-			<img class="main-top-logo" src="../../assets/logo/neverlandf_logo1.png" alt=”ねばーランドFロゴ”>
+			<img class="main-top-logo" src="../../assets/logo/neverlandf_logo1.png" alt=”ねばーランド.Fロゴ”>
 		</div>
 		<div class="main-top-tips1">
 			<img class="main-top-banner tr-duration-025s" src="../../assets/dmyimage/topicbanner_dmy1.png">

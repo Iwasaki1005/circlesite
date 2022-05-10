@@ -3,7 +3,7 @@ require_once 'mail.php';
 
 define('FROM_MAIL_ADDRESS', 'info@neverland-f.com');
 define('TO_MAIL_ADDRESS', 'info@neverland-f.com');
-define('MAIL_SUBJECT', '実験用サイトからのお問い合わせです');
+define('MAIL_SUBJECT', 'ねばーランド.Fからのお問い合わせです');
 
 $data = file_get_contents('php://input');
 $data = json_decode($data);

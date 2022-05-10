@@ -69,7 +69,7 @@
 		},
 		head: {
 			meta: [
-				{ name: 'keywords', content: 'ねばーランドF,イラスト,フリーゲーム' },
+				{ name: 'keywords', content: 'ねばーランド.F,イラスト,フリーゲーム' },
 				{ name: 'copyright', content: '© NEVERLAND.F' },
 				{ name: 'author', content: 'ねばーランド.F' },
 				{ property: 'og:title', content: 'ねばーランド.F' },

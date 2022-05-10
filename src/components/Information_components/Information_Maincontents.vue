@@ -18,7 +18,7 @@
 								<p class="fs-0_8rem m-right-05rem co-black">2022.※未定</p>
 								<div class="tag-info co-white font-E1">info</div>
 							</div>
-							<p class="co-black">新サークル「ねばーランドF」活動開始しました。</p>
+							<h3 class="co-black fs-h3nomal">新サークル「ねばーランド.F」活動開始しました。</h3>
 						</div>
 					</router-link>
 				</v-tab-item>

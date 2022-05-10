@@ -198,7 +198,7 @@ export default {
 						}
 					}
 					myXml.onload = function(){
-						//通信完了時
+						//通信完了時 特に何もなし
 					}
 					myXml.open("POST", "php/inquiry.php", true);
 						myXml.send(jsondata);

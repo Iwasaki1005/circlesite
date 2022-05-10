@@ -113,7 +113,7 @@ export default {
 					slidebtnext.classList.remove('isdisable');
 					slidebtback.classList.remove('isdisable');
 				}, 1050);
-				console.log('parameter_slidestate = 2')
+				// console.log('parameter_slidestate = 2')
 			}	else {
 					if (parameter_slidestate == 3) {
 						gameslide1.classList.add('opacity-0');
@@ -142,7 +142,7 @@ export default {
 							slidebtnext.classList.remove('isdisable');
 							slidebtback.classList.remove('isdisable');
 						}, 1050);
-						console.log('parameter_slidestate = 3')
+						// console.log('parameter_slidestate = 3')
 					}	else {
 							if (parameter_slidestate == 4) {
 								gameslide2.classList.add('opacity-0');
@@ -172,19 +172,19 @@ export default {
 									slidebtback.classList.remove('isdisable');
 								}, 1050);
 								parameter_slidestate = 1 ;
-								console.log('parameter_slidestate = 1')
+								// console.log('parameter_slidestate = 1')
 							}
 					}
 				}
 		}
 		let interval_id = setInterval(autoslide, 5000);
-		console.log('inteval_id =', interval_id)
+		// console.log('inteval_id =', interval_id)
 
 		slidebtnext.addEventListener('click', function () {
 			parameter_slidestate = parameter_slidestate +1;
 			clearInterval(interval_id);
 			interval_id = setInterval(autoslide, 5000);
-			console.log('inteval_id =', interval_id)
+			// console.log('inteval_id =', interval_id)
 			if (parameter_slidestate == 2) {
 				gameslide3.classList.add('opacity-0');
 				gameslide3.classList.remove('slide-position0');
@@ -212,7 +212,7 @@ export default {
 					slidebtnext.classList.remove('isdisable');
 					slidebtback.classList.remove('isdisable');
 				}, 1050);
-				console.log('parameter_slidestate = 2')
+				// console.log('parameter_slidestate = 2')
 			}	else {
 					if (parameter_slidestate == 3) {
 						gameslide1.classList.add('opacity-0');
@@ -241,7 +241,7 @@ export default {
 							slidebtnext.classList.remove('isdisable');
 							slidebtback.classList.remove('isdisable');
 						}, 1050);
-						console.log('parameter_slidestate = 3')
+						// console.log('parameter_slidestate = 3')
 					}	else {
 							if (parameter_slidestate == 4) {
 								gameslide2.classList.add('opacity-0');
@@ -271,7 +271,7 @@ export default {
 									slidebtback.classList.remove('isdisable');
 								}, 1050);
 								parameter_slidestate = 1 ;
-								console.log('parameter_slidestate = 1')
+								// console.log('parameter_slidestate = 1')
 							}
 					}
 				}
@@ -281,7 +281,7 @@ export default {
 			parameter_slidestate = parameter_slidestate -1;
 			clearInterval(interval_id);
 			interval_id = setInterval(autoslide, 5000);
-			console.log('inteval_id =', interval_id)
+			// console.log('inteval_id =', interval_id)
 			if (parameter_slidestate == 2) {
 				// 0にいるスライド２が1に移動/1にいるスライド３が2に移動/2にいるスライド１が3に移動
 				//その後、スライド1が0に瞬間移動
@@ -311,7 +311,7 @@ export default {
 					slidebtnext.classList.remove('isdisable');
 					slidebtback.classList.remove('isdisable');
 				}, 1050);
-				console.log('parameter_slidestate = 2')
+				// console.log('parameter_slidestate = 2')
 			}	else {
 					if (parameter_slidestate == 3) {
 						// 0にいるスライド３が1に移動/1にいるスライド１が2に移動/2にいるスライド２が3に移動
@@ -342,7 +342,7 @@ export default {
 							slidebtnext.classList.remove('isdisable');
 							slidebtback.classList.remove('isdisable');
 						}, 1050);
-						console.log('parameter_slidestate = 3')
+						// console.log('parameter_slidestate = 3')
 					}	else {
 							if (parameter_slidestate == 1) {
 						// 0にいるスライド１が1に移動/1にいるスライド２が2に移動/2にいるスライド３が3に移動
@@ -373,7 +373,7 @@ export default {
 							slidebtnext.classList.remove('isdisable');
 							slidebtback.classList.remove('isdisable');
 						}, 1050);
-								console.log('parameter_slidestate = 1')
+								// console.log('parameter_slidestate = 1')
 							}	else {
 								if (parameter_slidestate == 0) {
 									// 0にいるスライド３が1に移動/1にいるスライド１が2に移動/2にいるスライド２が3に移動
@@ -406,7 +406,7 @@ export default {
 										slidebtback.classList.remove('isdisable');
 									}, 1050);
 									parameter_slidestate = 3;
-									console.log('parameter_slidestate = 3')
+									// console.log('parameter_slidestate = 3')
 								}
 							}
 					}

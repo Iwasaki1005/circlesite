@@ -100,7 +100,7 @@ export default {
 	name: 'Footer',
 	methods: {
 		logoscroll: function () {
-			console.log(this.$route.path)
+			// console.log(this.$route.path)
 			if (this.$route.path === '/') {
 				window.scroll({top: 0, behavior: 'smooth'});
 			} else {

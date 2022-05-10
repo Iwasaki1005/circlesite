@@ -14,7 +14,7 @@
 				<v-tabs-items v-model="tab">
 					<v-tab-item>
 						<article class="article-container">
-							<p class="information-index">プライバシーポリシー</p>
+							<h3 class="information-index">プライバシーポリシー</h3>
 							<p>
 								当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定するものではありません。<br>
 								この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。この規約に関しての詳細は<a target="_blank" href="https://marketingplatform.google.com/about/analytics/terms/jp/">Googleアナリティクスサービス利用規約のページ</a>や<a target="_blank" href="https://policies.google.com/technologies/ads?hl=ja">Googleポリシーと規約ページ</a>をご覧ください。
@@ -23,7 +23,7 @@
 					</v-tab-item>
 					<v-tab-item>
 						<article class="article-container">
-							<p class="information-index">当サイトへのリンクについて</p>
+							<h3 class="information-index">当サイトへのリンクについて</h3>
 							<p>
 								当サイトは基本的にリンクフリーです。<br>
 								リンクをしていただく際のURLはトップページへお願いします。<br><br>
@@ -44,7 +44,7 @@
 					</v-tab-item>
 					<v-tab-item>
 						<article class="article-container">
-							<p class="information-index">閲覧推奨ブラウザ</p>
+							<h3 class="information-index">閲覧推奨ブラウザ</h3>
 							<p class="m-bottom-1rem_dis m-bottom-05rem_mob">当サイトを閲覧する際の推奨ブラウザは下記のものになります。</p>
 							<p class="m-bottom-1rem_dis m-bottom-05rem_mob">
 								・Google Chrome
@@ -108,6 +108,8 @@ export default {
 		padding: 0.2vw 0 0.2vw 1vw;
 		color: #fafafa;
 		margin-bottom: 1rem;
+		font-size: 1rem;
+		font-weight: normal;
 	}
 }
 
@@ -118,6 +120,8 @@ export default {
 		padding: 0.2vw 0 0.2vw 1vw;
 		color: #fafafa;
 		margin-bottom: 0.5rem;
+		font-size: 1rem;
+		font-weight: normal;
 	}
 }
 </style>

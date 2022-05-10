@@ -9,7 +9,7 @@
 					</div>
 					<!-- title -->
 					<div class="co-black m-top-05rem m-bottom-05rem">
-						<p class="lh-110">{{ column.title }}</p>
+						<h3 class="lh-110 fs-normal_mob f-weight-normal">{{ column.title }}</h3>
 					</div>
 					<!-- タグ -->
 					<div class="d-flex m-bottom-1rem">

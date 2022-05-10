@@ -6,7 +6,7 @@
 			</template>
 			<div class="py-4">
 				<a :class="`fs-1_2rem ${year.textclass}`" :href="year.linkhref">
-					{{year.title}}
+					<h3 class="fs-1_2rem f-weight-normal">{{year.title}}</h3>
 				</a>
 				<div>
 					{{year.text}}

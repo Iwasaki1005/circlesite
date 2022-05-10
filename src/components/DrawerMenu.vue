@@ -2,7 +2,9 @@
 	<div>
 		<ul id="Drawermenu" class="drawermenu drawermenu-hide">
 			<router-link to="/">
-				<img class="drawermenu-logo m-rl-auto closeevent" src="../assets//logo/neverlandf_logo1.png" alt=”ねばーランドFロゴ”>
+				<h1>
+					<img class="drawermenu-logo m-rl-auto closeevent" src="../assets//logo/neverlandf_logo1.png" alt=”ねばーランド.F”>
+				</h1>
 			</router-link>
 			<div class="drawermenu-links">
 				<div id="dr-content1" class="drawermenu-container drawermenu-saup opacity-0">
