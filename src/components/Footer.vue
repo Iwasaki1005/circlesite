@@ -59,11 +59,13 @@
 		</div>
 		<div class="footer-whiteline m-top-05rem m-bottom-2rem m-rl-auto"></div>
 		<div class="width-90p f-jus-space-around fs-0_8rem m-bottom-1rem m-rl-auto">
-			<div class="f-ali-jus-center co-white footer-hoveranim d-flex_important">
-				<i class="fab fa-twitter-square fs-1_2rem"></i>
-				<span class="m-right-05rem">『雨地屋しろー』Twitter</span>
-				<i class="fas fa-external-link-alt"></i>
-			</div>
+			<a href="https://twitter.com/tkcpail34" target="_blank" rel="noopener noreferrer">
+				<div class="f-ali-jus-center co-white footer-hoveranim d-flex_important">
+					<i class="fab fa-twitter-square fs-1_2rem"></i>
+					<span class="m-right-05rem">『雨地屋しろー』Twitter</span>
+					<i class="fas fa-external-link-alt"></i>
+				</div>
+			</a>
 		</div>
 		<div class="f-jus-space-between width-90p m-rl-auto fs-0_8rem m-bottom-1rem">
 			<span></span>

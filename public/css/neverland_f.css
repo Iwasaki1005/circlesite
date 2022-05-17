@@ -285,22 +285,25 @@ a {
  *
 --------------------------------------------------------------------------*/
 
+html.scrollbar {
+	overflow-y: hidden;
+}
+
 html::-webkit-scrollbar {
 	width: 0.8vw;
 }
-  
-  /* スクロールの背景の設定 */
-  html::-webkit-scrollbar-track {
+
+/* スクロールの背景の設定 */
+html::-webkit-scrollbar-track {
 	background-color: transparent;
 }
-  
-  /* スクロールのつまみ部分の設定 */
-  html::-webkit-scrollbar-thumb {
+
+/* スクロールのつまみ部分の設定 */
+html::-webkit-scrollbar-thumb {
 	border-radius: 2vw;
 	background: #ffdbae;
 	border: 0.2vw solid #fafafa;
 }
-
 
 
 /*--------------------------------------------------------------------------
@@ -327,10 +330,6 @@ html::-webkit-scrollbar {
 .v-line {
 	font-size: 0.5rem;
 	margin-left: 2rem;
-}
-
-html.scrollbar {
-	overflow-y: hidden;
 }
 
 
