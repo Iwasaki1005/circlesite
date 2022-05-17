@@ -1,37 +1,35 @@
 <template>
-	<v-lazy v-model="isActive" :options="{ threshold: 1}" min-height="100" transition="fade-transition" >
-		<section class="section">
-			<h2 class="font-E3 text-center scroll-fadein index-anime"><span>profile</span></h2>
-			<VerticalLine />
-			<div class="width-100p f-jus-space-around sa sa--up">
-				<div class="main-profile-card">
-					<div class="main-profile-left-side"></div>
-					<div class="main-profile-right-side"></div>
-					<div class="main-profile-back-side d-flex">
-						<div class="main-profile-gradation width-5p"></div>
-						<div class="width-95p p-all-05rem f-ali-items-end">
-							<div>
-								<div class="d-flex_mob m-bottom-05rem_mob mob-only">
-									<img class="main-profile-bt" src="../../assets/img/icon_mail.svg">
-									<img class="main-profile-bt m-left-05rem" src="../../assets/img/icon_twitter.svg">
-									<img class="main-profile-bt m-left-05rem" src="../../assets/img/icon_pixiv.svg">
-								</div>
-								<div class="f-ali-items-end f-jus-space-betweenwidth-100p">
-									<p class="lh-120 fs-1_2rem co-brown">雨地屋しろー</p>
-									<div class="d-flex m-left-05rem dis-only">
-										<img class="main-profile-bt" src="../../assets/img/icon_mail.svg">
-										<img class="main-profile-bt" src="../../assets/img/icon_twitter.svg">
-										<img class="main-profile-bt" src="../../assets/img/icon_pixiv.svg">
-									</div>
-								</div>
-								<p class="lh-120 fs-0_8rem m-left-1rem co-brown">└ illustrator:<br class="mob-only"><span class="mob-only main-profile-mbnamem-1"></span>Uchiya Shiro</p>
+	<section class="section">
+		<h2 class="font-E3 text-center scroll-fadein index-anime"><span>profile</span></h2>
+		<VerticalLine />
+		<div class="width-100p f-jus-space-around sa sa--up">
+			<div class="main-profile-card">
+				<div class="main-profile-left-side"></div>
+				<div class="main-profile-right-side"></div>
+				<div class="main-profile-back-side d-flex">
+					<div class="main-profile-gradation width-5p"></div>
+					<div class="width-95p p-all-05rem f-ali-items-end">
+						<div>
+							<div class="d-flex_mob m-bottom-05rem_mob mob-only">
+								<img class="main-profile-bt" src="../../assets/img/icon_mail.svg">
+								<img class="main-profile-bt m-left-05rem" src="../../assets/img/icon_twitter.svg">
+								<img class="main-profile-bt m-left-05rem" src="../../assets/img/icon_pixiv.svg">
 							</div>
+							<div class="f-ali-items-end f-jus-space-betweenwidth-100p">
+								<p class="lh-120 fs-1_2rem co-brown">雨地屋しろー</p>
+								<div class="d-flex m-left-05rem dis-only">
+									<img class="main-profile-bt" src="../../assets/img/icon_mail.svg">
+									<img class="main-profile-bt" src="../../assets/img/icon_twitter.svg">
+									<img class="main-profile-bt" src="../../assets/img/icon_pixiv.svg">
+								</div>
+							</div>
+							<p class="lh-120 fs-0_8rem m-left-1rem co-brown">└ illustrator:<br class="mob-only"><span class="mob-only main-profile-mbnamem-1"></span>Uchiya Shiro</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-	</v-lazy>
+		</div>
+	</section>
 </template>
 
 <script>

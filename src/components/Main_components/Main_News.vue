@@ -1,92 +1,89 @@
 <template>
-	<v-lazy v-model="isActive" :options="{ threshold: 1}" min-height="100" transition="fade-transition" >
-		<section id="News" class="section">
-			<h2 id="news-index" class="font-E3 text-center scroll-fadein index-anime"><span>News</span></h2>
-			<VerticalLine />
-			<div class="d-flex_dis sa sa--up">
-				<router-link class="hover-flash main-news-window-container" v-bind:to="news[0].link">
-					<div class="main-news-window-info">
-						<div class="main-news-window-info-text co-white">
-							<p>{{news[0].date}}</p>
-							<p>{{news[0].title}}</p>
-						</div>
-						<div class="main-news-window-info-tag">
-							<div v-if="news[0].tag.includes('dmy')" class="tag-dmy co-white tr-duration-05s">dmy</div>
-							<div v-if="news[0].tag.includes('info')" class="tag-info co-white tr-duration-05s">info</div>
-							<div v-if="news[0].tag.includes('game')" class="tag-info co-white tr-duration-05s">game</div>
-						</div>
+	<section id="News" class="section">
+		<h2 id="news-index" class="font-E3 text-center scroll-fadein index-anime"><span>News</span></h2>
+		<VerticalLine />
+		<div class="d-flex_dis sa sa--up">
+			<router-link class="hover-flash main-news-window-container" v-bind:to="news[0].link">
+				<div class="main-news-window-info">
+					<div class="main-news-window-info-text co-white">
+						<p>{{news[0].date}}</p>
+						<p>{{news[0].title}}</p>
 					</div>
-					<div v-bind:class="news[0].mainthum" class="main-news-window-img-container overflow-hidden f-ali-jus-center tr-duration-05s"></div>
-				</router-link>
-				<div class="f-ali-jus-center-dir-column m-top-1rem_mob">
-					<h3 class="co-brown f-weight-normal">-最新情報-</h3>
-					<div class="m-top-1rem">
-						<router-link class="m-bottom-05rem" v-bind:to="news[1].link">
-							<div class="m-bottom-05rem m-top-05rem p-rl-1rem">
-								<div class="d-flex">
-									<p class="fs-0_8rem co-black">{{news[1].date}}</p>
-									<div class="f-ali-items-center">
-										<div v-if="news[1].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
-										<div v-if="news[1].tag.includes('info')" class="tag-info-small">info</div>
-										<div v-if="news[1].tag.includes('game')" class="tag-info-small">game</div>
-									</div>
-								</div>
-								<p class="fs-0_8rem co-black">{{news[1].title}}</p>
-							</div>
-						</router-link>
-							<!-- ここまでりふぁ -->
-						<div class="main-news-line"></div>
-						<router-link class="m-bottom-05rem" v-bind:to="news[2].link">
-							<div class="m-bottom-05rem m-top-05rem p-rl-1rem">
-								<div class="d-flex">
-									<p class="fs-0_8rem co-black">{{news[2].date}}</p>
-									<div class="f-ali-items-center">
-										<div v-if="news[2].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
-										<div v-if="news[2].tag.includes('info')" class="tag-info-small">info</div>
-										<div v-if="news[2].tag.includes('game')" class="tag-info-small">game</div>
-									</div>
-								</div>
-								<p class="fs-0_8rem co-black">{{news[2].title}}</p>
-							</div>
-						</router-link>
-						<div class="main-news-line"></div>
-						<router-link class="m-bottom-05rem" v-bind:to="news[3].link">
-							<div class="m-bottom-05rem m-top-05rem p-rl-1rem">
-								<div class="d-flex">
-									<p class="fs-0_8rem co-black">{{news[3].date}}</p>
-									<div class="f-ali-items-center">
-										<div v-if="news[3].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
-										<div v-if="news[3].tag.includes('info')" class="tag-info-small">info</div>
-										<div v-if="news[3].tag.includes('game')" class="tag-info-small">game</div>
-									</div>
-								</div>
-								<p class="fs-0_8rem co-black">{{news[3].title}}</p>
-							</div>
-						</router-link>
-						<div class="main-news-line"></div>
-						<router-link class="m-bottom-05rem" v-bind:to="news[4].link">
-							<div class="m-bottom-05rem m-top-05rem p-rl-1rem">
-								<div class="d-flex">
-									<p class="fs-0_8rem co-black">{{news[4].date}}</p>
-									<div class="f-ali-items-center">
-										<div v-if="news[4].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
-										<div v-if="news[4].tag.includes('info')" class="tag-info-small">info</div>
-										<div v-if="news[4].tag.includes('game')" class="tag-info-small">game</div>
-									</div>
-								</div>
-								<p class="fs-0_8rem co-black">{{news[4].title}}</p>
-							</div>
-						</router-link>
+					<div class="main-news-window-info-tag">
+						<div v-if="news[0].tag.includes('dmy')" class="tag-dmy co-white tr-duration-05s">dmy</div>
+						<div v-if="news[0].tag.includes('info')" class="tag-info co-white tr-duration-05s">info</div>
+						<div v-if="news[0].tag.includes('game')" class="tag-info co-white tr-duration-05s">game</div>
 					</div>
 				</div>
+				<div v-bind:class="news[0].mainthum" class="main-news-window-img-container overflow-hidden f-ali-jus-center tr-duration-05s"></div>
+			</router-link>
+			<div class="f-ali-jus-center-dir-column m-top-1rem_mob">
+				<h3 class="co-brown f-weight-normal">-最新情報-</h3>
+				<div class="m-top-1rem">
+					<router-link class="m-bottom-05rem" v-bind:to="news[1].link">
+						<div class="m-bottom-05rem m-top-05rem p-rl-1rem">
+							<div class="d-flex">
+								<p class="fs-0_8rem co-black">{{news[1].date}}</p>
+								<div class="f-ali-items-center">
+									<div v-if="news[1].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
+									<div v-if="news[1].tag.includes('info')" class="tag-info-small">info</div>
+									<div v-if="news[1].tag.includes('game')" class="tag-info-small">game</div>
+								</div>
+							</div>
+							<p class="fs-0_8rem co-black">{{news[1].title}}</p>
+						</div>
+					</router-link>
+					<div class="main-news-line"></div>
+					<router-link class="m-bottom-05rem" v-bind:to="news[2].link">
+						<div class="m-bottom-05rem m-top-05rem p-rl-1rem">
+							<div class="d-flex">
+								<p class="fs-0_8rem co-black">{{news[2].date}}</p>
+								<div class="f-ali-items-center">
+									<div v-if="news[2].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
+									<div v-if="news[2].tag.includes('info')" class="tag-info-small">info</div>
+									<div v-if="news[2].tag.includes('game')" class="tag-info-small">game</div>
+								</div>
+							</div>
+							<p class="fs-0_8rem co-black">{{news[2].title}}</p>
+						</div>
+					</router-link>
+					<div class="main-news-line"></div>
+					<router-link class="m-bottom-05rem" v-bind:to="news[3].link">
+						<div class="m-bottom-05rem m-top-05rem p-rl-1rem">
+							<div class="d-flex">
+								<p class="fs-0_8rem co-black">{{news[3].date}}</p>
+								<div class="f-ali-items-center">
+									<div v-if="news[3].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
+									<div v-if="news[3].tag.includes('info')" class="tag-info-small">info</div>
+									<div v-if="news[3].tag.includes('game')" class="tag-info-small">game</div>
+								</div>
+							</div>
+							<p class="fs-0_8rem co-black">{{news[3].title}}</p>
+						</div>
+					</router-link>
+					<div class="main-news-line"></div>
+					<router-link class="m-bottom-05rem" v-bind:to="news[4].link">
+						<div class="m-bottom-05rem m-top-05rem p-rl-1rem">
+							<div class="d-flex">
+								<p class="fs-0_8rem co-black">{{news[4].date}}</p>
+								<div class="f-ali-items-center">
+									<div v-if="news[4].tag.includes('dmy')" class="tag-dmy-small">dmy</div>
+									<div v-if="news[4].tag.includes('info')" class="tag-info-small">info</div>
+									<div v-if="news[4].tag.includes('game')" class="tag-info-small">game</div>
+								</div>
+							</div>
+							<p class="fs-0_8rem co-black">{{news[4].title}}</p>
+						</div>
+					</router-link>
+				</div>
 			</div>
-			<div class="f-ali-jus-center m-top-2rem sa sa--up">
-				<a href="#" class="bt-typeA bt-typeA-border d-block center">
-					<span class="bt-typeA-border-inner font-E1">View more ></span>
-				</a>
-			</div>
-		</section>
-	</v-lazy>
+		</div>
+		<div class="f-ali-jus-center m-top-2rem sa sa--up">
+			<a href="#" class="bt-typeA bt-typeA-border d-block center">
+				<span class="bt-typeA-border-inner font-E1">View more ></span>
+			</a>
+		</div>
+	</section>
 </template>
 
 <script>
