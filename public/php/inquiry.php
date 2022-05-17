@@ -1,7 +1,7 @@
 <?php
 require_once 'mail.php';
 
-define('FROM_MAIL_ADDRESS', 'info@neverland-f.com');
+// define('FROM_MAIL_ADDRESS', 'info@neverland-f.com');
 define('TO_MAIL_ADDRESS', 'info@neverland-f.com');
 define('MAIL_SUBJECT', 'ねばーランド.Fからのお問い合わせです');
 
@@ -15,7 +15,7 @@ $data->user_text
 EOT;
 
 try {
-	$mail = new Mail(FROM_MAIL_ADDRESS, TO_MAIL_ADDRESS);
+	$mail = new Mail($data->user_mail, TO_MAIL_ADDRESS);
 	$mail->setSubject(MAIL_SUBJECT);
 	$mail->setMessage($message);
 	$mail->setLanguage('ja');

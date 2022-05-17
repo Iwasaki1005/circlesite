@@ -164,7 +164,7 @@ export default {
 						"user_text": usertext,
 						"user_index": userindex,
 					}
-					console.log("jsonで書き出す");
+					// console.log("jsonで書き出す");
 
 					var jsondata = JSON.stringify(jsontrans)
 
