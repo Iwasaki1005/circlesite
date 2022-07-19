@@ -107,9 +107,9 @@ export default {
 			this.filter()
 		},
 		removetag : function (column) {
-			let targettag = column
-			let activetagcall = this.activetag
-			let passindex = activetagcall.findIndex(element => element === targettag);
+			const targettag = column
+			const activetagcall = this.activetag
+			const passindex = activetagcall.findIndex(element => element === targettag);
 			this.activetag.splice( passindex, 1 );
 			this.filter()
 		},
